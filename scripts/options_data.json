@@ -1,0 +1,1613 @@
+{
+  "fetched_at": "2026-03-18T18:55:11.776585",
+  "data": {
+    "NVDA": {
+      "rationale": "Core AI holding \u2014 high beta, needs protection",
+      "data": {
+        "ticker": "NVDA",
+        "current_price": 181.16,
+        "strategies": {
+          "2m": {
+            "expiry": "2026-05-15",
+            "protective_put_5pct_otm": {
+              "strike": 170.0,
+              "bid": 5.9,
+              "ask": 6.0,
+              "mid": 5.95,
+              "iv": 37.9,
+              "oi": 33274,
+              "cost_pct_of_stock": 3.28
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 165.0,
+              "bid": 4.65,
+              "ask": 4.7,
+              "mid": 4.68,
+              "iv": 39.5,
+              "oi": 15677,
+              "cost_pct_of_stock": 2.58
+            },
+            "atm_put": {
+              "strike": 180.0,
+              "bid": 9.4,
+              "ask": 9.45,
+              "mid": 9.43,
+              "iv": 34.6,
+              "oi": 36420,
+              "cost_pct_of_stock": 5.2
+            },
+            "covered_call_5pct_otm": {
+              "strike": 190.0,
+              "bid": 7.65,
+              "ask": 7.7,
+              "mid": 7.68,
+              "iv": 39.0,
+              "oi": 44542,
+              "cost_pct_of_stock": 4.24
+            },
+            "covered_call_10pct_otm": {
+              "strike": 200.0,
+              "bid": 4.15,
+              "ask": 4.2,
+              "mid": 4.18,
+              "iv": 36.7,
+              "oi": 83008,
+              "cost_pct_of_stock": 2.3
+            }
+          },
+          "3m": {
+            "expiry": "2026-06-18",
+            "protective_put_5pct_otm": {
+              "strike": 172.0,
+              "bid": 9.85,
+              "ask": 9.95,
+              "mid": 9.9,
+              "iv": 39.6,
+              "oi": 2033,
+              "cost_pct_of_stock": 5.46
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 164.0,
+              "bid": 7.3,
+              "ask": 7.4,
+              "mid": 7.35,
+              "iv": 41.5,
+              "oi": 8425,
+              "cost_pct_of_stock": 4.06
+            },
+            "atm_put": {
+              "strike": 181.0,
+              "bid": 13.5,
+              "ask": 13.6,
+              "mid": 13.55,
+              "iv": 37.6,
+              "oi": 4672,
+              "cost_pct_of_stock": 7.48
+            },
+            "covered_call_5pct_otm": {
+              "strike": 190.0,
+              "bid": 12.0,
+              "ask": 12.1,
+              "mid": 12.05,
+              "iv": 43.3,
+              "oi": 69108,
+              "cost_pct_of_stock": 6.65
+            },
+            "covered_call_10pct_otm": {
+              "strike": 200.0,
+              "bid": 8.15,
+              "ask": 8.2,
+              "mid": 8.18,
+              "iv": 41.5,
+              "oi": 71716,
+              "cost_pct_of_stock": 4.51
+            }
+          },
+          "6m": {
+            "expiry": "2026-09-18",
+            "protective_put_5pct_otm": {
+              "strike": 170.0,
+              "bid": 14.8,
+              "ask": 14.95,
+              "mid": 14.88,
+              "iv": 40.3,
+              "oi": 21211,
+              "cost_pct_of_stock": 8.21
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 165.0,
+              "bid": 13.0,
+              "ask": 13.1,
+              "mid": 13.05,
+              "iv": 41.2,
+              "oi": 10958,
+              "cost_pct_of_stock": 7.2
+            },
+            "atm_put": {
+              "strike": 180.0,
+              "bid": 19.1,
+              "ask": 19.25,
+              "mid": 19.18,
+              "iv": 38.8,
+              "oi": 19229,
+              "cost_pct_of_stock": 10.58
+            },
+            "covered_call_5pct_otm": {
+              "strike": 190.0,
+              "bid": 19.85,
+              "ask": 20.0,
+              "mid": 19.93,
+              "iv": 46.1,
+              "oi": 14433,
+              "cost_pct_of_stock": 11.0
+            },
+            "covered_call_10pct_otm": {
+              "strike": 200.0,
+              "bid": 15.75,
+              "ask": 15.85,
+              "mid": 15.8,
+              "iv": 44.8,
+              "oi": 24676,
+              "cost_pct_of_stock": 8.72
+            }
+          },
+          "12m": {
+            "expiry": "2027-03-19",
+            "protective_put_5pct_otm": {
+              "strike": 170.0,
+              "bid": 22.9,
+              "ask": 23.05,
+              "mid": 22.98,
+              "iv": 40.6,
+              "oi": 5308,
+              "cost_pct_of_stock": 12.68
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 165.0,
+              "bid": 20.75,
+              "ask": 20.9,
+              "mid": 20.82,
+              "iv": 41.1,
+              "oi": 3385,
+              "cost_pct_of_stock": 11.5
+            },
+            "atm_put": {
+              "strike": 180.0,
+              "bid": 27.55,
+              "ask": 27.7,
+              "mid": 27.62,
+              "iv": 39.4,
+              "oi": 1994,
+              "cost_pct_of_stock": 15.25
+            },
+            "covered_call_5pct_otm": {
+              "strike": 190.0,
+              "bid": 31.85,
+              "ask": 31.95,
+              "mid": 31.9,
+              "iv": 49.3,
+              "oi": 3090,
+              "cost_pct_of_stock": 17.61
+            },
+            "covered_call_10pct_otm": {
+              "strike": 200.0,
+              "bid": 27.75,
+              "ask": 27.9,
+              "mid": 27.82,
+              "iv": 48.5,
+              "oi": 4394,
+              "cost_pct_of_stock": 15.36
+            }
+          }
+        }
+      }
+    },
+    "QQQ": {
+      "rationale": "Tech/AI broad hedge \u2014 portfolio level",
+      "data": {
+        "ticker": "QQQ",
+        "current_price": 597.27,
+        "strategies": {
+          "2m": {
+            "expiry": "2026-05-15",
+            "protective_put_5pct_otm": {
+              "strike": 565.0,
+              "bid": 11.08,
+              "ask": 11.2,
+              "mid": 11.14,
+              "iv": 25.7,
+              "oi": 2317,
+              "cost_pct_of_stock": 1.87
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 540.0,
+              "bid": 7.07,
+              "ask": 7.14,
+              "mid": 7.11,
+              "iv": 29.1,
+              "oi": 7877,
+              "cost_pct_of_stock": 1.19
+            },
+            "atm_put": {
+              "strike": 597.0,
+              "bid": 19.64,
+              "ask": 19.84,
+              "mid": 19.74,
+              "iv": 20.9,
+              "oi": 3002,
+              "cost_pct_of_stock": 3.31
+            },
+            "covered_call_5pct_otm": {
+              "strike": 627.0,
+              "bid": 8.89,
+              "ask": 8.99,
+              "mid": 8.94,
+              "iv": 20.9,
+              "oi": 333,
+              "cost_pct_of_stock": 1.5
+            },
+            "covered_call_10pct_otm": {
+              "strike": 655.0,
+              "bid": 1.8,
+              "ask": 1.87,
+              "mid": 1.83,
+              "iv": 17.3,
+              "oi": 4899,
+              "cost_pct_of_stock": 0.31
+            }
+          },
+          "3m": {
+            "expiry": "2026-06-18",
+            "protective_put_5pct_otm": {
+              "strike": 564.78,
+              "bid": 15.53,
+              "ask": 15.7,
+              "mid": 15.61,
+              "iv": 24.9,
+              "oi": 2386,
+              "cost_pct_of_stock": 2.61
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 539.78,
+              "bid": 10.83,
+              "ask": 10.96,
+              "mid": 10.89,
+              "iv": 27.8,
+              "oi": 2334,
+              "cost_pct_of_stock": 1.82
+            },
+            "atm_put": {
+              "strike": 594.78,
+              "bid": 24.08,
+              "ask": 24.27,
+              "mid": 24.17,
+              "iv": 21.3,
+              "oi": 2402,
+              "cost_pct_of_stock": 4.05
+            },
+            "covered_call_5pct_otm": {
+              "strike": 625.0,
+              "bid": 16.31,
+              "ask": 16.43,
+              "mid": 16.37,
+              "iv": 22.9,
+              "oi": 23853,
+              "cost_pct_of_stock": 2.74
+            },
+            "covered_call_10pct_otm": {
+              "strike": 655.0,
+              "bid": 5.58,
+              "ask": 5.69,
+              "mid": 5.63,
+              "iv": 19.4,
+              "oi": 4469,
+              "cost_pct_of_stock": 0.94
+            }
+          },
+          "6m": {
+            "expiry": "2026-09-18",
+            "protective_put_5pct_otm": {
+              "strike": 565.0,
+              "bid": 25.29,
+              "ask": 25.5,
+              "mid": 25.39,
+              "iv": 24.0,
+              "oi": 4206,
+              "cost_pct_of_stock": 4.25
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 540.0,
+              "bid": 19.44,
+              "ask": 19.62,
+              "mid": 19.53,
+              "iv": 26.2,
+              "oi": 9800,
+              "cost_pct_of_stock": 3.27
+            },
+            "atm_put": {
+              "strike": 595.0,
+              "bid": 34.72,
+              "ask": 34.96,
+              "mid": 34.84,
+              "iv": 21.3,
+              "oi": 10243,
+              "cost_pct_of_stock": 5.83
+            },
+            "covered_call_5pct_otm": {
+              "strike": 625.0,
+              "bid": 31.17,
+              "ask": 31.37,
+              "mid": 31.27,
+              "iv": 25.3,
+              "oi": 3304,
+              "cost_pct_of_stock": 5.24
+            },
+            "covered_call_10pct_otm": {
+              "strike": 655.0,
+              "bid": 17.59,
+              "ask": 17.77,
+              "mid": 17.68,
+              "iv": 22.6,
+              "oi": 4635,
+              "cost_pct_of_stock": 2.96
+            }
+          },
+          "12m": {
+            "expiry": "2027-03-19",
+            "protective_put_5pct_otm": {
+              "strike": 565.0,
+              "bid": 37.71,
+              "ask": 38.27,
+              "mid": 37.99,
+              "iv": 22.8,
+              "oi": 766,
+              "cost_pct_of_stock": 6.36
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 540.0,
+              "bid": 30.7,
+              "ask": 31.21,
+              "mid": 30.95,
+              "iv": 24.4,
+              "oi": 567,
+              "cost_pct_of_stock": 5.18
+            },
+            "atm_put": {
+              "strike": 595.0,
+              "bid": 47.92,
+              "ask": 48.56,
+              "mid": 48.24,
+              "iv": 20.9,
+              "oi": 134,
+              "cost_pct_of_stock": 8.08
+            },
+            "covered_call_5pct_otm": {
+              "strike": 625.0,
+              "bid": 51.0,
+              "ask": 55.78,
+              "mid": 53.39,
+              "iv": 28.2,
+              "oi": 473,
+              "cost_pct_of_stock": 8.94
+            },
+            "covered_call_10pct_otm": {
+              "strike": 655.0,
+              "bid": 38.66,
+              "ask": 39.24,
+              "mid": 38.95,
+              "iv": 25.6,
+              "oi": 51,
+              "cost_pct_of_stock": 6.52
+            }
+          }
+        }
+      }
+    },
+    "SMH": {
+      "rationale": "Semiconductor ETF hedge",
+      "data": {
+        "ticker": "SMH",
+        "current_price": 395.83,
+        "strategies": {
+          "2m": {
+            "expiry": "2026-05-15",
+            "protective_put_5pct_otm": {
+              "strike": 375.0,
+              "bid": 14.25,
+              "ask": 14.85,
+              "mid": 14.55,
+              "iv": 38.6,
+              "oi": 843,
+              "cost_pct_of_stock": 3.68
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 355.0,
+              "bid": 9.0,
+              "ask": 9.95,
+              "mid": 9.47,
+              "iv": 42.1,
+              "oi": 486,
+              "cost_pct_of_stock": 2.39
+            },
+            "atm_put": {
+              "strike": 395.0,
+              "bid": 21.25,
+              "ask": 22.0,
+              "mid": 21.62,
+              "iv": 35.4,
+              "oi": 323,
+              "cost_pct_of_stock": 5.46
+            },
+            "covered_call_5pct_otm": {
+              "strike": 415.0,
+              "bid": 16.95,
+              "ask": 17.5,
+              "mid": 17.23,
+              "iv": 40.0,
+              "oi": 610,
+              "cost_pct_of_stock": 4.35
+            },
+            "covered_call_10pct_otm": {
+              "strike": 435.0,
+              "bid": 9.65,
+              "ask": 10.2,
+              "mid": 9.93,
+              "iv": 37.7,
+              "oi": 112,
+              "cost_pct_of_stock": 2.51
+            }
+          },
+          "3m": {
+            "expiry": "2026-06-18",
+            "protective_put_5pct_otm": {
+              "strike": 375.0,
+              "bid": 19.3,
+              "ask": 20.0,
+              "mid": 19.65,
+              "iv": 37.8,
+              "oi": 4519,
+              "cost_pct_of_stock": 4.96
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 355.0,
+              "bid": 13.85,
+              "ask": 14.65,
+              "mid": 14.25,
+              "iv": 41.0,
+              "oi": 2755,
+              "cost_pct_of_stock": 3.6
+            },
+            "atm_put": {
+              "strike": 395.0,
+              "bid": 26.9,
+              "ask": 27.8,
+              "mid": 27.35,
+              "iv": 35.5,
+              "oi": 664,
+              "cost_pct_of_stock": 6.91
+            },
+            "covered_call_5pct_otm": {
+              "strike": 415.0,
+              "bid": 23.75,
+              "ask": 24.4,
+              "mid": 24.07,
+              "iv": 40.6,
+              "oi": 1155,
+              "cost_pct_of_stock": 6.08
+            },
+            "covered_call_10pct_otm": {
+              "strike": 435.0,
+              "bid": 15.8,
+              "ask": 16.4,
+              "mid": 16.1,
+              "iv": 38.7,
+              "oi": 201,
+              "cost_pct_of_stock": 4.07
+            }
+          },
+          "6m": {
+            "expiry": "2026-09-18",
+            "protective_put_5pct_otm": {
+              "strike": 375.0,
+              "bid": 29.35,
+              "ask": 30.65,
+              "mid": 30.0,
+              "iv": 36.9,
+              "oi": 217,
+              "cost_pct_of_stock": 7.58
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 355.0,
+              "bid": 22.5,
+              "ask": 24.15,
+              "mid": 23.32,
+              "iv": 39.0,
+              "oi": 10,
+              "cost_pct_of_stock": 5.89
+            },
+            "atm_put": {
+              "strike": 395.0,
+              "bid": 36.9,
+              "ask": 39.25,
+              "mid": 38.08,
+              "iv": 35.4,
+              "oi": 120,
+              "cost_pct_of_stock": 9.62
+            },
+            "covered_call_5pct_otm": {
+              "strike": 415.0,
+              "bid": 37.45,
+              "ask": 40.25,
+              "mid": 38.85,
+              "iv": 42.9,
+              "oi": 63,
+              "cost_pct_of_stock": 9.81
+            },
+            "covered_call_10pct_otm": {
+              "strike": 435.0,
+              "bid": 29.25,
+              "ask": 31.1,
+              "mid": 30.18,
+              "iv": 41.0,
+              "oi": 36,
+              "cost_pct_of_stock": 7.62
+            }
+          },
+          "12m": {
+            "expiry": "2027-01-15",
+            "protective_put_5pct_otm": {
+              "strike": 375.0,
+              "bid": 38.15,
+              "ask": 41.7,
+              "mid": 39.92,
+              "iv": 36.9,
+              "oi": 54,
+              "cost_pct_of_stock": 10.09
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 355.0,
+              "bid": 30.95,
+              "ask": 34.35,
+              "mid": 32.65,
+              "iv": 38.5,
+              "oi": 28,
+              "cost_pct_of_stock": 8.25
+            },
+            "atm_put": {
+              "strike": 395.0,
+              "bid": 46.7,
+              "ask": 50.05,
+              "mid": 48.38,
+              "iv": 35.2,
+              "oi": 42,
+              "cost_pct_of_stock": 12.22
+            },
+            "covered_call_5pct_otm": {
+              "strike": 415.0,
+              "bid": 51.1,
+              "ask": 54.3,
+              "mid": 52.7,
+              "iv": 43.3,
+              "oi": 30,
+              "cost_pct_of_stock": 13.31
+            },
+            "covered_call_10pct_otm": {
+              "strike": 435.0,
+              "bid": 43.25,
+              "ask": 44.6,
+              "mid": 43.92,
+              "iv": 41.4,
+              "oi": 258,
+              "cost_pct_of_stock": 11.1
+            }
+          }
+        }
+      }
+    },
+    "GLD": {
+      "rationale": "Safe haven \u2014 already a hedge, covered calls for income",
+      "data": {
+        "ticker": "GLD",
+        "current_price": 446.74,
+        "strategies": {
+          "2m": {
+            "expiry": "2026-05-15",
+            "protective_put_5pct_otm": {
+              "strike": 425.0,
+              "bid": 7.95,
+              "ask": 8.1,
+              "mid": 8.03,
+              "iv": 24.0,
+              "oi": 28845,
+              "cost_pct_of_stock": 1.8
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 400.0,
+              "bid": 3.0,
+              "ask": 3.25,
+              "mid": 3.12,
+              "iv": 25.9,
+              "oi": 12897,
+              "cost_pct_of_stock": 0.7
+            },
+            "atm_put": {
+              "strike": 445.0,
+              "bid": 15.05,
+              "ask": 15.5,
+              "mid": 15.28,
+              "iv": 22.9,
+              "oi": 2569,
+              "cost_pct_of_stock": 3.42
+            },
+            "covered_call_5pct_otm": {
+              "strike": 470.0,
+              "bid": 11.15,
+              "ask": 11.5,
+              "mid": 11.32,
+              "iv": 28.8,
+              "oi": 8846,
+              "cost_pct_of_stock": 2.54
+            },
+            "covered_call_10pct_otm": {
+              "strike": 490.0,
+              "bid": 6.3,
+              "ask": 6.6,
+              "mid": 6.45,
+              "iv": 28.9,
+              "oi": 4594,
+              "cost_pct_of_stock": 1.44
+            }
+          },
+          "3m": {
+            "expiry": "2026-06-18",
+            "protective_put_5pct_otm": {
+              "strike": 425.0,
+              "bid": 11.05,
+              "ask": 11.4,
+              "mid": 11.23,
+              "iv": 23.3,
+              "oi": 4399,
+              "cost_pct_of_stock": 2.51
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 400.0,
+              "bid": 5.15,
+              "ask": 5.4,
+              "mid": 5.28,
+              "iv": 24.7,
+              "oi": 8828,
+              "cost_pct_of_stock": 1.18
+            },
+            "atm_put": {
+              "strike": 445.0,
+              "bid": 18.95,
+              "ask": 19.55,
+              "mid": 19.25,
+              "iv": 22.7,
+              "oi": 1000,
+              "cost_pct_of_stock": 4.31
+            },
+            "covered_call_5pct_otm": {
+              "strike": 470.0,
+              "bid": 16.2,
+              "ask": 16.7,
+              "mid": 16.45,
+              "iv": 29.0,
+              "oi": 6865,
+              "cost_pct_of_stock": 3.68
+            },
+            "covered_call_10pct_otm": {
+              "strike": 490.0,
+              "bid": 10.55,
+              "ask": 10.95,
+              "mid": 10.75,
+              "iv": 29.0,
+              "oi": 7838,
+              "cost_pct_of_stock": 2.41
+            }
+          },
+          "6m": {
+            "expiry": "2026-09-18",
+            "protective_put_5pct_otm": {
+              "strike": 425.0,
+              "bid": 17.35,
+              "ask": 18.45,
+              "mid": 17.9,
+              "iv": 22.6,
+              "oi": 270,
+              "cost_pct_of_stock": 4.01
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 400.0,
+              "bid": 9.75,
+              "ask": 10.95,
+              "mid": 10.35,
+              "iv": 23.7,
+              "oi": 6453,
+              "cost_pct_of_stock": 2.32
+            },
+            "atm_put": {
+              "strike": 445.0,
+              "bid": 25.95,
+              "ask": 27.75,
+              "mid": 26.85,
+              "iv": 22.6,
+              "oi": 923,
+              "cost_pct_of_stock": 6.01
+            },
+            "covered_call_5pct_otm": {
+              "strike": 470.0,
+              "bid": 27.4,
+              "ask": 28.8,
+              "mid": 28.1,
+              "iv": 30.3,
+              "oi": 26867,
+              "cost_pct_of_stock": 6.29
+            },
+            "covered_call_10pct_otm": {
+              "strike": 490.0,
+              "bid": 21.0,
+              "ask": 22.35,
+              "mid": 21.68,
+              "iv": 30.4,
+              "oi": 2420,
+              "cost_pct_of_stock": 4.85
+            }
+          },
+          "12m": {
+            "expiry": "2027-03-19",
+            "protective_put_5pct_otm": {
+              "strike": 425.0,
+              "bid": 26.05,
+              "ask": 29.75,
+              "mid": 27.9,
+              "iv": 22.8,
+              "oi": 1000,
+              "cost_pct_of_stock": 6.25
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 400.0,
+              "bid": 18.25,
+              "ask": 19.3,
+              "mid": 18.77,
+              "iv": 22.6,
+              "oi": 1070,
+              "cost_pct_of_stock": 4.2
+            },
+            "atm_put": {
+              "strike": 445.0,
+              "bid": 35.15,
+              "ask": 38.5,
+              "mid": 36.83,
+              "iv": 22.1,
+              "oi": 75,
+              "cost_pct_of_stock": 8.24
+            },
+            "covered_call_5pct_otm": {
+              "strike": 470.0,
+              "bid": 44.0,
+              "ask": 47.25,
+              "mid": 45.62,
+              "iv": 31.8,
+              "oi": 756,
+              "cost_pct_of_stock": 10.21
+            },
+            "covered_call_10pct_otm": {
+              "strike": 490.0,
+              "bid": 36.4,
+              "ask": 39.45,
+              "mid": 37.92,
+              "iv": 31.4,
+              "oi": 1772,
+              "cost_pct_of_stock": 8.49
+            }
+          }
+        }
+      }
+    },
+    "XLE": {
+      "rationale": "Energy/geopolitical exposure hedge",
+      "data": {
+        "ticker": "XLE",
+        "current_price": 58.7,
+        "strategies": {
+          "2m": {
+            "expiry": "2026-05-15",
+            "protective_put_5pct_otm": {
+              "strike": 56.0,
+              "bid": 1.3,
+              "ask": 1.64,
+              "mid": 1.47,
+              "iv": 30.3,
+              "oi": 865,
+              "cost_pct_of_stock": 2.5
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 53.0,
+              "bid": 0.69,
+              "ask": 0.86,
+              "mid": 0.77,
+              "iv": 31.9,
+              "oi": 19596,
+              "cost_pct_of_stock": 1.32
+            },
+            "atm_put": {
+              "strike": 59.0,
+              "bid": 2.49,
+              "ask": 2.93,
+              "mid": 2.71,
+              "iv": 29.5,
+              "oi": 215,
+              "cost_pct_of_stock": 4.62
+            },
+            "covered_call_5pct_otm": {
+              "strike": 62.0,
+              "bid": 1.16,
+              "ask": 1.26,
+              "mid": 1.21,
+              "iv": 26.7,
+              "oi": 11453,
+              "cost_pct_of_stock": 2.06
+            },
+            "covered_call_10pct_otm": {
+              "strike": 65.0,
+              "bid": 0.5,
+              "ask": 0.57,
+              "mid": 0.53,
+              "iv": 26.1,
+              "oi": 29887,
+              "cost_pct_of_stock": 0.91
+            }
+          },
+          "3m": {
+            "expiry": "2026-06-18",
+            "protective_put_5pct_otm": {
+              "strike": 55.0,
+              "bid": 1.62,
+              "ask": 1.78,
+              "mid": 1.7,
+              "iv": 29.0,
+              "oi": 11471,
+              "cost_pct_of_stock": 2.9
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 52.5,
+              "bid": 1.06,
+              "ask": 1.18,
+              "mid": 1.12,
+              "iv": 30.7,
+              "oi": 18058,
+              "cost_pct_of_stock": 1.91
+            },
+            "atm_put": {
+              "strike": 60.0,
+              "bid": 3.55,
+              "ask": 4.05,
+              "mid": 3.8,
+              "iv": 28.2,
+              "oi": 549,
+              "cost_pct_of_stock": 6.47
+            },
+            "covered_call_5pct_otm": {
+              "strike": 62.5,
+              "bid": 1.5,
+              "ask": 1.83,
+              "mid": 1.67,
+              "iv": 27.8,
+              "oi": 9125,
+              "cost_pct_of_stock": 2.84
+            },
+            "covered_call_10pct_otm": {
+              "strike": 65.0,
+              "bid": 0.91,
+              "ask": 1.17,
+              "mid": 1.04,
+              "iv": 27.6,
+              "oi": 11972,
+              "cost_pct_of_stock": 1.77
+            }
+          },
+          "6m": {
+            "expiry": "2026-09-18",
+            "protective_put_5pct_otm": {
+              "strike": 56.0,
+              "bid": 2.9,
+              "ask": 3.45,
+              "mid": 3.17,
+              "iv": 28.8,
+              "oi": 1706,
+              "cost_pct_of_stock": 5.41
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 52.5,
+              "bid": 1.66,
+              "ask": 2.21,
+              "mid": 1.94,
+              "iv": 29.7,
+              "oi": 2162,
+              "cost_pct_of_stock": 3.3
+            },
+            "atm_put": {
+              "strike": 59.0,
+              "bid": 4.0,
+              "ask": 4.85,
+              "mid": 4.42,
+              "iv": 28.2,
+              "oi": 211,
+              "cost_pct_of_stock": 7.54
+            },
+            "covered_call_5pct_otm": {
+              "strike": 62.5,
+              "bid": 2.61,
+              "ask": 3.25,
+              "mid": 2.93,
+              "iv": 28.6,
+              "oi": 9442,
+              "cost_pct_of_stock": 4.99
+            },
+            "covered_call_10pct_otm": {
+              "strike": 65.0,
+              "bid": 2.09,
+              "ask": 2.41,
+              "mid": 2.25,
+              "iv": 28.1,
+              "oi": 3407,
+              "cost_pct_of_stock": 3.83
+            }
+          },
+          "12m": {
+            "expiry": "2027-01-15",
+            "protective_put_5pct_otm": {
+              "strike": 55.0,
+              "bid": 3.65,
+              "ask": 3.8,
+              "mid": 3.72,
+              "iv": 26.4,
+              "oi": 15328,
+              "cost_pct_of_stock": 6.35
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 52.5,
+              "bid": 2.33,
+              "ask": 3.3,
+              "mid": 2.81,
+              "iv": 29.2,
+              "oi": 5037,
+              "cost_pct_of_stock": 4.8
+            },
+            "atm_put": {
+              "strike": 60.0,
+              "bid": 5.85,
+              "ask": 6.1,
+              "mid": 5.97,
+              "iv": 25.2,
+              "oi": 325,
+              "cost_pct_of_stock": 10.18
+            },
+            "covered_call_5pct_otm": {
+              "strike": 62.5,
+              "bid": 3.9,
+              "ask": 4.55,
+              "mid": 4.22,
+              "iv": 28.5,
+              "oi": 2901,
+              "cost_pct_of_stock": 7.2
+            },
+            "covered_call_10pct_otm": {
+              "strike": 65.0,
+              "bid": 2.8,
+              "ask": 3.2,
+              "mid": 3.0,
+              "iv": 25.9,
+              "oi": 4745,
+              "cost_pct_of_stock": 5.11
+            }
+          }
+        }
+      }
+    },
+    "ITA": {
+      "rationale": "Defense ETF \u2014 hedge against peace/de-escalation",
+      "data": {
+        "ticker": "ITA",
+        "current_price": 232.13,
+        "strategies": {
+          "2m": {
+            "expiry": "2026-04-17",
+            "protective_put_5pct_otm": {
+              "strike": 220.0,
+              "bid": 1.45,
+              "ask": 3.8,
+              "mid": 2.62,
+              "iv": 32.5,
+              "oi": 200,
+              "cost_pct_of_stock": 1.13
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 210.0,
+              "bid": 0.05,
+              "ask": 3.7,
+              "mid": 1.88,
+              "iv": 45.0,
+              "oi": 66,
+              "cost_pct_of_stock": 0.81
+            },
+            "atm_put": {
+              "strike": 230.0,
+              "bid": 2.75,
+              "ask": 6.5,
+              "mid": 4.62,
+              "iv": 28.0,
+              "oi": 185,
+              "cost_pct_of_stock": 1.99
+            },
+            "covered_call_5pct_otm": {
+              "strike": 245.0,
+              "bid": 1.8,
+              "ask": 3.5,
+              "mid": 2.65,
+              "iv": 30.4,
+              "oi": 171,
+              "cost_pct_of_stock": 1.14
+            },
+            "covered_call_10pct_otm": {
+              "strike": 255.0,
+              "bid": 0.05,
+              "ask": 4.6,
+              "mid": 2.32,
+              "iv": 45.8,
+              "oi": 127,
+              "cost_pct_of_stock": 1.0
+            }
+          },
+          "3m": {
+            "expiry": "2026-07-17",
+            "protective_put_5pct_otm": {
+              "strike": 220.0,
+              "bid": 5.0,
+              "ask": 9.5,
+              "mid": 7.25,
+              "iv": 28.4,
+              "oi": 169,
+              "cost_pct_of_stock": 3.12
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 210.0,
+              "bid": 2.5,
+              "ask": 7.0,
+              "mid": 4.75,
+              "iv": 30.7,
+              "oi": 532,
+              "cost_pct_of_stock": 2.05
+            },
+            "atm_put": {
+              "strike": 230.0,
+              "bid": 9.4,
+              "ask": 11.5,
+              "mid": 10.45,
+              "iv": 23.5,
+              "oi": 119,
+              "cost_pct_of_stock": 4.5
+            },
+            "covered_call_5pct_otm": {
+              "strike": 245.0,
+              "bid": 9.0,
+              "ask": 12.1,
+              "mid": 10.55,
+              "iv": 32.4,
+              "oi": 149,
+              "cost_pct_of_stock": 4.54
+            },
+            "covered_call_10pct_otm": {
+              "strike": 255.0,
+              "bid": 4.5,
+              "ask": 9.0,
+              "mid": 6.75,
+              "iv": 32.5,
+              "oi": 70,
+              "cost_pct_of_stock": 2.91
+            }
+          },
+          "6m": {
+            "expiry": "2026-10-16",
+            "protective_put_5pct_otm": {
+              "strike": 220.0,
+              "bid": 8.0,
+              "ask": 11.9,
+              "mid": 9.95,
+              "iv": 25.2,
+              "oi": 5,
+              "cost_pct_of_stock": 4.29
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 210.0,
+              "bid": 5.0,
+              "ask": 9.1,
+              "mid": 7.05,
+              "iv": 26.9,
+              "oi": 9,
+              "cost_pct_of_stock": 3.04
+            },
+            "atm_put": {
+              "strike": 230.0,
+              "bid": 12.0,
+              "ask": 15.8,
+              "mid": 13.9,
+              "iv": 24.0,
+              "oi": 6,
+              "cost_pct_of_stock": 5.99
+            },
+            "covered_call_5pct_otm": {
+              "strike": 245.0,
+              "bid": 12.5,
+              "ask": 16.9,
+              "mid": 14.7,
+              "iv": 31.4,
+              "oi": 64,
+              "cost_pct_of_stock": 6.33
+            },
+            "covered_call_10pct_otm": {
+              "strike": 255.0,
+              "bid": 9.1,
+              "ask": 13.3,
+              "mid": 11.2,
+              "iv": 31.0,
+              "oi": 3,
+              "cost_pct_of_stock": 4.82
+            }
+          },
+          "12m": {
+            "expiry": "2026-12-18",
+            "protective_put_5pct_otm": {
+              "strike": 220.0,
+              "bid": 10.0,
+              "ask": 14.5,
+              "mid": 12.25,
+              "iv": 25.5,
+              "oi": 6,
+              "cost_pct_of_stock": 5.28
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 210.0,
+              "bid": 6.7,
+              "ask": 11.3,
+              "mid": 9.0,
+              "iv": 26.8,
+              "oi": 12,
+              "cost_pct_of_stock": 3.88
+            },
+            "atm_put": {
+              "strike": 230.0,
+              "bid": 14.1,
+              "ask": 18.6,
+              "mid": 16.35,
+              "iv": 24.6,
+              "oi": 5,
+              "cost_pct_of_stock": 7.04
+            },
+            "covered_call_5pct_otm": {
+              "strike": 245.0,
+              "bid": 15.5,
+              "ask": 19.9,
+              "mid": 17.7,
+              "iv": 31.3,
+              "oi": 92,
+              "cost_pct_of_stock": 7.63
+            },
+            "covered_call_10pct_otm": {
+              "strike": 255.0,
+              "bid": 13.0,
+              "ask": 16.5,
+              "mid": 14.75,
+              "iv": 31.3,
+              "oi": 17,
+              "cost_pct_of_stock": 6.35
+            }
+          }
+        }
+      }
+    },
+    "SPY": {
+      "rationale": "Broad market hedge",
+      "data": {
+        "ticker": "SPY",
+        "current_price": 663.49,
+        "strategies": {
+          "2m": {
+            "expiry": "2026-05-15",
+            "protective_put_5pct_otm": {
+              "strike": 630.0,
+              "bid": 10.54,
+              "ask": 10.6,
+              "mid": 10.57,
+              "iv": 22.8,
+              "oi": 14965,
+              "cost_pct_of_stock": 1.59
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 595.0,
+              "bid": 5.74,
+              "ask": 5.78,
+              "mid": 5.76,
+              "iv": 27.2,
+              "oi": 4111,
+              "cost_pct_of_stock": 0.87
+            },
+            "atm_put": {
+              "strike": 663.0,
+              "bid": 19.04,
+              "ask": 19.11,
+              "mid": 19.07,
+              "iv": 18.2,
+              "oi": 362,
+              "cost_pct_of_stock": 2.87
+            },
+            "covered_call_5pct_otm": {
+              "strike": 697.0,
+              "bid": 6.21,
+              "ask": 6.26,
+              "mid": 6.23,
+              "iv": 16.8,
+              "oi": 1007,
+              "cost_pct_of_stock": 0.94
+            },
+            "covered_call_10pct_otm": {
+              "strike": 730.0,
+              "bid": 0.61,
+              "ask": 0.63,
+              "mid": 0.62,
+              "iv": 13.6,
+              "oi": 7109,
+              "cost_pct_of_stock": 0.09
+            }
+          },
+          "3m": {
+            "expiry": "2026-06-18",
+            "protective_put_5pct_otm": {
+              "strike": 630.0,
+              "bid": 14.82,
+              "ask": 14.88,
+              "mid": 14.85,
+              "iv": 21.9,
+              "oi": 150226,
+              "cost_pct_of_stock": 2.24
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 595.0,
+              "bid": 9.1,
+              "ask": 9.15,
+              "mid": 9.12,
+              "iv": 25.7,
+              "oi": 21021,
+              "cost_pct_of_stock": 1.38
+            },
+            "atm_put": {
+              "strike": 665.0,
+              "bid": 24.19,
+              "ask": 24.27,
+              "mid": 24.23,
+              "iv": 17.6,
+              "oi": 10109,
+              "cost_pct_of_stock": 3.65
+            },
+            "covered_call_5pct_otm": {
+              "strike": 695.0,
+              "bid": 12.11,
+              "ask": 12.18,
+              "mid": 12.14,
+              "iv": 18.1,
+              "oi": 10598,
+              "cost_pct_of_stock": 1.83
+            },
+            "covered_call_10pct_otm": {
+              "strike": 730.0,
+              "bid": 2.33,
+              "ask": 2.36,
+              "mid": 2.34,
+              "iv": 14.6,
+              "oi": 13520,
+              "cost_pct_of_stock": 0.35
+            }
+          },
+          "6m": {
+            "expiry": "2026-09-18",
+            "protective_put_5pct_otm": {
+              "strike": 630.0,
+              "bid": 23.49,
+              "ask": 23.58,
+              "mid": 23.53,
+              "iv": 20.7,
+              "oi": 97784,
+              "cost_pct_of_stock": 3.55
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 595.0,
+              "bid": 16.44,
+              "ask": 16.52,
+              "mid": 16.48,
+              "iv": 23.7,
+              "oi": 7097,
+              "cost_pct_of_stock": 2.48
+            },
+            "atm_put": {
+              "strike": 665.0,
+              "bid": 33.59,
+              "ask": 33.71,
+              "mid": 33.65,
+              "iv": 17.5,
+              "oi": 2906,
+              "cost_pct_of_stock": 5.07
+            },
+            "covered_call_5pct_otm": {
+              "strike": 695.0,
+              "bid": 25.08,
+              "ask": 25.16,
+              "mid": 25.12,
+              "iv": 20.2,
+              "oi": 2181,
+              "cost_pct_of_stock": 3.79
+            },
+            "covered_call_10pct_otm": {
+              "strike": 730.0,
+              "bid": 10.24,
+              "ask": 10.32,
+              "mid": 10.28,
+              "iv": 17.0,
+              "oi": 30936,
+              "cost_pct_of_stock": 1.55
+            }
+          },
+          "12m": {
+            "expiry": "2027-03-19",
+            "protective_put_5pct_otm": {
+              "strike": 630.0,
+              "bid": 35.47,
+              "ask": 35.63,
+              "mid": 35.55,
+              "iv": 19.6,
+              "oi": 1232,
+              "cost_pct_of_stock": 5.36
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 595.0,
+              "bid": 26.88,
+              "ask": 27.01,
+              "mid": 26.95,
+              "iv": 21.7,
+              "oi": 483,
+              "cost_pct_of_stock": 4.06
+            },
+            "atm_put": {
+              "strike": 665.0,
+              "bid": 46.28,
+              "ask": 46.46,
+              "mid": 46.37,
+              "iv": 17.2,
+              "oi": 2741,
+              "cost_pct_of_stock": 6.99
+            },
+            "covered_call_5pct_otm": {
+              "strike": 695.0,
+              "bid": 45.98,
+              "ask": 46.12,
+              "mid": 46.05,
+              "iv": 22.3,
+              "oi": 299,
+              "cost_pct_of_stock": 6.94
+            },
+            "covered_call_10pct_otm": {
+              "strike": 730.0,
+              "bid": 28.07,
+              "ask": 28.21,
+              "mid": 28.14,
+              "iv": 19.9,
+              "oi": 400,
+              "cost_pct_of_stock": 4.24
+            }
+          }
+        }
+      }
+    },
+    "TLT": {
+      "rationale": "Rate risk hedge \u2014 long duration bonds",
+      "data": {
+        "ticker": "TLT",
+        "current_price": 87.03,
+        "strategies": {
+          "2m": {
+            "expiry": "2026-05-15",
+            "protective_put_5pct_otm": {
+              "strike": 83.0,
+              "bid": 0.48,
+              "ask": 0.5,
+              "mid": 0.49,
+              "iv": 13.6,
+              "oi": 4733,
+              "cost_pct_of_stock": 0.56
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 78.0,
+              "bid": 0.16,
+              "ask": 0.18,
+              "mid": 0.17,
+              "iv": 18.3,
+              "oi": 884,
+              "cost_pct_of_stock": 0.2
+            },
+            "atm_put": {
+              "strike": 87.0,
+              "bid": 1.54,
+              "ask": 1.57,
+              "mid": 1.56,
+              "iv": 11.4,
+              "oi": 19986,
+              "cost_pct_of_stock": 1.79
+            },
+            "covered_call_5pct_otm": {
+              "strike": 91.0,
+              "bid": 0.45,
+              "ask": 0.47,
+              "mid": 0.46,
+              "iv": 12.6,
+              "oi": 41518,
+              "cost_pct_of_stock": 0.53
+            },
+            "covered_call_10pct_otm": {
+              "strike": 96.0,
+              "bid": 0.11,
+              "ask": 0.12,
+              "mid": 0.11,
+              "iv": 15.0,
+              "oi": 12397,
+              "cost_pct_of_stock": 0.13
+            }
+          },
+          "3m": {
+            "expiry": "2026-06-18",
+            "protective_put_5pct_otm": {
+              "strike": 83.0,
+              "bid": 0.8,
+              "ask": 0.82,
+              "mid": 0.81,
+              "iv": 13.4,
+              "oi": 27367,
+              "cost_pct_of_stock": 0.93
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 78.0,
+              "bid": 0.28,
+              "ask": 0.3,
+              "mid": 0.29,
+              "iv": 16.5,
+              "oi": 5891,
+              "cost_pct_of_stock": 0.33
+            },
+            "atm_put": {
+              "strike": 87.0,
+              "bid": 2.03,
+              "ask": 2.07,
+              "mid": 2.05,
+              "iv": 11.9,
+              "oi": 35880,
+              "cost_pct_of_stock": 2.36
+            },
+            "covered_call_5pct_otm": {
+              "strike": 91.0,
+              "bid": 0.83,
+              "ask": 0.86,
+              "mid": 0.84,
+              "iv": 13.0,
+              "oi": 7566,
+              "cost_pct_of_stock": 0.97
+            },
+            "covered_call_10pct_otm": {
+              "strike": 96.0,
+              "bid": 0.25,
+              "ask": 0.27,
+              "mid": 0.26,
+              "iv": 14.4,
+              "oi": 20306,
+              "cost_pct_of_stock": 0.3
+            }
+          },
+          "6m": {
+            "expiry": "2026-09-18",
+            "protective_put_5pct_otm": {
+              "strike": 83.0,
+              "bid": 1.55,
+              "ask": 1.59,
+              "mid": 1.57,
+              "iv": 13.3,
+              "oi": 9228,
+              "cost_pct_of_stock": 1.8
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 78.0,
+              "bid": 0.63,
+              "ask": 0.66,
+              "mid": 0.65,
+              "iv": 14.7,
+              "oi": 5495,
+              "cost_pct_of_stock": 0.74
+            },
+            "atm_put": {
+              "strike": 87.0,
+              "bid": 3.05,
+              "ask": 3.1,
+              "mid": 3.08,
+              "iv": 12.6,
+              "oi": 11292,
+              "cost_pct_of_stock": 3.53
+            },
+            "covered_call_5pct_otm": {
+              "strike": 91.0,
+              "bid": 1.67,
+              "ask": 1.71,
+              "mid": 1.69,
+              "iv": 13.1,
+              "oi": 12821,
+              "cost_pct_of_stock": 1.94
+            },
+            "covered_call_10pct_otm": {
+              "strike": 96.0,
+              "bid": 0.7,
+              "ask": 0.73,
+              "mid": 0.71,
+              "iv": 13.7,
+              "oi": 22783,
+              "cost_pct_of_stock": 0.82
+            }
+          },
+          "12m": {
+            "expiry": "2027-02-19",
+            "protective_put_5pct_otm": {
+              "strike": 83.0,
+              "bid": 2.54,
+              "ask": 2.65,
+              "mid": 2.59,
+              "iv": 13.4,
+              "oi": 4926,
+              "cost_pct_of_stock": 2.98
+            },
+            "tail_hedge_put_10pct_otm": {
+              "strike": 78.0,
+              "bid": 1.21,
+              "ask": 1.32,
+              "mid": 1.27,
+              "iv": 14.1,
+              "oi": 8220,
+              "cost_pct_of_stock": 1.45
+            },
+            "atm_put": {
+              "strike": 87.0,
+              "bid": 4.2,
+              "ask": 4.35,
+              "mid": 4.28,
+              "iv": 13.1,
+              "oi": 6468,
+              "cost_pct_of_stock": 4.91
+            },
+            "covered_call_5pct_otm": {
+              "strike": 91.0,
+              "bid": 2.64,
+              "ask": 2.73,
+              "mid": 2.69,
+              "iv": 13.0,
+              "oi": 15513,
+              "cost_pct_of_stock": 3.09
+            },
+            "covered_call_10pct_otm": {
+              "strike": 96.0,
+              "bid": 1.42,
+              "ask": 1.5,
+              "mid": 1.46,
+              "iv": 13.3,
+              "oi": 2464,
+              "cost_pct_of_stock": 1.68
+            }
+          }
+        }
+      }
+    }
+  }
+}
