@@ -1,0 +1,591 @@
+{
+  "NVDA": {
+    "data": [
+      {
+        "ticker": "NVDA",
+        "pe": 36.891617,
+        "ev_ebitda": 32.799,
+        "rev_yoy": 0.654735357900948,
+        "gross_margin": 0.71068,
+        "fcf_yield": 0.013257471299930856
+      },
+      {
+        "ticker": "AMD",
+        "pe": 76.42146,
+        "ev_ebitda": 46.482,
+        "rev_yoy": 0.34337793290672874,
+        "gross_margin": 0.52493,
+        "fcf_yield": 0.014105859175443882
+      },
+      {
+        "ticker": "INTC",
+        "pe": NaN,
+        "ev_ebitda": 19.144,
+        "rev_yoy": -0.004670345191239336,
+        "gross_margin": 0.36563998,
+        "fcf_yield": -0.020025974202869962
+      },
+      {
+        "ticker": "QCOM",
+        "pe": 26.304436,
+        "ev_ebitda": 10.419,
+        "rev_yoy": 0.1365946306657769,
+        "gross_margin": 0.55101,
+        "fcf_yield": 0.07480111534019869
+      },
+      {
+        "ticker": "TSM",
+        "pe": 32.935986,
+        "ev_ebitda": 2.683,
+        "rev_yoy": 0.31605021584818027,
+        "gross_margin": 0.59891,
+        "fcf_yield": 0.3653509390813908
+      },
+      {
+        "ticker": "AVGO",
+        "pe": 61.46498,
+        "ev_ebitda": 4.338,
+        "rev_yoy": 0.23874432853763525,
+        "gross_margin": 0.76725996,
+        "fcf_yield": 0.017026217880846857
+      }
+    ],
+    "flags": {
+      "pe": "CHEAP vs peers",
+      "ev_ebitda": "EXPENSIVE vs peers",
+      "rev_yoy": "ABOVE peers",
+      "gross_margin": "ABOVE peers",
+      "fcf_yield": "BELOW peers"
+    }
+  },
+  "CEG": {
+    "data": [
+      {
+        "ticker": "CEG",
+        "pe": 42.75202,
+        "ev_ebitda": 20.876,
+        "rev_yoy": 0.08337576374745417,
+        "gross_margin": 0.1838,
+        "fcf_yield": 0.010955270542605464
+      },
+      {
+        "ticker": "NEE",
+        "pe": 27.563637,
+        "ev_ebitda": 21.153,
+        "rev_yoy": 0.10742132266795944,
+        "gross_margin": 0.62268,
+        "fcf_yield": -0.08025197024623658
+      },
+      {
+        "ticker": "D",
+        "pe": 17.925072,
+        "ev_ebitda": 13.637,
+        "rev_yoy": 0.14157272287156789,
+        "gross_margin": 0.49019,
+        "fcf_yield": -0.1647603118508727
+      },
+      {
+        "ticker": "ETR",
+        "pe": 26.66496,
+        "ev_ebitda": 13.937,
+        "rev_yoy": 0.08982021612920849,
+        "gross_margin": 0.47717,
+        "fcf_yield": -0.07658314086467925
+      },
+      {
+        "ticker": "SO",
+        "pe": 24.62755,
+        "ev_ebitda": 13.304,
+        "rev_yoy": 0.10585990121239336,
+        "gross_margin": 0.48469,
+        "fcf_yield": -0.032018618078521466
+      },
+      {
+        "ticker": "DUK",
+        "pe": 20.68829,
+        "ev_ebitda": 12.063,
+        "rev_yoy": 0.06192970319860329,
+        "gross_margin": 0.51897,
+        "fcf_yield": -0.01969527820527054
+      }
+    ],
+    "flags": {
+      "pe": "EXPENSIVE vs peers",
+      "ev_ebitda": "EXPENSIVE vs peers",
+      "rev_yoy": "BELOW peers",
+      "gross_margin": "BELOW peers",
+      "fcf_yield": "ABOVE peers"
+    }
+  },
+  "MSFT": {
+    "data": [
+      {
+        "ticker": "MSFT",
+        "pe": 24.517523,
+        "ev_ebitda": 17.116,
+        "rev_yoy": 0.1493215623240672,
+        "gross_margin": 0.68586,
+        "fcf_yield": 0.01842097824324637
+      },
+      {
+        "ticker": "GOOGL",
+        "pe": 28.437155,
+        "ev_ebitda": 24.647,
+        "rev_yoy": 0.15090081081544376,
+        "gross_margin": 0.59652,
+        "fcf_yield": 0.01023296255510331
+      },
+      {
+        "ticker": "AAPL",
+        "pe": 31.597979,
+        "ev_ebitda": 24.565,
+        "rev_yoy": 0.0642551178283274,
+        "gross_margin": 0.47325,
+        "fcf_yield": 0.028939668819802377
+      },
+      {
+        "ticker": "AMZN",
+        "pe": 29.27057,
+        "ev_ebitda": 16.233,
+        "rev_yoy": 0.12377754683294695,
+        "gross_margin": 0.50286,
+        "fcf_yield": 0.010560933913855444
+      },
+      {
+        "ticker": "META",
+        "pe": 26.232637,
+        "ev_ebitda": 15.492,
+        "rev_yoy": 0.2216703849824621,
+        "gross_margin": 0.81999,
+        "fcf_yield": 0.015045860831523733
+      },
+      {
+        "ticker": "CRM",
+        "pe": 24.947369,
+        "ev_ebitda": 15.016,
+        "rev_yoy": 0.09579100145137881,
+        "gross_margin": 0.77676004,
+        "fcf_yield": 0.08988087456395112
+      }
+    ],
+    "flags": {
+      "pe": "FAIR vs peers",
+      "ev_ebitda": "FAIR vs peers",
+      "rev_yoy": "ABOVE peers",
+      "gross_margin": "IN-LINE with peers",
+      "fcf_yield": "ABOVE peers"
+    }
+  },
+  "LMT": {
+    "data": [
+      {
+        "ticker": "LMT",
+        "pe": 29.859602,
+        "ev_ebitda": 19.922,
+        "rev_yoy": 0.0563743085173768,
+        "gross_margin": 0.1024,
+        "fcf_yield": 0.03553726015518602
+      },
+      {
+        "ticker": "RTX",
+        "pe": 41.241936,
+        "ev_ebitda": 20.858,
+        "rev_yoy": 0.09741385716762863,
+        "gross_margin": 0.20076999,
+        "fcf_yield": 0.02344892054799053
+      },
+      {
+        "ticker": "NOC",
+        "pe": 24.900034,
+        "ev_ebitda": 17.043,
+        "rev_yoy": 0.022445348865547242,
+        "gross_margin": 0.19815001,
+        "fcf_yield": 0.028031871219832503
+      },
+      {
+        "ticker": "BA",
+        "pe": 82.726906,
+        "ev_ebitda": -59.692,
+        "rev_yoy": 0.3449644451794278,
+        "gross_margin": 0.04828,
+        "fcf_yield": 0.01088332719306325
+      },
+      {
+        "ticker": "GD",
+        "pe": 22.856403,
+        "ev_ebitda": 16.338,
+        "rev_yoy": 0.10130773744655881,
+        "gross_margin": 0.1513,
+        "fcf_yield": 0.03513792379242812
+      },
+      {
+        "ticker": "LHX",
+        "pe": 43.237087,
+        "ev_ebitda": 19.72,
+        "rev_yoy": 0.025322391559202812,
+        "gross_margin": 0.25726,
+        "fcf_yield": 0.03957171894545549
+      }
+    ],
+    "flags": {
+      "pe": "CHEAP vs peers",
+      "ev_ebitda": "EXPENSIVE vs peers",
+      "rev_yoy": "BELOW peers",
+      "gross_margin": "BELOW peers",
+      "fcf_yield": "ABOVE peers"
+    }
+  },
+  "TSM": {
+    "data": [
+      {
+        "ticker": "TSM",
+        "pe": 32.935986,
+        "ev_ebitda": 2.683,
+        "rev_yoy": 0.31605021584818027,
+        "gross_margin": 0.59891,
+        "fcf_yield": 0.3653509390813908
+      },
+      {
+        "ticker": "INTC",
+        "pe": NaN,
+        "ev_ebitda": 19.144,
+        "rev_yoy": -0.004670345191239336,
+        "gross_margin": 0.36563998,
+        "fcf_yield": -0.020025974202869962
+      },
+      {
+        "ticker": "SSNLF",
+        "pe": 19.523952,
+        "ev_ebitda": -0.986,
+        "rev_yoy": 0.10880093313642895,
+        "gross_margin": 0.39379,
+        "fcf_yield": 54.918354070391764
+      },
+      {
+        "ticker": "UMC",
+        "pe": 18.235294,
+        "ev_ebitda": 0.701,
+        "rev_yoy": 0.022602482114447767,
+        "gross_margin": 0.29007,
+        "fcf_yield": 1.5993756708592577
+      },
+      {
+        "ticker": "NVDA",
+        "pe": 36.891617,
+        "ev_ebitda": 32.799,
+        "rev_yoy": 0.654735357900948,
+        "gross_margin": 0.71068,
+        "fcf_yield": 0.013257471299930856
+      },
+      {
+        "ticker": "QCOM",
+        "pe": 26.304436,
+        "ev_ebitda": 10.419,
+        "rev_yoy": 0.1365946306657769,
+        "gross_margin": 0.55101,
+        "fcf_yield": 0.07480111534019869
+      }
+    ],
+    "flags": {
+      "pe": "EXPENSIVE vs peers",
+      "ev_ebitda": "CHEAP vs peers",
+      "rev_yoy": "ABOVE peers",
+      "gross_margin": "ABOVE peers",
+      "fcf_yield": "ABOVE peers"
+    }
+  },
+  "AVGO": {
+    "data": [
+      {
+        "ticker": "AVGO",
+        "pe": 61.46498,
+        "ev_ebitda": 4.338,
+        "rev_yoy": 0.23874432853763525,
+        "gross_margin": 0.76725996,
+        "fcf_yield": 0.017026217880846857
+      },
+      {
+        "ticker": "NVDA",
+        "pe": 36.891617,
+        "ev_ebitda": 32.799,
+        "rev_yoy": 0.654735357900948,
+        "gross_margin": 0.71068,
+        "fcf_yield": 0.013257471299930856
+      },
+      {
+        "ticker": "QCOM",
+        "pe": 26.304436,
+        "ev_ebitda": 10.419,
+        "rev_yoy": 0.1365946306657769,
+        "gross_margin": 0.55101,
+        "fcf_yield": 0.07480111534019869
+      },
+      {
+        "ticker": "MRVL",
+        "pe": 28.540718,
+        "ev_ebitda": 31.006,
+        "rev_yoy": 0.42087285211450765,
+        "gross_margin": 0.51023996,
+        "fcf_yield": 0.01883382856989785
+      },
+      {
+        "ticker": "AMD",
+        "pe": 76.42146,
+        "ev_ebitda": 46.482,
+        "rev_yoy": 0.34337793290672874,
+        "gross_margin": 0.52493,
+        "fcf_yield": 0.014105859175443882
+      },
+      {
+        "ticker": "TXN",
+        "pe": 35.06985,
+        "ev_ebitda": 23.169,
+        "rev_yoy": 0.13049037785307846,
+        "gross_margin": 0.57023996,
+        "fcf_yield": -0.0017307317271352879
+      }
+    ],
+    "flags": {
+      "pe": "EXPENSIVE vs peers",
+      "ev_ebitda": "CHEAP vs peers",
+      "rev_yoy": "BELOW peers",
+      "gross_margin": "ABOVE peers",
+      "fcf_yield": "ABOVE peers"
+    }
+  },
+  "ANET": {
+    "data": [
+      {
+        "ticker": "ANET",
+        "pe": 49.480003,
+        "ev_ebitda": 39.832,
+        "rev_yoy": 0.28595907526666764,
+        "gross_margin": 0.64056,
+        "fcf_yield": 0.01977206983772231
+      },
+      {
+        "ticker": "CSCO",
+        "pe": 27.91367,
+        "ev_ebitda": 20.2,
+        "rev_yoy": 0.05298961024478189,
+        "gross_margin": 0.64814,
+        "fcf_yield": 0.03303762942403632
+      },
+      {
+        "ticker": "JNPR",
+        "pe": NaN,
+        "ev_ebitda": NaN,
+        "rev_yoy": NaN,
+        "gross_margin": NaN,
+        "fcf_yield": NaN
+      },
+      {
+        "ticker": "NOK",
+        "pe": 64.30769,
+        "ev_ebitda": 18.767,
+        "rev_yoy": 0.03480749219562955,
+        "gross_margin": 0.44647998,
+        "fcf_yield": 0.010694775355780334
+      },
+      {
+        "ticker": "ERIC",
+        "pe": 12.744445,
+        "ev_ebitda": NaN,
+        "rev_yoy": -0.0451791189285138,
+        "gross_margin": 0.48143002,
+        "fcf_yield": 0.48878385334314617
+      },
+      {
+        "ticker": "FFIV",
+        "pe": 23.380283,
+        "ev_ebitda": 17.243,
+        "rev_yoy": 0.09656974844821954,
+        "gross_margin": 0.81385005,
+        "fcf_yield": 0.0425125287910539
+      }
+    ],
+    "flags": {
+      "pe": "EXPENSIVE vs peers",
+      "ev_ebitda": "EXPENSIVE vs peers",
+      "rev_yoy": "ABOVE peers",
+      "gross_margin": "IN-LINE with peers",
+      "fcf_yield": "BELOW peers"
+    }
+  },
+  "CRWD": {
+    "data": [
+      {
+        "ticker": "CRWD",
+        "pe": NaN,
+        "ev_ebitda": -2260.839,
+        "rev_yoy": 0.21711245176577237,
+        "gross_margin": 0.74808997,
+        "fcf_yield": 0.014517781944279533
+      },
+      {
+        "ticker": "PANW",
+        "pe": 94.36314,
+        "ev_ebitda": 92.433,
+        "rev_yoy": 0.1487387106820305,
+        "gross_margin": 0.73502,
+        "fcf_yield": 0.020349985096600184
+      },
+      {
+        "ticker": "S",
+        "pe": NaN,
+        "ev_ebitda": -17.106,
+        "rev_yoy": 0.3224755857645608,
+        "gross_margin": 0.7419,
+        "fcf_yield": 0.05978908053280176
+      },
+      {
+        "ticker": "FTNT",
+        "pe": 34.458675,
+        "ev_ebitda": 26.506,
+        "rev_yoy": 0.14167702071929883,
+        "gross_margin": 0.80456,
+        "fcf_yield": 0.02817119184419817
+      },
+      {
+        "ticker": "ZS",
+        "pe": NaN,
+        "ev_ebitda": -344.571,
+        "rev_yoy": 0.23311687443000206,
+        "gross_margin": 0.76632005,
+        "fcf_yield": 0.040705569838029
+      },
+      {
+        "ticker": "CYBR",
+        "pe": NaN,
+        "ev_ebitda": -7015.6,
+        "rev_yoy": 0.33097216606728663,
+        "gross_margin": 0.76449996,
+        "fcf_yield": 0.018565971521017615
+      }
+    ],
+    "flags": {
+      "ev_ebitda": "CHEAP vs peers",
+      "rev_yoy": "IN-LINE with peers",
+      "gross_margin": "IN-LINE with peers",
+      "fcf_yield": "BELOW peers"
+    }
+  },
+  "NTR": {
+    "data": [
+      {
+        "ticker": "NTR",
+        "pe": 16.712446,
+        "ev_ebitda": 9.171,
+        "rev_yoy": 0.035153241952872324,
+        "gross_margin": 0.32167,
+        "fcf_yield": 0.035994775837415525
+      },
+      {
+        "ticker": "MOS",
+        "pe": 16.341177,
+        "ev_ebitda": 6.335,
+        "rev_yoy": 0.0835760779659798,
+        "gross_margin": 0.1578,
+        "fcf_yield": -0.04909699172352462
+      },
+      {
+        "ticker": "CF",
+        "pe": 14.1124735,
+        "ev_ebitda": 7.264,
+        "rev_yoy": 0.19339622641509435,
+        "gross_margin": 0.38452998,
+        "fcf_yield": 0.06616567813543178
+      },
+      {
+        "ticker": "ICL",
+        "pe": 29.277777,
+        "ev_ebitda": 7.786,
+        "rev_yoy": -0.09222399150743099,
+        "gross_margin": 0.30561,
+        "fcf_yield": -0.006101285531628725
+      },
+      {
+        "ticker": "SMG",
+        "pe": 23.107527,
+        "ev_ebitda": 12.246,
+        "rev_yoy": -0.03929405804036367,
+        "gross_margin": 0.31303,
+        "fcf_yield": 0.08239967362902846
+      },
+      {
+        "ticker": "CTVA",
+        "pe": 45.33714,
+        "ev_ebitda": 13.831,
+        "rev_yoy": 0.029157795126567305,
+        "gross_margin": 0.4729,
+        "fcf_yield": 0.05465135743299702
+      }
+    ],
+    "flags": {
+      "pe": "CHEAP vs peers",
+      "ev_ebitda": "EXPENSIVE vs peers",
+      "rev_yoy": "ABOVE peers",
+      "gross_margin": "IN-LINE with peers",
+      "fcf_yield": "BELOW peers"
+    }
+  },
+  "RTX": {
+    "data": [
+      {
+        "ticker": "RTX",
+        "pe": 41.241936,
+        "ev_ebitda": 20.858,
+        "rev_yoy": 0.09741385716762863,
+        "gross_margin": 0.20076999,
+        "fcf_yield": 0.02344892054799053
+      },
+      {
+        "ticker": "LMT",
+        "pe": 29.859602,
+        "ev_ebitda": 19.922,
+        "rev_yoy": 0.0563743085173768,
+        "gross_margin": 0.1024,
+        "fcf_yield": 0.03553726015518602
+      },
+      {
+        "ticker": "NOC",
+        "pe": 24.900034,
+        "ev_ebitda": 17.043,
+        "rev_yoy": 0.022445348865547242,
+        "gross_margin": 0.19815001,
+        "fcf_yield": 0.028031871219832503
+      },
+      {
+        "ticker": "BA",
+        "pe": 82.726906,
+        "ev_ebitda": -59.692,
+        "rev_yoy": 0.3449644451794278,
+        "gross_margin": 0.04828,
+        "fcf_yield": 0.01088332719306325
+      },
+      {
+        "ticker": "GD",
+        "pe": 22.856403,
+        "ev_ebitda": 16.338,
+        "rev_yoy": 0.10130773744655881,
+        "gross_margin": 0.1513,
+        "fcf_yield": 0.03513792379242812
+      },
+      {
+        "ticker": "LHX",
+        "pe": 43.237087,
+        "ev_ebitda": 19.72,
+        "rev_yoy": 0.025322391559202812,
+        "gross_margin": 0.25726,
+        "fcf_yield": 0.03957171894545549
+      }
+    ],
+    "flags": {
+      "pe": "EXPENSIVE vs peers",
+      "ev_ebitda": "EXPENSIVE vs peers",
+      "rev_yoy": "ABOVE peers",
+      "gross_margin": "ABOVE peers",
+      "fcf_yield": "BELOW peers"
+    }
+  }
+}

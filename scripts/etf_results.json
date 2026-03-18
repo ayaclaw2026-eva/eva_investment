@@ -1,0 +1,556 @@
+{
+  "SPY_benchmark": {
+    "sharpe_1y": 0.7256521459585369,
+    "ann_return_1y": 0.17992988712408442,
+    "sharpe_3y": 1.1284254944081842,
+    "ann_return_3y": 0.21317837803098882,
+    "sharpe_5y": 0.49478569399088723,
+    "ann_return_5y": 0.12704797161705317
+  },
+  "SMH": {
+    "ticker": "SMH",
+    "price": 393.67,
+    "aum": 46249938944,
+    "expense_ratio": 0.35,
+    "inception_date": "1324339200",
+    "top5_holdings": [
+      {
+        "Symbol": "NVDA",
+        "Name": "NVIDIA Corp",
+        "Holding Percent": 0.1773397
+      },
+      {
+        "Symbol": "TSM",
+        "Name": "Taiwan Semiconductor Manufacturing Co Ltd ADR",
+        "Holding Percent": 0.1144209
+      },
+      {
+        "Symbol": "AVGO",
+        "Name": "Broadcom Inc",
+        "Holding Percent": 0.0690207
+      },
+      {
+        "Symbol": "MU",
+        "Name": "Micron Technology Inc",
+        "Holding Percent": 0.064715296
+      },
+      {
+        "Symbol": "ASML",
+        "Name": "ASML Holding NV ADR",
+        "Holding Percent": 0.0595933
+      }
+    ],
+    "ann_return_1y": 0.7247333269245222,
+    "ann_vol_1y": 0.3624268796770101,
+    "sharpe_1y": 1.8810230839723412,
+    "max_drawdown_1y": -0.2197459290854471,
+    "ann_return_3y": 0.4976934625748122,
+    "ann_vol_3y": 0.33770293967503956,
+    "sharpe_3y": 1.3464302768946836,
+    "max_drawdown_3y": -0.3573875916764769,
+    "ann_return_5y": 0.2842435400800565,
+    "ann_vol_5y": 0.34639727292135586,
+    "sharpe_5y": 0.6964360257386527,
+    "max_drawdown_5y": -0.45302626227886406,
+    "correlations_12m": {
+      "SPY": 0.873,
+      "GLD": 0.103,
+      "TLT": 0.049,
+      "BIL": -0.131
+    }
+  },
+  "QQQ": {
+    "ticker": "QQQ",
+    "price": 594.9,
+    "aum": 395032887296,
+    "expense_ratio": 0.18,
+    "inception_date": "921024000",
+    "top5_holdings": [
+      {
+        "Symbol": "NVDA",
+        "Name": "NVIDIA Corp",
+        "Holding Percent": 0.083994195
+      },
+      {
+        "Symbol": "AAPL",
+        "Name": "Apple Inc",
+        "Holding Percent": 0.0761501
+      },
+      {
+        "Symbol": "MSFT",
+        "Name": "Microsoft Corp",
+        "Holding Percent": 0.0569425
+      },
+      {
+        "Symbol": "AMZN",
+        "Name": "Amazon.com Inc",
+        "Holding Percent": 0.043793503
+      },
+      {
+        "Symbol": "TSLA",
+        "Name": "Tesla Inc",
+        "Holding Percent": 0.0391901
+      }
+    ],
+    "ann_return_1y": 0.2385134497218544,
+    "ann_vol_1y": 0.22526183825248963,
+    "sharpe_1y": 0.8679386230645464,
+    "max_drawdown_1y": -0.15685159770646845,
+    "ann_return_3y": 0.27719778072588985,
+    "ann_vol_3y": 0.19540899685418728,
+    "sharpe_3y": 1.1985005014925003,
+    "max_drawdown_3y": -0.2276830687630951,
+    "ann_return_5y": 0.14453106878918942,
+    "ann_vol_5y": 0.22323699741638134,
+    "sharpe_5y": 0.45481291167795906,
+    "max_drawdown_5y": -0.3511871177203078,
+    "correlations_12m": {
+      "SPY": 0.974,
+      "GLD": 0.058,
+      "TLT": 0.07,
+      "BIL": -0.096
+    }
+  },
+  "ITA": {
+    "ticker": "ITA",
+    "price": 231.43,
+    "aum": 16010935296,
+    "expense_ratio": 0.38,
+    "inception_date": "1146441600",
+    "top5_holdings": [
+      {
+        "Symbol": "GE",
+        "Name": "GE Aerospace",
+        "Holding Percent": 0.2098807
+      },
+      {
+        "Symbol": "RTX",
+        "Name": "RTX Corp",
+        "Holding Percent": 0.1579345
+      },
+      {
+        "Symbol": "BA",
+        "Name": "Boeing Co",
+        "Holding Percent": 0.075454004
+      },
+      {
+        "Symbol": "LMT",
+        "Name": "Lockheed Martin Corp",
+        "Holding Percent": 0.0526011
+      },
+      {
+        "Symbol": "HWM",
+        "Name": "Howmet Aerospace Inc",
+        "Holding Percent": 0.0513071
+      }
+    ],
+    "ann_return_1y": 0.5189360814863833,
+    "ann_vol_1y": 0.22770172130563773,
+    "sharpe_1y": 2.090173402104183,
+    "max_drawdown_1y": -0.15166138188186132,
+    "ann_return_3y": 0.2826645124081415,
+    "ann_vol_3y": 0.18457376492274882,
+    "sharpe_3y": 1.2984755038639986,
+    "max_drawdown_3y": -0.15166138188186143,
+    "ann_return_5y": 0.1849432471187642,
+    "ann_vol_5y": 0.19543948420788831,
+    "sharpe_5y": 0.7262772294659746,
+    "max_drawdown_5y": -0.18722221305337497,
+    "correlations_12m": {
+      "SPY": 0.718,
+      "GLD": 0.132,
+      "TLT": 0.013,
+      "BIL": -0.029
+    }
+  },
+  "XAR": {
+    "ticker": "XAR",
+    "price": 271.04,
+    "aum": 6179803136,
+    "expense_ratio": 0.35,
+    "inception_date": "1317168000",
+    "top5_holdings": [
+      {
+        "Symbol": "ATI",
+        "Name": "ATI Inc",
+        "Holding Percent": 0.0446183
+      },
+      {
+        "Symbol": "LMT",
+        "Name": "Lockheed Martin Corp",
+        "Holding Percent": 0.0401739
+      },
+      {
+        "Symbol": "HII",
+        "Name": "Huntington Ingalls Industries Inc",
+        "Holding Percent": 0.0392926
+      },
+      {
+        "Symbol": "HWM",
+        "Name": "Howmet Aerospace Inc",
+        "Holding Percent": 0.0389779
+      },
+      {
+        "Symbol": "WWD",
+        "Name": "Woodward Inc",
+        "Holding Percent": 0.038069
+      }
+    ],
+    "ann_return_1y": 0.6592775390773151,
+    "ann_vol_1y": 0.2737648237119409,
+    "sharpe_1y": 2.251120252490038,
+    "max_drawdown_1y": -0.1485136785718881,
+    "ann_return_3y": 0.3417910208449868,
+    "ann_vol_3y": 0.2179756922782769,
+    "sharpe_3y": 1.3707538566435091,
+    "max_drawdown_3y": -0.1972799539510481,
+    "ann_return_5y": 0.17527928277590976,
+    "ann_vol_5y": 0.22654735330533024,
+    "sharpe_5y": 0.5838924218091825,
+    "max_drawdown_5y": -0.3239756616518444,
+    "correlations_12m": {
+      "SPY": 0.704,
+      "GLD": 0.189,
+      "TLT": 0.029,
+      "BIL": -0.059
+    }
+  },
+  "IAU": {
+    "ticker": "IAU",
+    "price": 91.12,
+    "aum": 83820666880,
+    "expense_ratio": 0.25,
+    "inception_date": "1106265600",
+    "top5_holdings": [],
+    "ann_return_1y": 0.6093254056080333,
+    "ann_vol_1y": 0.261655994911256,
+    "sharpe_1y": 2.1643891851211348,
+    "max_drawdown_1y": -0.1378359756036643,
+    "ann_return_3y": 0.35917563823538945,
+    "ann_vol_3y": 0.18943918654124764,
+    "sharpe_3y": 1.6690086354786304,
+    "max_drawdown_3y": -0.1378359756036643,
+    "ann_return_5y": 0.22479148849112685,
+    "ann_vol_5y": 0.17274901025107878,
+    "sharpe_5y": 1.0523446023042649,
+    "max_drawdown_5y": -0.20933812065776142,
+    "correlations_12m": {
+      "SPY": 0.051,
+      "GLD": 1.0,
+      "TLT": 0.03,
+      "BIL": 0.008
+    }
+  },
+  "GLD": {
+    "ticker": "GLD",
+    "price": 444.74,
+    "aum": 184864325632,
+    "expense_ratio": 0.4,
+    "inception_date": "1100736000",
+    "top5_holdings": [],
+    "ann_return_1y": 0.6071259804790305,
+    "ann_vol_1y": 0.2634216105524114,
+    "sharpe_1y": 2.1415326529058243,
+    "max_drawdown_1y": -0.13867713220425468,
+    "ann_return_3y": 0.3573003598767197,
+    "ann_vol_3y": 0.19042284882620095,
+    "sharpe_3y": 1.6505391123708157,
+    "max_drawdown_3y": -0.13867713220425468,
+    "ann_return_5y": 0.22312953089204912,
+    "ann_vol_5y": 0.17323526079471901,
+    "sharpe_5y": 1.039797152529471,
+    "max_drawdown_5y": -0.2103284420378339,
+    "correlations_12m": {
+      "SPY": 0.053,
+      "GLD": 1.0,
+      "TLT": 0.03,
+      "BIL": 0.01
+    }
+  },
+  "XLE": {
+    "ticker": "XLE",
+    "price": 58.43,
+    "aum": 37876244480,
+    "expense_ratio": 0.08,
+    "inception_date": "913766400",
+    "top5_holdings": [
+      {
+        "Symbol": "XOM",
+        "Name": "Exxon Mobil Corp",
+        "Holding Percent": 0.24052441
+      },
+      {
+        "Symbol": "CVX",
+        "Name": "Chevron Corp",
+        "Holding Percent": 0.17270651
+      },
+      {
+        "Symbol": "COP",
+        "Name": "ConocoPhillips",
+        "Holding Percent": 0.0685018
+      },
+      {
+        "Symbol": "WMB",
+        "Name": "Williams Companies Inc",
+        "Holding Percent": 0.0455585
+      },
+      {
+        "Symbol": "SLB",
+        "Name": "SLB Ltd",
+        "Holding Percent": 0.043773998
+      }
+    ],
+    "ann_return_1y": 0.3243051840802966,
+    "ann_vol_1y": 0.24752788157130184,
+    "sharpe_1y": 1.1364585770886786,
+    "max_drawdown_1y": -0.18793161511193526,
+    "ann_return_3y": 0.16909535313188195,
+    "ann_vol_3y": 0.2170937407818418,
+    "sharpe_3y": 0.5808336651151799,
+    "max_drawdown_3y": -0.20137298686352853,
+    "ann_return_5y": 0.23426570633556731,
+    "ann_vol_5y": 0.26079173971736624,
+    "sharpe_5y": 0.7334040048310275,
+    "max_drawdown_5y": -0.2604373854221812,
+    "correlations_12m": {
+      "SPY": 0.584,
+      "GLD": 0.145,
+      "TLT": -0.003,
+      "BIL": -0.05
+    }
+  },
+  "GRID": {
+    "ticker": "GRID",
+    "price": 166.61,
+    "aum": 8242098176,
+    "expense_ratio": 0.56,
+    "inception_date": "1258329600",
+    "top5_holdings": [
+      {
+        "Symbol": "ABBN.SW",
+        "Name": "ABB Ltd",
+        "Holding Percent": 0.086980104
+      },
+      {
+        "Symbol": "NG.L",
+        "Name": "National Grid PLC",
+        "Holding Percent": 0.083847106
+      },
+      {
+        "Symbol": "JCI",
+        "Name": "Johnson Controls International PLC Registered Shares",
+        "Holding Percent": 0.083801
+      },
+      {
+        "Symbol": "SU.PA",
+        "Name": "Schneider Electric SE",
+        "Holding Percent": 0.0818351
+      },
+      {
+        "Symbol": "ETN",
+        "Name": "Eaton Corp PLC",
+        "Holding Percent": 0.073766395
+      }
+    ],
+    "ann_return_1y": 0.4178598651345735,
+    "ann_vol_1y": 0.2049941612488542,
+    "sharpe_1y": 1.8286367906816117,
+    "max_drawdown_1y": -0.1498025681441561,
+    "ann_return_3y": 0.22759587888583988,
+    "ann_vol_3y": 0.1876858218076247,
+    "sharpe_3y": 0.9835366204435413,
+    "max_drawdown_3y": -0.20765246119507427,
+    "ann_return_5y": 0.1557117099393701,
+    "ann_vol_5y": 0.204776139864923,
+    "sharpe_5y": 0.5504142719640991,
+    "max_drawdown_5y": -0.29636365533457026,
+    "correlations_12m": {
+      "SPY": 0.862,
+      "GLD": 0.203,
+      "TLT": 0.114,
+      "BIL": -0.062
+    }
+  },
+  "URA": {
+    "ticker": "URA",
+    "price": 49.07,
+    "aum": 7551528448,
+    "expense_ratio": 0.69,
+    "inception_date": "1288828800",
+    "top5_holdings": [
+      {
+        "Symbol": "CCO.TO",
+        "Name": "Cameco Corp",
+        "Holding Percent": 0.2281663
+      },
+      {
+        "Symbol": "NXE.TO",
+        "Name": "NexGen Energy Ltd",
+        "Holding Percent": 0.0652624
+      },
+      {
+        "Symbol": "OKLO",
+        "Name": "Oklo Inc Class A Shares",
+        "Holding Percent": 0.064913504
+      },
+      {
+        "Symbol": "UEC",
+        "Name": "Uranium Energy Corp",
+        "Holding Percent": 0.0609785
+      },
+      {
+        "Symbol": "KAP",
+        "Name": "National Atomic Co Kazatomprom JSC ADR",
+        "Holding Percent": 0.045928
+      }
+    ],
+    "ann_return_1y": 1.0865441614252616,
+    "ann_vol_1y": 0.4849687364855443,
+    "sharpe_1y": 2.1517761515671787,
+    "max_drawdown_1y": -0.28428841988960035,
+    "ann_return_3y": 0.4179642953060614,
+    "ann_vol_3y": 0.39790808689147616,
+    "sharpe_3y": 0.9423389663561366,
+    "max_drawdown_3y": -0.3781013152230217,
+    "ann_return_5y": 0.25332440981347726,
+    "ann_vol_5y": 0.42829932301685003,
+    "sharpe_5y": 0.49106874214041835,
+    "max_drawdown_5y": -0.3790285165369662,
+    "correlations_12m": {
+      "SPY": 0.458,
+      "GLD": 0.381,
+      "TLT": 0.025,
+      "BIL": 0.009
+    }
+  },
+  "CIBR": {
+    "ticker": "CIBR",
+    "price": 64.96,
+    "aum": 9501814784,
+    "expense_ratio": 0.58,
+    "inception_date": "1436140800",
+    "top5_holdings": [
+      {
+        "Symbol": "CSCO",
+        "Name": "Cisco Systems Inc",
+        "Holding Percent": 0.0929368
+      },
+      {
+        "Symbol": "INFY",
+        "Name": "Infosys Ltd ADR",
+        "Holding Percent": 0.0769953
+      },
+      {
+        "Symbol": "AVGO",
+        "Name": "Broadcom Inc",
+        "Holding Percent": 0.0730936
+      },
+      {
+        "Symbol": "PANW",
+        "Name": "Palo Alto Networks Inc",
+        "Holding Percent": 0.071943104
+      },
+      {
+        "Symbol": "CRWD",
+        "Name": "CrowdStrike Holdings Inc Class A",
+        "Holding Percent": 0.0685285
+      }
+    ],
+    "ann_return_1y": -0.008789123549829858,
+    "ann_vol_1y": 0.2401669617666475,
+    "sharpe_1y": -0.21563800103425348,
+    "max_drawdown_1y": -0.21443953416395778,
+    "ann_return_3y": 0.18134837217657007,
+    "ann_vol_3y": 0.21058503184957925,
+    "sharpe_3y": 0.6569715376323244,
+    "max_drawdown_3y": -0.21443953416395753,
+    "ann_return_5y": 0.09685114038960618,
+    "ann_vol_5y": 0.2411766560281229,
+    "sharpe_5y": 0.2232850445663645,
+    "max_drawdown_5y": -0.3388776826025555,
+    "correlations_12m": {
+      "SPY": 0.779,
+      "GLD": 0.045,
+      "TLT": 0.085,
+      "BIL": -0.022
+    }
+  },
+  "BIL": {
+    "ticker": "BIL",
+    "price": 91.54,
+    "aum": 43266318336,
+    "expense_ratio": 0.1353,
+    "inception_date": "1180051200",
+    "top5_holdings": [],
+    "ann_return_1y": 0.04024937899310821,
+    "ann_vol_1y": 0.002043664823610242,
+    "sharpe_1y": -1.3459256993192603,
+    "max_drawdown_1y": -0.00010930031760391055,
+    "ann_return_3y": 0.04744141529214052,
+    "ann_vol_3y": 0.0024438775141434822,
+    "sharpe_3y": 1.8173641135599747,
+    "max_drawdown_3y": -0.00021857996328120705,
+    "ann_return_5y": 0.032698020487520685,
+    "ann_vol_5y": 0.002625090901671674,
+    "sharpe_5y": -3.9244277239767005,
+    "max_drawdown_5y": -0.0012022318948048752,
+    "correlations_12m": {
+      "SPY": -0.091,
+      "GLD": 0.01,
+      "TLT": -0.089,
+      "BIL": 1.0
+    }
+  },
+  "COPX": {
+    "ticker": "COPX",
+    "price": 74.93,
+    "aum": 8406912000,
+    "expense_ratio": 0.65,
+    "inception_date": "1271635200",
+    "top5_holdings": [
+      {
+        "Symbol": "5713.T",
+        "Name": "Sumitomo Metal Mining Co Ltd",
+        "Holding Percent": 0.0660552
+      },
+      {
+        "Symbol": "LUN.TO",
+        "Name": "Lundin Mining Corp",
+        "Holding Percent": 0.0620492
+      },
+      {
+        "Symbol": "BOL.ST",
+        "Name": "Boliden AB",
+        "Holding Percent": 0.0545475
+      },
+      {
+        "Symbol": "KGH.WA",
+        "Name": "KGHM Polska Miedz SA",
+        "Holding Percent": 0.0537927
+      },
+      {
+        "Symbol": "SCCO",
+        "Name": "Southern Copper Corp",
+        "Holding Percent": 0.050573703
+      }
+    ],
+    "ann_return_1y": 0.8285456980728958,
+    "ann_vol_1y": 0.40380901445208434,
+    "sharpe_1y": 1.945339677814716,
+    "max_drawdown_1y": -0.27885503114618326,
+    "ann_return_3y": 0.30223467859108455,
+    "ann_vol_3y": 0.347129582350047,
+    "sharpe_3y": 0.7467951213955346,
+    "max_drawdown_3y": -0.3972276744152394,
+    "ann_return_5y": 0.1850081740304692,
+    "ann_vol_5y": 0.35672079864824136,
+    "sharpe_5y": 0.3980933395770455,
+    "max_drawdown_5y": -0.4211941150457289,
+    "correlations_12m": {
+      "SPY": 0.617,
+      "GLD": 0.542,
+      "TLT": 0.074,
+      "BIL": -0.046
+    }
+  }
+}

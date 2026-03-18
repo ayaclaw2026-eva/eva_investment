@@ -1,0 +1,100 @@
+{
+  "NVDA": {
+    "ticker": "NVDA",
+    "short_pct_float": 0.0107,
+    "short_ratio": 1.32,
+    "insider_buys_6m": 0,
+    "insider_sells_6m": 0,
+    "insider_buy_value": 0,
+    "insider_sell_value": 0,
+    "insider_sentiment": "neutral"
+  },
+  "CEG": {
+    "ticker": "CEG",
+    "short_pct_float": 0.026400002,
+    "short_ratio": 2.01,
+    "insider_buys_6m": 0,
+    "insider_sells_6m": 0,
+    "insider_buy_value": 0,
+    "insider_sell_value": 0,
+    "insider_sentiment": "neutral"
+  },
+  "MSFT": {
+    "ticker": "MSFT",
+    "short_pct_float": 0.01,
+    "short_ratio": 1.63,
+    "insider_buys_6m": 0,
+    "insider_sells_6m": 0,
+    "insider_buy_value": 0,
+    "insider_sell_value": 0,
+    "insider_sentiment": "neutral"
+  },
+  "LMT": {
+    "ticker": "LMT",
+    "short_pct_float": 0.014199999,
+    "short_ratio": 1.61,
+    "insider_buys_6m": 0,
+    "insider_sells_6m": 0,
+    "insider_buy_value": 0,
+    "insider_sell_value": 0,
+    "insider_sentiment": "neutral"
+  },
+  "TSM": {
+    "ticker": "TSM",
+    "short_pct_float": 0.0039,
+    "short_ratio": 1.61,
+    "insider_buys_6m": 0,
+    "insider_sells_6m": 0,
+    "insider_sentiment": "neutral"
+  },
+  "AVGO": {
+    "ticker": "AVGO",
+    "short_pct_float": 0.010199999,
+    "short_ratio": 1.94,
+    "insider_buys_6m": 0,
+    "insider_sells_6m": 0,
+    "insider_buy_value": 0,
+    "insider_sell_value": 0,
+    "insider_sentiment": "neutral"
+  },
+  "ANET": {
+    "ticker": "ANET",
+    "short_pct_float": 0.0145000005,
+    "short_ratio": 1.63,
+    "insider_buys_6m": 0,
+    "insider_sells_6m": 0,
+    "insider_buy_value": 0,
+    "insider_sell_value": 0,
+    "insider_sentiment": "neutral"
+  },
+  "CRWD": {
+    "ticker": "CRWD",
+    "short_pct_float": 0.0287,
+    "short_ratio": 1.52,
+    "insider_buys_6m": 0,
+    "insider_sells_6m": 0,
+    "insider_buy_value": 0,
+    "insider_sell_value": 0,
+    "insider_sentiment": "neutral"
+  },
+  "NTR": {
+    "ticker": "NTR",
+    "short_pct_float": 0.0117,
+    "short_ratio": 1.99,
+    "insider_buys_6m": 0,
+    "insider_sells_6m": 0,
+    "insider_buy_value": 0,
+    "insider_sell_value": 0,
+    "insider_sentiment": "neutral"
+  },
+  "RTX": {
+    "ticker": "RTX",
+    "short_pct_float": 0.0097,
+    "short_ratio": 1.85,
+    "insider_buys_6m": 0,
+    "insider_sells_6m": 0,
+    "insider_buy_value": 0,
+    "insider_sell_value": 0,
+    "insider_sentiment": "neutral"
+  }
+}

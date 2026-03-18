@@ -1,0 +1,52 @@
+{
+  "TSM": {
+    "scenarios": {
+      "bear": {
+        "intrinsic_per_share": 75.55,
+        "upside_pct": -77.8,
+        "growth_y1": 0.095,
+        "fcf_margin": 0.196
+      },
+      "base": {
+        "intrinsic_per_share": 120.57,
+        "upside_pct": -64.5,
+        "growth_y1": 0.189,
+        "fcf_margin": 0.23
+      },
+      "bull": {
+        "intrinsic_per_share": 179.98,
+        "upside_pct": -47.0,
+        "growth_y1": 0.256,
+        "fcf_margin": 0.265
+      }
+    },
+    "wacc": 0.1135,
+    "rev_latest_usd": 122872709677.41936,
+    "rev_cagr_5y": 0.18937974673962787,
+    "fcf_margin_avg": 0.23019159440578923,
+    "reverse_dcf_implied_growth": 0.4604,
+    "currency_note": "Financials converted from TWD to USD at rate 31"
+  },
+  "CEG": {
+    "scenarios": {
+      "bear": {
+        "intrinsic_per_share": 20.54,
+        "upside_pct": -93.5
+      },
+      "base": {
+        "intrinsic_per_share": 35.38,
+        "upside_pct": -88.8
+      },
+      "bull": {
+        "intrinsic_per_share": 54.13,
+        "upside_pct": -82.9
+      }
+    },
+    "wacc": 0.1039,
+    "rev_latest": 25533000000.0,
+    "rev_cagr_5y": 0.01469039149633189,
+    "fcf_margin_avg": 0.050444522774448754,
+    "reverse_dcf_implied_growth": 0.5575,
+    "note": "Used 2025 FCF only - prior years distorted by Exelon spinoff"
+  }
+}
