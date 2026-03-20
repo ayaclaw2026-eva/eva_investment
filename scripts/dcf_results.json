@@ -1,10 +1,10 @@
 {
   "NVDA": {
     "ticker": "NVDA",
-    "price": 180.4,
-    "mktcap": 4384621854720,
-    "pe_ttm": 36.891617,
-    "pe_fwd": 16.384851,
+    "price": 178.56,
+    "mktcap": 4339900874752,
+    "pe_ttm": 36.3666,
+    "pe_fwd": 16.062826,
     "beta": 2.375,
     "de_ratio": 7.255,
     "div_yield": 0.02,
@@ -13,8 +13,8 @@
     "total_cash": 62556000256,
     "short_pct": 0.0107,
     "mean_target": 268.426,
-    "ev_ebitda": 32.799,
-    "enterprise_value": 4369754882048,
+    "ev_ebitda": 32.184,
+    "enterprise_value": 4287863980032,
     "revenue_history": {
       "2023": 26974000000.0,
       "2024": 60922000000.0,
@@ -51,8 +51,8 @@
     "pe_5y_max": null,
     "pe_5y_median": null,
     "pe_current_pct": null,
-    "pct_52w": 74.70140528893093,
-    "lo52": 86.59959627985899,
+    "pct_52w": 73.23605498167072,
+    "lo52": 86.59958951154498,
     "hi52": 212.1667169482571,
     "wacc": 0.17362499999999997,
     "scenarios": {
@@ -67,7 +67,7 @@
         "fcf_margin": 0.3185,
         "terminal_g": 0.02,
         "intrinsic_per_share": 43.02,
-        "upside_pct": -76.2
+        "upside_pct": -75.9
       },
       "base": {
         "growth_schedule": [
@@ -80,7 +80,7 @@
         "fcf_margin": 0.3747,
         "terminal_g": 0.03,
         "intrinsic_per_share": 108.98,
-        "upside_pct": -39.6
+        "upside_pct": -39.0
       },
       "bull": {
         "growth_schedule": [
@@ -93,28 +93,28 @@
         "fcf_margin": 0.4309,
         "terminal_g": 0.04,
         "intrinsic_per_share": 165.71,
-        "upside_pct": -8.1
+        "upside_pct": -7.2
       }
     },
-    "reverse_dcf_implied_growth": 0.6408,
+    "reverse_dcf_implied_growth": 0.6371,
     "peg": null
   },
   "CEG": {
     "ticker": "CEG",
-    "price": 317.22,
-    "mktcap": 114830573568,
-    "pe_ttm": 42.75202,
-    "pe_fwd": 23.302948,
+    "price": 316.47,
+    "mktcap": 114559082496,
+    "pe_ttm": 42.82409,
+    "pe_fwd": 23.215145,
     "beta": 1.107,
     "de_ratio": 63.94,
-    "div_yield": 0.55,
+    "div_yield": 0.54,
     "shares": 361990335,
     "total_debt": 9496999936,
     "total_cash": 3640999936,
     "short_pct": 0.026400002,
-    "mean_target": 393.93445,
-    "ev_ebitda": 20.876,
-    "enterprise_value": 117572804608,
+    "mean_target": 394.6221,
+    "ev_ebitda": 21.44,
+    "enterprise_value": 120751079424,
     "revenue_history": {
       "2022": 24440000000.0,
       "2023": 24918000000.0,
@@ -144,14 +144,14 @@
     },
     "eps_history": {},
     "eps_cagr_5y": null,
-    "analyst_buy": 14,
+    "analyst_buy": 15,
     "analyst_hold": 5,
     "analyst_sell": 0,
     "pe_5y_min": null,
     "pe_5y_max": null,
     "pe_5y_median": null,
     "pe_current_pct": null,
-    "pct_52w": 62.3892330010923,
+    "pct_52w": 62.09059367381019,
     "lo52": 160.53626655917324,
     "hi52": 411.6753267846509,
     "wacc": 0.103885,
@@ -167,7 +167,7 @@
         "fcf_margin": 0.001,
         "terminal_g": 0.02,
         "intrinsic_per_share": -15.36,
-        "upside_pct": -104.8
+        "upside_pct": -104.9
       },
       "base": {
         "growth_schedule": [
@@ -180,7 +180,7 @@
         "fcf_margin": -0.1596,
         "terminal_g": 0.03,
         "intrinsic_per_share": -161.17,
-        "upside_pct": -150.8
+        "upside_pct": -150.9
       },
       "bull": {
         "growth_schedule": [
@@ -193,7 +193,7 @@
         "fcf_margin": -0.1835,
         "terminal_g": 0.04,
         "intrinsic_per_share": -205.74,
-        "upside_pct": -164.9
+        "upside_pct": -165.0
       }
     },
     "reverse_dcf_implied_growth": 1.5,
@@ -201,20 +201,20 @@
   },
   "MSFT": {
     "ticker": "MSFT",
-    "price": 391.79,
-    "mktcap": 2911931465728,
-    "pe_ttm": 24.517523,
-    "pe_fwd": 20.791224,
+    "price": 389.02,
+    "mktcap": 2891343462400,
+    "pe_ttm": 24.328955,
+    "pe_fwd": 20.644226,
     "beta": 1.108,
     "de_ratio": 31.539,
-    "div_yield": 0.91,
+    "div_yield": 0.93,
     "shares": 7425629076,
     "total_debt": 123278000128,
     "total_cash": 89461997568,
     "short_pct": 0.01,
     "mean_target": 594.6217,
-    "ev_ebitda": 17.116,
-    "enterprise_value": 2999686529024,
+    "ev_ebitda": 16.676,
+    "enterprise_value": 2922534141952,
     "revenue_history": {
       "2022": 198270000000.0,
       "2023": 211915000000.0,
@@ -251,7 +251,7 @@
     "pe_5y_max": null,
     "pe_5y_median": null,
     "pe_current_pct": null,
-    "pct_52w": 23.62029260387655,
+    "pct_52w": 22.30169397526984,
     "lo52": 342.17049555544185,
     "hi52": 552.2420017670738,
     "wacc": 0.10394,
@@ -267,7 +267,7 @@
         "fcf_margin": 0.2477,
         "terminal_g": 0.02,
         "intrinsic_per_share": 124.18,
-        "upside_pct": -68.3
+        "upside_pct": -68.1
       },
       "base": {
         "growth_schedule": [
@@ -280,7 +280,7 @@
         "fcf_margin": 0.2914,
         "terminal_g": 0.03,
         "intrinsic_per_share": 198.87,
-        "upside_pct": -49.2
+        "upside_pct": -48.9
       },
       "bull": {
         "growth_schedule": [
@@ -293,28 +293,28 @@
         "fcf_margin": 0.3351,
         "terminal_g": 0.04,
         "intrinsic_per_share": 296.52,
-        "upside_pct": -24.3
+        "upside_pct": -23.8
       }
     },
-    "reverse_dcf_implied_growth": 0.2701,
+    "reverse_dcf_implied_growth": 0.2682,
     "peg": null
   },
   "LMT": {
     "ticker": "LMT",
-    "price": 642.28,
-    "mktcap": 148622180352,
-    "pe_ttm": 29.859602,
-    "pe_fwd": 20.090036,
+    "price": 637.51,
+    "mktcap": 147518406656,
+    "pe_ttm": 29.624071,
+    "pe_fwd": 19.940832,
     "beta": 0.197,
     "de_ratio": 338.804,
-    "div_yield": 2.12,
+    "div_yield": 2.1,
     "shares": 230080240,
     "total_debt": 22770999296,
     "total_cash": 4120999936,
     "short_pct": 0.014199999,
     "mean_target": 663.2105,
-    "ev_ebitda": 19.922,
-    "enterprise_value": 165056954368,
+    "ev_ebitda": 19.955,
+    "enterprise_value": 165328453632,
     "revenue_history": {
       "2022": 65984000000.0,
       "2023": 67571000000.0,
@@ -351,8 +351,8 @@
     "pe_5y_max": null,
     "pe_5y_median": null,
     "pe_current_pct": null,
-    "pct_52w": 82.8579205337175,
-    "lo52": 401.953508862233,
+    "pct_52w": 81.21335856820139,
+    "lo52": 401.9534783914636,
     "hi52": 692.0,
     "wacc": 0.053834999999999994,
     "scenarios": {
@@ -367,7 +367,7 @@
         "fcf_margin": 0.0747,
         "terminal_g": 0.02,
         "intrinsic_per_share": 643.49,
-        "upside_pct": 0.2
+        "upside_pct": 0.9
       },
       "base": {
         "growth_schedule": [
@@ -380,7 +380,7 @@
         "fcf_margin": 0.0879,
         "terminal_g": 0.03,
         "intrinsic_per_share": 1180.3,
-        "upside_pct": 83.8
+        "upside_pct": 85.1
       },
       "bull": {
         "growth_schedule": [
@@ -393,28 +393,28 @@
         "fcf_margin": 0.1011,
         "terminal_g": 0.04,
         "intrinsic_per_share": 2462.91,
-        "upside_pct": 283.5
+        "upside_pct": 286.3
       }
     },
-    "reverse_dcf_implied_growth": -0.0806,
+    "reverse_dcf_implied_growth": -0.0818,
     "peg": null
   },
   "TSM": {
     "ticker": "TSM",
-    "price": 339.57,
-    "mktcap": 1761181433856,
-    "pe_ttm": 32.935986,
-    "pe_fwd": 18.910765,
+    "price": 338.79,
+    "mktcap": 1757136027648,
+    "pe_ttm": 32.70174,
+    "pe_fwd": 18.867327,
     "beta": 1.282,
     "de_ratio": 19.565,
-    "div_yield": 1.02,
+    "div_yield": 1.04,
     "shares": 5186504904,
     "total_debt": 1068416565248,
     "total_cash": 3068494610432,
     "short_pct": 0.0039,
     "mean_target": 430.65167,
-    "ev_ebitda": 2.683,
-    "enterprise_value": 7013255872512,
+    "ev_ebitda": 2.611,
+    "enterprise_value": 6826801233920,
     "revenue_history": {
       "2022": 2263891300000.0,
       "2023": 2161735800000.0,
@@ -451,7 +451,7 @@
     "pe_5y_max": null,
     "pe_5y_median": null,
     "pe_current_pct": null,
-    "pct_52w": 80.6852260319257,
+    "pct_52w": 80.38113952463287,
     "lo52": 132.60759030552757,
     "hi52": 389.11354545099755,
     "wacc": 0.11351,
@@ -467,7 +467,7 @@
         "fcf_margin": 0.1957,
         "terminal_g": 0.02,
         "intrinsic_per_share": 2341.96,
-        "upside_pct": 589.7
+        "upside_pct": 591.3
       },
       "base": {
         "growth_schedule": [
@@ -480,7 +480,7 @@
         "fcf_margin": 0.2302,
         "terminal_g": 0.03,
         "intrinsic_per_share": 3737.75,
-        "upside_pct": 1000.7
+        "upside_pct": 1003.3
       },
       "bull": {
         "growth_schedule": [
@@ -493,7 +493,7 @@
         "fcf_margin": 0.2647,
         "terminal_g": 0.04,
         "intrinsic_per_share": 5579.32,
-        "upside_pct": 1543.1
+        "upside_pct": 1546.8
       }
     },
     "reverse_dcf_implied_growth": -0.1,
@@ -501,20 +501,20 @@
   },
   "AVGO": {
     "ticker": "AVGO",
-    "price": 315.93,
-    "mktcap": 1497910476800,
-    "pe_ttm": 61.46498,
-    "pe_fwd": 17.87989,
+    "price": 319.84,
+    "mktcap": 1516448907264,
+    "pe_ttm": 62.46875,
+    "pe_fwd": 18.101175,
     "beta": 1.257,
     "de_ratio": 166.032,
-    "div_yield": 0.81,
-    "shares": 4735602612,
+    "div_yield": 0.82,
+    "shares": 4734668184,
     "total_debt": 40456998912,
     "total_cash": 11105000448,
     "short_pct": 0.010199999,
     "mean_target": 472.00763,
-    "ev_ebitda": 4.338,
-    "enterprise_value": 161437417472,
+    "ev_ebitda": 4.321,
+    "enterprise_value": 160837353472,
     "revenue_history": {
       "2022": 33203000000.0,
       "2023": 35819000000.0,
@@ -551,7 +551,7 @@
     "pe_5y_max": null,
     "pe_5y_median": null,
     "pe_current_pct": null,
-    "pct_52w": 64.60262233058938,
+    "pct_52w": 66.01651863443578,
     "lo52": 137.27739823179985,
     "hi52": 413.81818763503134,
     "wacc": 0.11213499999999998,
@@ -566,8 +566,8 @@
         ],
         "fcf_margin": 0.3785,
         "terminal_g": 0.02,
-        "intrinsic_per_share": 70.64,
-        "upside_pct": -77.6
+        "intrinsic_per_share": 70.65,
+        "upside_pct": -77.9
       },
       "base": {
         "growth_schedule": [
@@ -579,8 +579,8 @@
         ],
         "fcf_margin": 0.4453,
         "terminal_g": 0.03,
-        "intrinsic_per_share": 136.3,
-        "upside_pct": -56.9
+        "intrinsic_per_share": 136.32,
+        "upside_pct": -57.4
       },
       "bull": {
         "growth_schedule": [
@@ -592,19 +592,19 @@
         ],
         "fcf_margin": 0.5121,
         "terminal_g": 0.04,
-        "intrinsic_per_share": 226.47,
-        "upside_pct": -28.3
+        "intrinsic_per_share": 226.52,
+        "upside_pct": -29.2
       }
     },
-    "reverse_dcf_implied_growth": 0.4201,
+    "reverse_dcf_implied_growth": 0.4237,
     "peg": null
   },
   "ANET": {
     "ticker": "ANET",
-    "price": 136.07,
-    "mktcap": 171350933504,
-    "pe_ttm": 49.480003,
-    "pe_fwd": 31.917566,
+    "price": 136.26,
+    "mktcap": 171590189056,
+    "pe_ttm": 49.549088,
+    "pe_fwd": 31.962132,
     "beta": 1.46,
     "de_ratio": 0.179,
     "div_yield": null,
@@ -613,8 +613,8 @@
     "total_cash": 10743000064,
     "short_pct": 0.0145000005,
     "mean_target": 177.74088,
-    "ev_ebitda": 39.832,
-    "enterprise_value": 156486598656,
+    "ev_ebitda": 40.852,
+    "enterprise_value": 160494960640,
     "revenue_history": {
       "2022": 4381310000.0,
       "2023": 5860200000.0,
@@ -651,7 +651,7 @@
     "pe_5y_max": null,
     "pe_5y_median": null,
     "pe_current_pct": null,
-    "pct_52w": 72.63766291642149,
+    "pct_52w": 72.81774063052738,
     "lo52": 59.43000030517578,
     "hi52": 164.94000244140625,
     "wacc": 0.12329999999999999,
@@ -680,7 +680,7 @@
         "fcf_margin": 0.3602,
         "terminal_g": 0.03,
         "intrinsic_per_share": 66.41,
-        "upside_pct": -51.2
+        "upside_pct": -51.3
       },
       "bull": {
         "growth_schedule": [
@@ -693,18 +693,18 @@
         "fcf_margin": 0.4142,
         "terminal_g": 0.04,
         "intrinsic_per_share": 103.51,
-        "upside_pct": -23.9
+        "upside_pct": -24.0
       }
     },
-    "reverse_dcf_implied_growth": 0.44,
+    "reverse_dcf_implied_growth": 0.4404,
     "peg": null
   },
   "CRWD": {
     "ticker": "CRWD",
-    "price": 435.81,
-    "mktcap": 110527561728,
+    "price": 428.18,
+    "mktcap": 108592480256,
     "pe_ttm": null,
-    "pe_fwd": 70.56818,
+    "pe_fwd": 69.33269,
     "beta": 1.124,
     "de_ratio": 18.336,
     "div_yield": null,
@@ -713,8 +713,8 @@
     "total_cash": 5230125056,
     "short_pct": 0.0287,
     "mean_target": 490.4775,
-    "ev_ebitda": -2260.839,
-    "enterprise_value": 105499787264,
+    "ev_ebitda": -2233.556,
+    "enterprise_value": 104226643968,
     "revenue_history": {
       "2023": 2241236000.0,
       "2024": 3055555000.0,
@@ -751,7 +751,7 @@
     "pe_5y_max": null,
     "pe_5y_median": null,
     "pe_current_pct": null,
-    "pct_52w": 51.24953049011067,
+    "pct_52w": 48.412044693437394,
     "lo52": 298.0,
     "hi52": 566.9000244140625,
     "wacc": 0.10482,
@@ -767,7 +767,7 @@
         "fcf_margin": 0.2408,
         "terminal_g": 0.02,
         "intrinsic_per_share": 97.86,
-        "upside_pct": -77.5
+        "upside_pct": -77.1
       },
       "base": {
         "growth_schedule": [
@@ -780,7 +780,7 @@
         "fcf_margin": 0.2833,
         "terminal_g": 0.03,
         "intrinsic_per_share": 178.48,
-        "upside_pct": -59.0
+        "upside_pct": -58.3
       },
       "bull": {
         "growth_schedule": [
@@ -793,28 +793,28 @@
         "fcf_margin": 0.3258,
         "terminal_g": 0.04,
         "intrinsic_per_share": 295.36,
-        "upside_pct": -32.2
+        "upside_pct": -31.0
       }
     },
-    "reverse_dcf_implied_growth": 0.5025,
+    "reverse_dcf_implied_growth": 0.4967,
     "peg": null
   },
   "NTR": {
     "ticker": "NTR",
-    "price": 77.88,
-    "mktcap": 37668659200,
-    "pe_ttm": 16.712446,
-    "pe_fwd": 16.215843,
+    "price": 76.05,
+    "mktcap": 36783538176,
+    "pe_ttm": 16.319744,
+    "pe_fwd": 15.826571,
     "beta": 1.167,
     "de_ratio": 47.384,
-    "div_yield": 2.77,
+    "div_yield": 2.82,
     "shares": 481141322,
     "total_debt": 12019000320,
     "total_cash": 701000000,
     "short_pct": 0.0117,
     "mean_target": 77.7015,
-    "ev_ebitda": 9.171,
-    "enterprise_value": 49634791424,
+    "ev_ebitda": 8.86,
+    "enterprise_value": 47950798848,
     "revenue_history": {
       "2022": 37884000000.0,
       "2023": 29056000000.0,
@@ -851,7 +851,7 @@
     "pe_5y_max": null,
     "pe_5y_median": null,
     "pe_current_pct": null,
-    "pct_52w": 81.30433860665849,
+    "pct_52w": 76.73040043044129,
     "lo52": 45.350714749966976,
     "hi52": 85.36000061035156,
     "wacc": 0.107185,
@@ -867,7 +867,7 @@
         "fcf_margin": 0.0768,
         "terminal_g": 0.02,
         "intrinsic_per_share": 24.17,
-        "upside_pct": -69.0
+        "upside_pct": -68.2
       },
       "base": {
         "growth_schedule": [
@@ -880,7 +880,7 @@
         "fcf_margin": 0.0903,
         "terminal_g": 0.03,
         "intrinsic_per_share": 37.77,
-        "upside_pct": -51.5
+        "upside_pct": -50.3
       },
       "bull": {
         "growth_schedule": [
@@ -893,28 +893,28 @@
         "fcf_margin": 0.1039,
         "terminal_g": 0.04,
         "intrinsic_per_share": 55.63,
-        "upside_pct": -28.6
+        "upside_pct": -26.8
       }
     },
-    "reverse_dcf_implied_growth": 0.13,
+    "reverse_dcf_implied_growth": 0.1254,
     "peg": null
   },
   "RTX": {
     "ticker": "RTX",
-    "price": 204.56,
-    "mktcap": 275332497408,
-    "pe_ttm": 41.241936,
-    "pe_fwd": 27.241396,
+    "price": 200.73,
+    "mktcap": 270177402880,
+    "pe_ttm": 40.551517,
+    "pe_fwd": 26.731352,
     "beta": 0.406,
     "de_ratio": 59.513,
-    "div_yield": 1.34,
+    "div_yield": 1.33,
     "shares": 1345974220,
     "total_debt": 39956000768,
     "total_cash": 7434999808,
     "short_pct": 0.0097,
     "mean_target": 217.16238,
-    "ev_ebitda": 20.858,
-    "enterprise_value": 307341361152,
+    "ev_ebitda": 20.621,
+    "enterprise_value": 303851405312,
     "revenue_history": {
       "2022": 67074000000.0,
       "2023": 68920000000.0,
@@ -951,7 +951,7 @@
     "pe_5y_max": null,
     "pe_5y_median": null,
     "pe_current_pct": null,
-    "pct_52w": 90.45091486814886,
+    "pct_52w": 86.77153900748587,
     "lo52": 110.40625842422381,
     "hi52": 214.5,
     "wacc": 0.06533,
@@ -967,7 +967,7 @@
         "fcf_margin": 0.0566,
         "terminal_g": 0.02,
         "intrinsic_per_share": 66.69,
-        "upside_pct": -67.4
+        "upside_pct": -66.8
       },
       "base": {
         "growth_schedule": [
@@ -980,7 +980,7 @@
         "fcf_margin": 0.0666,
         "terminal_g": 0.03,
         "intrinsic_per_share": 132.36,
-        "upside_pct": -35.3
+        "upside_pct": -34.1
       },
       "bull": {
         "growth_schedule": [
@@ -993,10 +993,10 @@
         "fcf_margin": 0.0766,
         "terminal_g": 0.04,
         "intrinsic_per_share": 248.23,
-        "upside_pct": 21.3
+        "upside_pct": 23.7
       }
     },
-    "reverse_dcf_implied_growth": 0.1648,
+    "reverse_dcf_implied_growth": 0.1606,
     "peg": null
   }
 }
