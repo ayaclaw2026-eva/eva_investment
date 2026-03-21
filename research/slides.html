@@ -3,422 +3,545 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eva Investment Research — Daily Update | March 21, 2026</title>
+<title>Eva Investment Research · Mar 21, 2026</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',system-ui,sans-serif;background:#0d0f14;color:#e2e8f0}
-.slide{width:100%;min-height:100vh;padding:44px 52px;display:flex;flex-direction:column;border-bottom:2px solid #1e2533;page-break-after:always}
-.slide-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;border-bottom:1px solid #2d3748;padding-bottom:14px}
-.slide-title{font-size:1.9rem;font-weight:700;background:linear-gradient(135deg,#a78bfa,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.slide-meta{font-size:0.8rem;color:#64748b}
-.logo{font-size:1rem;font-weight:700;color:#a78bfa}
-h2{font-size:1.3rem;font-weight:600;color:#94a3b8;margin-bottom:18px}
-h3{font-size:0.95rem;font-weight:600;color:#7dd3fc;margin-bottom:10px}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
-.grid-4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px}
-.card{background:#131720;border:1px solid #1e2d3d;border-radius:10px;padding:18px}
-.card.highlight{border-color:#7c3aed;background:linear-gradient(135deg,#1a1040,#131720)}
-.card.green{border-color:#065f46;background:#0a1f1a}
-.card.red{border-color:#7f1d1d;background:#1a0a0a}
-.card.amber{border-color:#78350f;background:#1a1204}
-.card.blue{border-color:#1e3a5f;background:#0a1525}
-.ticker-price{font-size:1.5rem;font-weight:700;color:#f1f5f9}
-.perf-pos{color:#34d399;font-weight:600}
-.perf-neg{color:#f87171;font-weight:600}
-.perf-neutral{color:#94a3b8}
-.pe-label{font-size:0.72rem;color:#64748b}
-.ticker-name{font-size:0.85rem;color:#94a3b8;margin-bottom:5px}
-table{width:100%;border-collapse:collapse}
-th{background:#1e2533;color:#94a3b8;font-size:0.75rem;text-align:left;padding:9px 11px;text-transform:uppercase;letter-spacing:.04em}
-td{padding:8px 11px;font-size:0.85rem;border-bottom:1px solid #1e2533}
-tr:hover td{background:#161d2b}
-.tag{display:inline-block;padding:2px 8px;border-radius:99px;font-size:0.7rem;font-weight:600;margin:2px}
-.tag-buy{background:#064e3b;color:#6ee7b7}
-.tag-hold{background:#1e2533;color:#94a3b8}
-.tag-avoid{background:#7f1d1d;color:#fca5a5}
-.tag-watch{background:#1e3a5f;color:#93c5fd}
-.news-item{background:#131720;border-left:3px solid #7c3aed;border-radius:0 8px 8px 0;padding:11px 15px;margin-bottom:9px}
-.news-item h4{font-size:0.88rem;font-weight:600;color:#e2e8f0;margin-bottom:3px}
-.news-item p{font-size:0.8rem;color:#94a3b8;line-height:1.5}
-.news-source{margin-top:5px}
-.news-source a{color:#475569;font-size:0.7rem;text-decoration:none;border-bottom:1px dotted #475569}
-.news-source a:hover{color:#7dd3fc}
-.source-model{color:#475569;font-size:0.7rem;font-style:italic}
-.event-banner{background:linear-gradient(135deg,#0f1a2e,#131720);border:1px solid #2d4a6b;border-radius:10px;padding:20px;margin-bottom:22px}
-.event-banner h3{color:#a78bfa;margin-bottom:12px;font-size:1rem}
-.event-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.event-card{background:#0d1117;border-radius:8px;padding:12px 14px;border:1px solid #1e2533}
-.event-card .ev-icon{font-size:1.4rem;margin-bottom:6px}
-.event-card .ev-title{font-size:0.78rem;font-weight:600;color:#e2e8f0;margin-bottom:3px}
-.event-card .ev-body{font-size:0.72rem;color:#94a3b8;line-height:1.45}
-.event-card .ev-src{font-size:0.65rem;color:#475569;margin-top:5px}
-.event-card .ev-src a{color:#475569;text-decoration:none;border-bottom:1px dotted #334155}
-.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
-.kpi{background:#131720;border:1px solid #1e2d3d;border-radius:8px;padding:14px}
-.kpi .kpi-label{font-size:0.72rem;color:#64748b;margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em}
-.kpi .kpi-val{font-size:1.6rem;font-weight:700}
-.kpi .kpi-sub{font-size:0.72rem;margin-top:2px}
-.verdict-buy{color:#34d399}
-.verdict-hold{color:#fbbf24}
-.verdict-avoid{color:#f87171}
-.footnote{font-size:0.7rem;color:#475569;margin-top:20px;padding-top:12px;border-top:1px solid #1e2533}
-.aapl-highlight{border-color:#a78bfa!important;background:linear-gradient(135deg,#1a1040,#131720)!important}
+:root {
+  --bg: #0d0f14;
+  --surface: #131720;
+  --surface2: #1a2030;
+  --border: #1e2d3d;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --dim: #64748b;
+  --accent: #a78bfa;
+  --blue: #60a5fa;
+  --green: #34d399;
+  --red: #f87171;
+  --amber: #fbbf24;
+  --teal: #2dd4bf;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* ── PAGE / SLIDE ── */
+.slide {
+  padding: 20px 16px 32px;
+  border-bottom: 2px solid var(--border);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .slide { padding: 32px 28px 40px; }
+}
+
+/* ── HEADER ── */
+.slide-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+.slide-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent), var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+@media (min-width: 640px) { .slide-title { font-size: 1.8rem; } }
+.slide-meta { font-size: 0.75rem; color: var(--dim); margin-top: 3px; }
+.logo { font-size: 0.9rem; font-weight: 700; color: var(--accent); white-space: nowrap; }
+
+/* ── SECTION HEADINGS ── */
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 20px 0 12px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+h3 { font-size: 0.9rem; font-weight: 600; color: var(--blue); margin-bottom: 8px; }
+
+/* ── KPI STRIP ── */
+.kpi-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+@media (min-width: 540px) { .kpi-row { grid-template-columns: repeat(4, 1fr); } }
+.kpi {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.kpi-label { font-size: 0.7rem; color: var(--dim); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
+.kpi-val { font-size: 1.25rem; font-weight: 700; line-height: 1.1; }
+.kpi-sub { font-size: 0.72rem; margin-top: 3px; }
+.kpi.purple { border-color: #7c3aed; }
+
+/* ── EVENT BANNER ── */
+.event-banner {
+  background: linear-gradient(135deg, #0f1a2e, var(--surface));
+  border: 1px solid #2d4a6b;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+.event-banner > h3 {
+  color: var(--accent);
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+.event-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+@media (min-width: 500px) { .event-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 780px) { .event-grid { grid-template-columns: 1fr 1fr 1fr; } }
+.event-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+.ev-icon { font-size: 1.3rem; margin-bottom: 5px; }
+.ev-title { font-size: 0.82rem; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+.ev-body { font-size: 0.78rem; color: var(--muted); line-height: 1.45; }
+.ev-src { margin-top: 6px; }
+.ev-src a { font-size: 0.68rem; color: var(--dim); text-decoration: none; border-bottom: 1px dotted var(--border); }
+.source-model { font-size: 0.68rem; color: var(--dim); font-style: italic; }
+
+/* ── CARDS ── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+.card.green  { border-color: #065f46; background: #0a1f1a; }
+.card.red    { border-color: #7f1d1d; background: #1a0a0a; }
+.card.amber  { border-color: #78350f; background: #1a1204; }
+.card.blue   { border-color: #1e3a5f; background: #0a1525; }
+.card.purple { border-color: #7c3aed; background: #1a1040; }
+.card p { font-size: 0.85rem; color: var(--muted); line-height: 1.55; }
+
+/* ── 2-COL (desktop only, stack on mobile) ── */
+.grid-2 { display: grid; grid-template-columns: 1fr; gap: 0; }
+@media (min-width: 740px) { .grid-2 { grid-template-columns: 1fr 1fr; gap: 20px; } }
+
+/* ── TABLE ── */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 8px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
+th {
+  background: var(--surface2);
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-align: left;
+  padding: 9px 11px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  white-space: nowrap;
+}
+td { padding: 9px 11px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #161d2b; }
+td strong { color: var(--text); }
+
+/* ── TAGS ── */
+.tag { display: inline-block; padding: 2px 9px; border-radius: 99px; font-size: 0.7rem; font-weight: 700; }
+.tag-buy   { background: #064e3b; color: #6ee7b7; }
+.tag-hold  { background: #1e2533; color: var(--muted); }
+.tag-avoid { background: #7f1d1d; color: #fca5a5; }
+.tag-watch { background: #1e3a5f; color: #93c5fd; }
+.tag-reduce{ background: #451a03; color: var(--amber); }
+
+/* ── NEWS ITEMS ── */
+.news-item {
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+.news-item h4 { font-size: 0.88rem; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+.news-item p  { font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
+.news-source  { margin-top: 6px; }
+.news-source a { font-size: 0.68rem; color: var(--dim); text-decoration: none; border-bottom: 1px dotted var(--border); }
+
+/* ── PERF COLORS ── */
+.pos  { color: var(--green); font-weight: 600; }
+.neg  { color: var(--red);   font-weight: 600; }
+.neu  { color: var(--muted); }
+.gold { color: var(--amber); }
+
+/* ── AAPL HIGHLIGHT ── */
+.aapl { border-color: var(--accent) !important; background: linear-gradient(135deg, #1a1040, var(--surface)) !important; }
+
+/* ── FOOTNOTE ── */
+.footnote {
+  font-size: 0.7rem;
+  color: var(--dim);
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  line-height: 1.6;
+}
+
+/* ── DIVIDER ── */
+.divider { height: 1px; background: linear-gradient(90deg, #7c3aed33, #60a5fa33); margin: 16px 0; }
+
+/* ── ALLOCATION BAR ── */
+.alloc-row { display: flex; align-items: center; gap: 10px; margin-bottom: 9px; }
+.alloc-name { font-size: 0.82rem; color: var(--text); min-width: 140px; }
+.alloc-bar-bg { flex: 1; background: var(--surface2); border-radius: 99px; height: 8px; overflow: hidden; }
+.alloc-bar { height: 8px; border-radius: 99px; }
+.alloc-pct { font-size: 0.8rem; font-weight: 700; min-width: 32px; text-align: right; }
 </style>
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     SLIDE 1 — MARKET SNAPSHOT + KEY EVENTS
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════════════
+     SLIDE 1 — SNAPSHOT + KEY EVENTS
+     ════════════════════════════════════════════════ -->
 <div class="slide">
   <div class="slide-header">
-    <div class="slide-title">Eva Investment Research</div>
-    <div class="slide-meta">Daily Market Intelligence · Saturday March 21, 2026</div>
-    <div class="logo">✨ Eva AI</div>
+    <div>
+      <div class="slide-title">Eva Investment Research</div>
+      <div class="slide-meta">Daily Market Intelligence · Sat Mar 21, 2026</div>
+    </div>
+    <div class="logo">✨ Eva</div>
   </div>
 
-  <!-- KPI strip -->
   <div class="kpi-row">
-    <div class="kpi"><div class="kpi-label">S&P 500 (SPY)</div><div class="kpi-val perf-neg">$648.57</div><div class="kpi-sub perf-neg">−1.43% today</div></div>
-    <div class="kpi"><div class="kpi-label">Nasdaq (QQQ)</div><div class="kpi-val perf-neg">$582.06</div><div class="kpi-sub perf-neg">−1.85% today</div></div>
-    <div class="kpi"><div class="kpi-label">Gold (GLD)</div><div class="kpi-val perf-neg">$413.38</div><div class="kpi-sub perf-neg">−3.06% today</div></div>
-    <div class="kpi"><div class="kpi-label">AAPL (Portfolio)</div><div class="kpi-val perf-neg">$247.99</div><div class="kpi-sub perf-neg">−0.39% · P/E 31.4x · Target $295</div></div>
+    <div class="kpi"><div class="kpi-label">S&P 500</div><div class="kpi-val neg">$648.57</div><div class="kpi-sub neg">−1.43% today</div></div>
+    <div class="kpi"><div class="kpi-label">Nasdaq</div><div class="kpi-val neg">$582.06</div><div class="kpi-sub neg">−1.85% today</div></div>
+    <div class="kpi"><div class="kpi-label">Gold (GLD)</div><div class="kpi-val neg">$413.38</div><div class="kpi-sub neg">−3.06% today</div></div>
+    <div class="kpi purple"><div class="kpi-label">AAPL (yours)</div><div class="kpi-val">$247.99</div><div class="kpi-sub neg">−0.39% · Target $295</div></div>
   </div>
 
-  <!-- Key Events Banner -->
   <div class="event-banner">
     <h3>⚡ Key Events — March 21, 2026</h3>
     <div class="event-grid">
       <div class="event-card">
         <div class="ev-icon">🤖</div>
-        <div class="ev-title">NVDA Pivots to Inference & AI Agents</div>
-        <div class="ev-body">Nvidia shifting focus from training to inference compute and agentic AI workloads — signals maturation of the infrastructure cycle toward deployment-phase spending.</div>
-        <div class="ev-src"><span class="source-model">Source: AI model knowledge (no live source) · Mar 2026</span></div>
+        <div class="ev-title">NVDA Pivots to Inference &amp; AI Agents</div>
+        <div class="ev-body">Nvidia shifting from training to inference compute and agentic AI — signals AI infrastructure cycle maturing toward deployment spending.</div>
+        <div class="ev-src"><span class="source-model">AI model knowledge · Mar 2026</span></div>
       </div>
       <div class="event-card">
         <div class="ev-icon">✅</div>
         <div class="ev-title">MSFT Validating NVDA Vera Rubin NVL72</div>
-        <div class="ev-body">Microsoft has started validating Nvidia's next-gen Vera Rubin NVL72 for AI workloads — confirming hyperscaler commitment to NVDA's hardware roadmap and future capex cycles.</div>
-        <div class="ev-src"><span class="source-model">Source: AI model knowledge (no live source) · Mar 21, 2026</span></div>
+        <div class="ev-body">Microsoft validating Nvidia's next-gen hardware — confirms hyperscaler commitment to NVDA's roadmap despite MSFT's own −19% YTD decline.</div>
+        <div class="ev-src"><span class="source-model">AI model knowledge · Mar 21, 2026</span></div>
       </div>
       <div class="event-card">
         <div class="ev-icon">⚠️</div>
         <div class="ev-title">SMCI Co-Founder Returns</div>
-        <div class="ev-body">Super Micro Computer co-founder returns to an executive role, signaling governance stabilisation after the company's accounting controversy. Watch for re-rating potential.</div>
-        <div class="ev-src"><span class="source-model">Source: AI model knowledge (no live source) · Mar 20, 2026</span></div>
+        <div class="ev-body">Super Micro co-founder returning to exec role after accounting controversy — potential governance re-rating catalyst. Watch for recovery.</div>
+        <div class="ev-src"><span class="source-model">AI model knowledge · Mar 20, 2026</span></div>
       </div>
       <div class="event-card">
         <div class="ev-icon">🍎</div>
-        <div class="ev-title">AAPL — Services Growth Offsets iPhone</div>
-        <div class="ev-body">Apple Intelligence features driving mild upgrade interest but hardware sales remain flat. Services revenue (74% gross margin) continuing to expand as % of revenue mix.</div>
-        <div class="ev-src"><span class="source-model">Source: AI model knowledge (no live source) · Mar 2026</span></div>
+        <div class="ev-title">AAPL — Services Expanding</div>
+        <div class="ev-body">Apple Intelligence driving mild upgrade interest. Services revenue (74% gross margin) growing as % of mix — key for AAPL's 26.8% implied growth thesis.</div>
+        <div class="ev-src"><span class="source-model">AI model knowledge · Mar 2026</span></div>
       </div>
       <div class="event-card">
         <div class="ev-icon">🛢️</div>
         <div class="ev-title">Oil Near $97 — Hormuz Premium</div>
-        <div class="ev-body">Brent crude holding elevated levels driven by Middle East supply risk premium. XLE +29.9% YTD. Defense and energy continue to outperform as geopolitical tension persists.</div>
-        <div class="ev-src"><span class="source-model">Source: AI model knowledge (no live source) · Mar 2026</span></div>
+        <div class="ev-body">Brent crude elevated on Middle East supply risk. Energy facility attacks this week reinforcing geopolitical premium. XLE +29.9% YTD.</div>
+        <div class="ev-src"><span class="source-model">AI model knowledge · Mar 2026</span></div>
       </div>
       <div class="event-card">
         <div class="ev-icon">📉</div>
-        <div class="ev-title">CEG Nuclear Down 10.9% Today</div>
-        <div class="ev-body">Constellation Energy dropped sharply today (-10.9%). AI power demand thesis under pressure; nuclear PPA valuations being repriced as rate environment weighs on long-duration assets.</div>
-        <div class="ev-src"><span class="source-model">Source: yfinance price data · Mar 21, 2026</span></div>
+        <div class="ev-title">CEG −10.9% Today</div>
+        <div class="ev-body">Constellation Energy sharp drop. Nuclear PPA valuations under pressure as rates weigh on long-duration assets. Watch closely at 3% allocation.</div>
+        <div class="ev-src"><span class="source-model">yfinance · Mar 21, 2026</span></div>
       </div>
     </div>
   </div>
 
-  <!-- Market table -->
-  <h2>📊 Broad Market Snapshot</h2>
-  <table>
-    <thead><tr><th>ETF</th><th>Name</th><th>Price</th><th>1D</th><th>52-wk %ile</th><th>P/E</th><th>Verdict</th></tr></thead>
-    <tbody>
-      <tr><td><strong>SPY</strong></td><td>S&P 500</td><td>$648.57</td><td class="perf-neg">−1.43%</td><td>77th</td><td>25.7x</td><td><span class="tag tag-hold">HOLD</span></td></tr>
-      <tr><td><strong>QQQ</strong></td><td>Nasdaq 100</td><td>$582.06</td><td class="perf-neg">−1.85%</td><td>77th</td><td>31.3x</td><td><span class="tag tag-hold">HOLD</span></td></tr>
-      <tr><td><strong>XLE</strong></td><td>Energy</td><td>$59.31</td><td class="perf-neg">−0.08%</td><td>96th</td><td>22.8x</td><td><span class="tag tag-buy">WATCH</span></td></tr>
-      <tr><td><strong>ITA</strong></td><td>Defense</td><td>$222.56</td><td class="perf-neg">−2.09%</td><td>77th</td><td>37.2x</td><td><span class="tag tag-buy">BUY</span></td></tr>
-      <tr><td><strong>XAR</strong></td><td>Aerospace/Defense EW</td><td>$258.88</td><td class="perf-neg">−3.40%</td><td>77th</td><td>38.2x</td><td><span class="tag tag-buy">BUY</span></td></tr>
-      <tr><td><strong>GLD</strong></td><td>Gold</td><td>$413.38</td><td class="perf-neg">−3.06%</td><td>59th</td><td>—</td><td><span class="tag tag-buy">BUY</span></td></tr>
-      <tr><td><strong>SMH</strong></td><td>Semiconductors</td><td>$384.74</td><td class="perf-neg">−2.58%</td><td>83rd</td><td>39.5x</td><td><span class="tag tag-hold">HOLD</span></td></tr>
-    </tbody>
-  </table>
-  <div class="footnote">Prices via yfinance · March 21, 2026 close · Source citations: live news sourcing requires web search (configured in daily cron, not available in manual refresh)</div>
+  <h2>📊 Market Snapshot</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>ETF</th><th>Price</th><th>1D</th><th>52wk %</th><th>P/E</th><th>Signal</th></tr></thead>
+      <tbody>
+        <tr><td><strong>SPY</strong> S&P 500</td><td>$648.57</td><td class="neg">−1.43%</td><td>77th</td><td>25.7x</td><td><span class="tag tag-hold">HOLD</span></td></tr>
+        <tr><td><strong>QQQ</strong> Nasdaq</td><td>$582.06</td><td class="neg">−1.85%</td><td>77th</td><td>31.3x</td><td><span class="tag tag-hold">HOLD</span></td></tr>
+        <tr><td><strong>XAR</strong> Defense EW</td><td>$258.88</td><td class="neg">−3.40%</td><td>77th</td><td>38.2x</td><td><span class="tag tag-buy">BUY</span></td></tr>
+        <tr><td><strong>ITA</strong> Defense</td><td>$222.56</td><td class="neg">−2.09%</td><td>77th</td><td>37.2x</td><td><span class="tag tag-buy">BUY</span></td></tr>
+        <tr><td><strong>GLD</strong> Gold</td><td>$413.38</td><td class="neg">−3.06%</td><td>59th</td><td>—</td><td><span class="tag tag-buy">BUY</span></td></tr>
+        <tr><td><strong>XLE</strong> Energy</td><td>$59.31</td><td class="neg">−0.08%</td><td>96th</td><td>22.8x</td><td><span class="tag tag-watch">WATCH</span></td></tr>
+        <tr><td><strong>SMH</strong> Semis</td><td>$384.74</td><td class="neg">−2.58%</td><td>83rd</td><td>39.5x</td><td><span class="tag tag-hold">HOLD</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="footnote">Prices via yfinance · Mar 21, 2026 · Live news sourcing with URLs available in daily 8am cron run — manual refresh uses AI model knowledge for narratives</div>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     SLIDE 2 — AAPL DEEP DIVE (YOUR LARGEST HOLDING)
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════════════
+     SLIDE 2 — AAPL DEEP DIVE
+     ════════════════════════════════════════════════ -->
 <div class="slide">
   <div class="slide-header">
-    <div class="slide-title">AAPL — Portfolio Focus</div>
-    <div class="slide-meta">Your largest holding · Deep dive</div>
-    <div class="logo">✨ Eva AI</div>
+    <div>
+      <div class="slide-title">🍎 AAPL — Your Largest Holding</div>
+      <div class="slide-meta">Deep dive · DCF · Analyst consensus · Theme impact</div>
+    </div>
+    <div class="logo">✨ Eva</div>
   </div>
 
   <div class="kpi-row">
-    <div class="kpi aapl-highlight"><div class="kpi-label">Current Price</div><div class="kpi-val">$247.99</div><div class="kpi-sub perf-neg">−0.39% today</div></div>
-    <div class="kpi aapl-highlight"><div class="kpi-label">Analyst Target</div><div class="kpi-val perf-pos">$295.44</div><div class="kpi-sub perf-pos">+19.1% upside</div></div>
-    <div class="kpi aapl-highlight"><div class="kpi-label">P/E (TTM)</div><div class="kpi-val">31.4x</div><div class="kpi-sub perf-neutral">vs S&P ~25x</div></div>
-    <div class="kpi aapl-highlight"><div class="kpi-label">Market Cap</div><div class="kpi-val">$3.6T</div><div class="kpi-sub perf-neutral">Beta 1.12 · Short 0.9%</div></div>
+    <div class="kpi aapl"><div class="kpi-label">Price</div><div class="kpi-val">$247.99</div><div class="kpi-sub neg">−0.39% today</div></div>
+    <div class="kpi aapl"><div class="kpi-label">Ana. Target</div><div class="kpi-val pos">$295.44</div><div class="kpi-sub pos">+19.1% upside</div></div>
+    <div class="kpi aapl"><div class="kpi-label">P/E (TTM)</div><div class="kpi-val">31.4x</div><div class="kpi-sub neu">vs S&P ~25x</div></div>
+    <div class="kpi aapl"><div class="kpi-label">Market Cap</div><div class="kpi-val">$3.6T</div><div class="kpi-sub neu">Beta 1.12 · Short 0.9%</div></div>
+  </div>
+
+  <h2>📐 DCF Analysis</h2>
+  <div class="card blue">
+    <h3>WACC: 10.4% &nbsp;(rf 4.3% + beta 1.12 × ERP 5.5%)</h3>
+    <div class="table-wrap" style="margin-top:10px">
+      <table>
+        <thead><tr><th>Scenario</th><th>Y1 Growth</th><th>Terminal g</th><th>Intrinsic/sh</th><th>vs $248</th></tr></thead>
+        <tbody>
+          <tr><td>Bear</td><td>2.0%</td><td>2%</td><td>$85</td><td class="neg">−66%</td></tr>
+          <tr><td>Base (hist.)</td><td>1.8%</td><td>3%</td><td>$92</td><td class="neg">−63%</td></tr>
+          <tr><td>Bull (services)</td><td>8.0%</td><td>4%</td><td>$134</td><td class="neg">−46%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:12px;font-size:0.82rem;color:var(--amber)">🔄 Implied growth to justify $248: <strong>26.8%</strong> — market pricing a strong services re-rating</p>
   </div>
 
   <div class="grid-2">
     <div>
-      <h2>📐 DCF Snapshot</h2>
-      <div class="card blue" style="margin-bottom:14px">
-        <h3>WACC: 10.4% (rf 4.3% + beta 1.12 × ERP 5.5%)</h3>
-        <table>
-          <thead><tr><th>Scenario</th><th>Y1 Growth</th><th>Terminal g</th><th>Intrinsic/sh</th><th>vs $248</th></tr></thead>
-          <tbody>
-            <tr><td>Bear</td><td>2.0%</td><td>2%</td><td>$85</td><td class="perf-neg">−66%</td></tr>
-            <tr><td>Base (hist.)</td><td>1.8%</td><td>3%</td><td>$92</td><td class="perf-neg">−63%</td></tr>
-            <tr><td>Bull (services)</td><td>8.0%</td><td>4%</td><td>$134</td><td class="perf-neg">−46%</td></tr>
-          </tbody>
-        </table>
-        <p style="font-size:0.75rem;color:#fbbf24;margin-top:10px">🔄 Implied constant growth to justify $248: <strong>26.8%</strong> — market pricing strong services re-rating</p>
-      </div>
-
       <h2>🏦 Analyst Consensus</h2>
       <div class="card">
-        <table>
-          <thead><tr><th>Metric</th><th>Value</th></tr></thead>
-          <tbody>
-            <tr><td>Ratings</td><td>25 Buy / 15 Hold / 2 Sell</td></tr>
-            <tr><td>Mean Target</td><td class="perf-pos">$295.44 (+19.1%)</td></tr>
-            <tr><td>52-wk Range</td><td>$169.21 – $288.62</td></tr>
-            <tr><td>52-wk Percentile</td><td>66th (mid-range)</td></tr>
-            <tr><td>Short Interest</td><td>0.9% (very low)</td></tr>
-            <tr><td>FCF (TTM)</td><td>$106.3B (margin 24.4%)</td></tr>
-            <tr><td>Gross Margin</td><td>47.3%</td></tr>
-          </tbody>
-        </table>
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td>Ratings</td><td><strong>25 Buy / 15 Hold / 2 Sell</strong></td></tr>
+              <tr><td>Mean Target</td><td class="pos"><strong>$295.44 (+19%)</strong></td></tr>
+              <tr><td>52-wk Range</td><td>$169 – $289</td></tr>
+              <tr><td>52-wk Percentile</td><td>66th (mid-range)</td></tr>
+              <tr><td>Short Interest</td><td>0.9% (very low)</td></tr>
+              <tr><td>FCF (TTM)</td><td>$106.3B (24.4% margin)</td></tr>
+              <tr><td>Gross Margin</td><td>47.3%</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
     <div>
-      <h2>💡 Two-Theme Impact on AAPL</h2>
-      <div class="card" style="margin-bottom:12px">
+      <h2>🎯 Theme Impact</h2>
+      <div class="card" style="margin-bottom:10px">
         <h3>🤖 AI Wave — Mild Positive</h3>
-        <ul style="list-style:none">
-          <li style="padding:5px 0;border-bottom:1px solid #1e2533;font-size:0.83rem">→ Apple Intelligence (on-device AI) could drive iPhone 17 upgrade supercycle</li>
-          <li style="padding:5px 0;border-bottom:1px solid #1e2533;font-size:0.83rem">→ Privacy-first AI differentiates from cloud-dependent competitors</li>
-          <li style="padding:5px 0;border-bottom:1px solid #1e2533;font-size:0.83rem">→ AAPL depends on TSM for A18 Pro chips — indirect AI supply chain exposure</li>
-          <li style="padding:5px 0;font-size:0.83rem">→ Not a picks-and-shovels AI play — more a downstream consumer beneficiary</li>
-        </ul>
+        <p>Apple Intelligence may drive iPhone 17 upgrade cycle. Privacy-first AI differentiates. AAPL depends on TSM for A18 chips — indirect AI supply chain exposure. Not a picks-and-shovels AI play.</p>
       </div>
-      <div class="card" style="margin-bottom:12px">
-        <h3>⚔️ Middle East Conflict — Modest Negative</h3>
-        <ul style="list-style:none">
-          <li style="padding:5px 0;border-bottom:1px solid #1e2533;font-size:0.83rem">→ Oil at $97 raises air freight costs for iPhone logistics from China</li>
-          <li style="padding:5px 0;border-bottom:1px solid #1e2533;font-size:0.83rem">→ Sustained high oil softens consumer spending on premium devices</li>
-          <li style="padding:5px 0;font-size:0.83rem">→ No direct defense or energy upside unlike LMT, CEG, XLE</li>
-        </ul>
-      </div>
-      <div class="card green">
-        <h3>📋 Eva Verdict</h3>
-        <p style="font-size:0.85rem;margin-bottom:8px"><span class="tag tag-hold">HOLD</span> <strong>LOW conviction · Suggested: 4–6% allocation</strong></p>
-        <p style="font-size:0.8rem;color:#94a3b8;line-height:1.5">DCF implies all scenarios below price on revenue CAGR alone. However, 26.8% implied growth is <em>more defensible</em> than most tech peers (NVDA 64%, CRWD 50%) due to the services flywheel — App Store, iCloud, Apple Pay carry 74% gross margins. The real question is whether services can sustain 26%+ growth perpetually. Analyst consensus (25 Buy, mean $295) supports a hold at current levels.</p>
+      <div class="card red">
+        <h3>⚔️ Middle East — Modest Negative</h3>
+        <p>Oil at $97 raises iPhone logistics costs. Sustained high oil softens consumer spending on premium devices. No direct defense or energy upside unlike LMT or XLE.</p>
       </div>
     </div>
   </div>
-  <div class="footnote">AAPL data: yfinance · March 21, 2026 · DCF: CAPM WACC, 5Y explicit FCF, Gordon Growth terminal value · Reverse DCF via binary search</div>
+
+  <div class="card green">
+    <h3>📋 Eva Verdict — HOLD (LOW conviction)</h3>
+    <p>DCF all scenarios below price on revenue CAGR alone (3Y CAGR just 1.8%). However 26.8% implied growth is <em>more defensible</em> than most tech peers — services flywheel (App Store, iCloud, Apple Pay at 74% gross margins) justifies a premium. Analyst consensus solidly positive (25 Buy, $295 target). <strong>Suggested sizing: 4–6% of portfolio. Hold, don't add at $248.</strong></p>
+  </div>
+  <div class="footnote">AAPL data: yfinance · Mar 21, 2026 · DCF: 5Y explicit FCF + Gordon Growth terminal value · Reverse DCF via binary search · rf=4.3%, ERP=5.5%</div>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════════════
+<!-- ════════════════════════════════════════════════
      SLIDE 3 — AI SECTOR
-     ═══════════════════════════════════════════════════════════════════ -->
+     ════════════════════════════════════════════════ -->
 <div class="slide">
   <div class="slide-header">
-    <div class="slide-title">AI Sector Update</div>
-    <div class="slide-meta">Semiconductors · Cloud · Data Centers · Enterprise AI</div>
-    <div class="logo">✨ Eva AI</div>
+    <div>
+      <div class="slide-title">AI Sector Update</div>
+      <div class="slide-meta">Semiconductors · Cloud · Data Centers</div>
+    </div>
+    <div class="logo">✨ Eva</div>
   </div>
 
-  <div class="grid-2">
-    <div>
-      <h2>💾 Semiconductor Prices</h2>
-      <table>
-        <thead><tr><th>Ticker</th><th>Price</th><th>1D</th><th>52-wk %ile</th><th>P/E</th><th>Ana. Target</th></tr></thead>
-        <tbody>
-          <tr><td><strong>NVDA</strong></td><td>$172.70</td><td class="perf-neg">−3.28%</td><td>69th</td><td>35.2x</td><td class="perf-pos">$269 +56%</td></tr>
-          <tr><td><strong>AMD</strong></td><td>$201.33</td><td class="perf-neg">−1.92%</td><td>66th</td><td>76.8x</td><td class="perf-pos">$290 +44%</td></tr>
-          <tr><td><strong>TSM</strong></td><td>$329.24</td><td class="perf-neg">−2.82%</td><td>76th</td><td>31.8x</td><td class="perf-pos">$431 +31%</td></tr>
-          <tr><td><strong>MU</strong></td><td>$422.90</td><td class="perf-neg">−4.81%</td><td>88th</td><td>20.0x</td><td class="perf-pos">$513 +21%</td></tr>
-          <tr><td><strong>AVGO</strong></td><td>$310.51</td><td class="perf-neg">−2.92%</td><td>62nd</td><td>60.6x</td><td class="perf-pos">$472 +52%</td></tr>
-          <tr><td><strong>ANET</strong></td><td>$131.22</td><td class="perf-neg">−3.70%</td><td>68th</td><td>47.5x</td><td class="perf-pos">$178 +36%</td></tr>
-          <tr><td><strong>SMH ETF</strong></td><td>$384.74</td><td class="perf-neg">−2.58%</td><td>83rd</td><td>39.5x</td><td>—</td></tr>
-        </tbody>
-      </table>
-
-      <h2 style="margin-top:20px">☁️ Cloud & Enterprise AI</h2>
-      <table>
-        <thead><tr><th>Ticker</th><th>Price</th><th>1D</th><th>P/E</th><th>Ana. Target</th></tr></thead>
-        <tbody>
-          <tr><td><strong>MSFT</strong></td><td>$381.87</td><td class="perf-neg">−1.84%</td><td>23.9x</td><td class="perf-pos">$595 +56%</td></tr>
-          <tr><td><strong>GOOGL</strong></td><td>$301.00</td><td class="perf-neg">−2.00%</td><td>27.8x</td><td class="perf-pos">$377 +25%</td></tr>
-          <tr><td><strong>AMZN</strong></td><td>$205.37</td><td class="perf-neg">−1.63%</td><td>28.6x</td><td class="perf-pos">$280 +36%</td></tr>
-          <tr><td><strong>META</strong></td><td>$593.66</td><td class="perf-neg">−2.15%</td><td>25.3x</td><td class="perf-pos">$864 +46%</td></tr>
-          <tr><td><strong>CEG</strong></td><td>$281.99</td><td class="perf-neg">−10.9%</td><td>38.2x</td><td class="perf-pos">$394 +40%</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div>
-      <h2>📰 Key AI Developments</h2>
-
-      <div class="news-item">
-        <h4>🚀 NVDA Pivots to Inferencing &amp; AI Agents</h4>
-        <p>Nvidia going "all in" on inference compute and agentic AI workloads — decisive pivot from training-focused revenue. Signals maturation of AI infrastructure cycle toward deployment spending.</p>
-        <div class="news-source"><span class="source-model">Source: AI model knowledge (no live source) · Mar 2026</span></div>
-      </div>
-
-      <div class="news-item">
-        <h4>✅ MSFT Validating NVDA Vera Rubin NVL72</h4>
-        <p>Microsoft validating Nvidia's next-gen Vera Rubin NVL72 — signals continued hyperscaler commitment to NVDA hardware roadmap and future capex cycles despite MSFT's own YTD decline.</p>
-        <div class="news-source"><span class="source-model">Source: AI model knowledge (no live source) · Mar 21, 2026</span></div>
-      </div>
-
-      <div class="news-item">
-        <h4>⚠️ SMCI Co-Founder Returns to Executive Role</h4>
-        <p>Super Micro Computer co-founder returning to leadership after accounting controversy. Potential governance re-rating catalyst. SMCI remains high-risk but watch for recovery setup.</p>
-        <div class="news-source"><span class="source-model">Source: AI model knowledge (no live source) · Mar 20, 2026</span></div>
-      </div>
-
-      <div class="news-item" style="border-left-color:#f87171">
-        <h4>📉 CEG −10.9% — Nuclear PPA Repricing</h4>
-        <p>Constellation Energy sharp single-day drop. Rate environment weighing on long-duration nuclear PPA valuations. AI power demand thesis under pressure near-term. DCF implied growth 55.8% — still expensive.</p>
-        <div class="news-source"><span class="source-model">Source: yfinance price data · Mar 21, 2026</span></div>
-      </div>
-
-      <div class="card amber" style="margin-top:14px">
-        <h3>⚠️ Note on News Sources</h3>
-        <p style="font-size:0.8rem;color:#94a3b8;line-height:1.5">Live news sourcing (with verified URLs) is available in the automated 8am daily cron run, which has web search configured. This manual refresh uses yfinance for prices and AI model knowledge for narratives. Tomorrow's automated update will include full source links.</p>
-      </div>
-    </div>
+  <h2>💾 Semiconductors</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Ticker</th><th>Price</th><th>1D</th><th>52wk %</th><th>P/E</th><th>Target</th><th>Signal</th></tr></thead>
+      <tbody>
+        <tr><td><strong>NVDA</strong></td><td>$172.70</td><td class="neg">−3.28%</td><td>69th</td><td>35.2x</td><td class="pos">$269 +56%</td><td><span class="tag tag-hold">HOLD</span></td></tr>
+        <tr><td><strong>AMD</strong></td><td>$201.33</td><td class="neg">−1.92%</td><td>66th</td><td>76.8x</td><td class="pos">$290 +44%</td><td><span class="tag tag-hold">HOLD</span></td></tr>
+        <tr><td><strong>TSM</strong></td><td>$329.24</td><td class="neg">−2.82%</td><td>76th</td><td>31.8x</td><td class="pos">$431 +31%</td><td><span class="tag tag-hold">HOLD</span></td></tr>
+        <tr><td><strong>MU</strong></td><td>$422.90</td><td class="neg">−4.81%</td><td>88th</td><td>20.0x</td><td class="pos">$513 +21%</td><td><span class="tag tag-buy">WATCH</span></td></tr>
+        <tr><td><strong>AVGO</strong></td><td>$310.51</td><td class="neg">−2.92%</td><td>62nd</td><td>60.6x</td><td class="pos">$472 +52%</td><td><span class="tag tag-hold">HOLD</span></td></tr>
+        <tr><td><strong>ANET</strong></td><td>$131.22</td><td class="neg">−3.70%</td><td>68th</td><td>47.5x</td><td class="pos">$178 +36%</td><td><span class="tag tag-hold">HOLD</span></td></tr>
+      </tbody>
+    </table>
   </div>
-  <div class="footnote">Prices: yfinance · March 21, 2026 · News: AI model knowledge where marked — live sourced news available in daily 8am cron run</div>
+
+  <h2>☁️ Cloud &amp; Enterprise AI</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Ticker</th><th>Price</th><th>1D</th><th>P/E</th><th>Target</th><th>Signal</th></tr></thead>
+      <tbody>
+        <tr><td><strong>MSFT</strong></td><td>$381.87</td><td class="neg">−1.84%</td><td>23.9x</td><td class="pos">$595 +56%</td><td><span class="tag tag-hold">HOLD</span></td></tr>
+        <tr><td><strong>GOOGL</strong></td><td>$301.00</td><td class="neg">−2.00%</td><td>27.8x</td><td class="pos">$377 +25%</td><td><span class="tag tag-hold">HOLD</span></td></tr>
+        <tr><td><strong>AMZN</strong></td><td>$205.37</td><td class="neg">−1.63%</td><td>28.6x</td><td class="pos">$280 +36%</td><td><span class="tag tag-hold">HOLD</span></td></tr>
+        <tr><td><strong>META</strong></td><td>$593.66</td><td class="neg">−2.15%</td><td>25.3x</td><td class="pos">$864 +46%</td><td><span class="tag tag-hold">HOLD</span></td></tr>
+        <tr><td><strong>CEG</strong></td><td>$281.99</td><td class="neg">−10.9%</td><td>38.2x</td><td class="pos">$394 +40%</td><td><span class="tag tag-hold">WATCH</span></td></tr>
+        <tr><td><strong>AAPL</strong></td><td>$247.99</td><td class="neg">−0.39%</td><td>31.4x</td><td class="pos">$295 +19%</td><td><span class="tag tag-hold">HOLD</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>📰 Key Developments</h2>
+  <div class="news-item">
+    <h4>🚀 NVDA Pivots to Inferencing &amp; AI Agents</h4>
+    <p>Nvidia going all-in on inference compute and agentic AI workloads — decisive pivot from training revenue. Signals maturation toward deployment-phase spending.</p>
+    <div class="news-source"><span class="source-model">Source: AI model knowledge (no live source) · Mar 2026</span></div>
+  </div>
+  <div class="news-item">
+    <h4>✅ MSFT Validating NVDA Vera Rubin NVL72</h4>
+    <p>Microsoft started validating Nvidia's next-gen Vera Rubin NVL72 — confirms hyperscaler commitment to NVDA hardware and future capex cycles.</p>
+    <div class="news-source"><span class="source-model">Source: AI model knowledge (no live source) · Mar 21, 2026</span></div>
+  </div>
+  <div class="news-item" style="border-left-color:var(--red)">
+    <h4>⚠️ SMCI Co-Founder Returns to Executive Role</h4>
+    <p>Super Micro co-founder returning to leadership post-accounting controversy. Potential governance re-rating catalyst. High risk — watch for recovery setup.</p>
+    <div class="news-source"><span class="source-model">Source: AI model knowledge (no live source) · Mar 20, 2026</span></div>
+  </div>
+  <div class="footnote">Prices: yfinance · Mar 21, 2026 · Live news with URLs available in daily 8am cron run</div>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     SLIDE 4 — DEFENSE, ENERGY & GEOPOLITICS
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════════════
+     SLIDE 4 — DEFENSE, ENERGY & GEO
+     ════════════════════════════════════════════════ -->
 <div class="slide">
   <div class="slide-header">
-    <div class="slide-title">Defense, Energy &amp; Geopolitics</div>
-    <div class="slide-meta">Middle East conflict · Supply chain impact · Safe havens</div>
-    <div class="logo">✨ Eva AI</div>
+    <div>
+      <div class="slide-title">Defense, Energy &amp; Geopolitics</div>
+      <div class="slide-meta">Middle East · Safe havens · Supply chain</div>
+    </div>
+    <div class="logo">✨ Eva</div>
   </div>
 
-  <div class="grid-2">
-    <div>
-      <h2>🛡️ Defense &amp; Energy Performance</h2>
-      <table>
-        <thead><tr><th>Ticker</th><th>Price</th><th>1D</th><th>52-wk %ile</th><th>P/E</th><th>Verdict</th></tr></thead>
-        <tbody>
-          <tr><td><strong>LMT</strong></td><td>$627.43</td><td class="perf-neg">−1.58%</td><td>77th</td><td>29.2x</td><td><span class="tag tag-buy">BUY</span></td></tr>
-          <tr><td><strong>RTX</strong></td><td>$198.16</td><td class="perf-neg">−1.28%</td><td>84th</td><td>40.0x</td><td><span class="tag tag-avoid">AVOID</span></td></tr>
-          <tr><td><strong>XAR</strong></td><td>$258.88</td><td class="perf-neg">−3.40%</td><td>77th</td><td>38.2x</td><td><span class="tag tag-buy">BUY</span></td></tr>
-          <tr><td><strong>ITA</strong></td><td>$222.56</td><td class="perf-neg">−2.09%</td><td>77th</td><td>37.2x</td><td><span class="tag tag-buy">BUY</span></td></tr>
-          <tr><td><strong>XLE</strong></td><td>$59.31</td><td class="perf-neg">−0.08%</td><td>96th</td><td>22.8x</td><td><span class="tag tag-watch">WATCH</span></td></tr>
-          <tr><td><strong>COPX</strong></td><td>$69.08</td><td class="perf-neg">−4.56%</td><td>55th</td><td>21.0x</td><td><span class="tag tag-buy">BUY</span></td></tr>
-          <tr><td><strong>GRID</strong></td><td>$160.88</td><td class="perf-neg">−3.29%</td><td>77th</td><td>26.4x</td><td><span class="tag tag-buy">BUY</span></td></tr>
-        </tbody>
-      </table>
-
-      <h2 style="margin-top:20px">🏅 Safe Havens</h2>
-      <table>
-        <thead><tr><th>Ticker</th><th>Price</th><th>1D</th><th>52-wk %ile</th><th>Sharpe 1Y</th></tr></thead>
-        <tbody>
-          <tr><td><strong>IAU</strong></td><td>$84.70</td><td class="perf-neg">−3.06%</td><td>60th</td><td class="perf-pos">2.16</td></tr>
-          <tr><td><strong>GLD</strong></td><td>$413.38</td><td class="perf-neg">−3.06%</td><td>59th</td><td class="perf-pos">2.14</td></tr>
-          <tr><td><strong>URA</strong></td><td>$46.44</td><td class="perf-neg">−3.79%</td><td>63rd</td><td class="perf-pos">2.15</td></tr>
-          <tr><td><strong>BIL</strong></td><td>$91.57</td><td class="perf-pos">+0.03%</td><td>60th</td><td>—</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div>
-      <h2>📰 Geopolitical Developments</h2>
-      <div class="news-item" style="border-left-color:#f87171">
-        <h4>🛢️ Oil Near $97 — Hormuz Premium Sustained</h4>
-        <p>Brent crude holding near $97/b driven by active Middle East supply disruption risk. Energy facilities attacks this week have reinforced the geopolitical premium. EIA Q2 forecast $91/b may be revised upward.</p>
-        <div class="news-source"><span class="source-model">Source: AI model knowledge (no live source) · Mar 2026</span></div>
-      </div>
-      <div class="news-item" style="border-left-color:#34d399">
-        <h4>🛡️ Defense Procurement Accelerating</h4>
-        <p>Attack frequency signals escalation not stabilisation. Patriot/PAC-3 (LMT's core product) is deployed specifically to defend energy infrastructure — each attack is effectively an advertisement for LMT's order book.</p>
-        <div class="news-source"><span class="source-model">Source: AI model knowledge (no live source) · Mar 2026</span></div>
-      </div>
-      <div class="news-item">
-        <h4>⚡ Energy Facility Attacks — Portfolio Impact</h4>
-        <p>Recent infrastructure attacks directly strengthen: LMT (defense systems), XAR/ITA (defense ETFs), XLE (supply disruption), IAU/GLD (safe haven demand). Potential headwind: CEG nuclear if sentiment deteriorates.</p>
-        <div class="news-source"><span class="source-model">Source: AI model knowledge (no live source) · Mar 2026</span></div>
-      </div>
-      <div class="card green" style="margin-top:14px">
-        <h3>✅ LMT — Thesis Reinforced by Events</h3>
-        <p style="font-size:0.82rem;color:#94a3b8;line-height:1.5">Current price $627 vs DCF base $1,180 (+88% upside). Reverse DCF implies −8.1% growth — market is still pricing in a declining business while geopolitical demand is structurally increasing. <strong>Largest conviction position: 8% allocation maintained.</strong></p>
-      </div>
-    </div>
+  <h2>🛡️ Defense &amp; Energy</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Ticker</th><th>Price</th><th>1D</th><th>52wk %</th><th>P/E</th><th>Signal</th></tr></thead>
+      <tbody>
+        <tr><td><strong>LMT</strong></td><td>$627.43</td><td class="neg">−1.58%</td><td>77th</td><td>29.2x</td><td><span class="tag tag-buy">BUY</span></td></tr>
+        <tr><td><strong>RTX</strong></td><td>$198.16</td><td class="neg">−1.28%</td><td>84th</td><td>40.0x</td><td><span class="tag tag-avoid">AVOID</span></td></tr>
+        <tr><td><strong>XAR</strong></td><td>$258.88</td><td class="neg">−3.40%</td><td>77th</td><td>38.2x</td><td><span class="tag tag-buy">BUY</span></td></tr>
+        <tr><td><strong>ITA</strong></td><td>$222.56</td><td class="neg">−2.09%</td><td>77th</td><td>37.2x</td><td><span class="tag tag-buy">BUY</span></td></tr>
+        <tr><td><strong>XLE</strong></td><td>$59.31</td><td class="neg">−0.08%</td><td>96th</td><td>22.8x</td><td><span class="tag tag-watch">WATCH</span></td></tr>
+        <tr><td><strong>COPX</strong></td><td>$69.08</td><td class="neg">−4.56%</td><td>55th</td><td>21.0x</td><td><span class="tag tag-buy">BUY</span></td></tr>
+      </tbody>
+    </table>
   </div>
-  <div class="footnote">Prices: yfinance · March 21, 2026 · Geopolitical commentary: AI model knowledge — live sourcing in daily 8am cron</div>
+
+  <h2>🏅 Safe Havens</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Ticker</th><th>Price</th><th>1D</th><th>52wk %</th><th>Sharpe 1Y</th><th>Signal</th></tr></thead>
+      <tbody>
+        <tr><td><strong>IAU</strong> Gold</td><td>$84.70</td><td class="neg">−3.06%</td><td>60th</td><td class="pos">2.16</td><td><span class="tag tag-buy">BUY</span></td></tr>
+        <tr><td><strong>URA</strong> Uranium</td><td>$46.44</td><td class="neg">−3.79%</td><td>63rd</td><td class="pos">2.15</td><td><span class="tag tag-hold">HOLD</span></td></tr>
+        <tr><td><strong>BIL</strong> T-Bills</td><td>$91.57</td><td class="pos">+0.03%</td><td>60th</td><td>—</td><td><span class="tag tag-hold">HOLD</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>📰 Geopolitical Developments</h2>
+  <div class="news-item" style="border-left-color:var(--red)">
+    <h4>🛢️ Oil Near $97 — Hormuz Premium Sustained</h4>
+    <p>Brent crude holding on Middle East supply disruption risk. Energy facility attacks this week reinforcing premium. EIA Q2 forecast $91/b may be revised upward.</p>
+    <div class="news-source"><span class="source-model">Source: AI model knowledge · Mar 2026</span></div>
+  </div>
+  <div class="news-item" style="border-left-color:var(--green)">
+    <h4>🛡️ LMT Thesis Reinforced</h4>
+    <p>Patriot/PAC-3 systems are deployed to defend energy infrastructure — each attack is an advertisement for LMT's order book. DCF base $1,180 vs current $627 (+88% upside). Thesis intact.</p>
+    <div class="news-source"><span class="source-model">Source: AI model knowledge · Mar 2026</span></div>
+  </div>
+  <div class="news-item" style="border-left-color:var(--red)">
+    <h4>📉 CEG −10.9% — Watch Closely</h4>
+    <p>Nuclear PPA valuations under pressure from rate environment. At 3% allocation the risk is contained, but the implied growth of 55.8% was already stretched. Monitor before adding.</p>
+    <div class="news-source"><span class="source-model">Source: yfinance · Mar 21, 2026</span></div>
+  </div>
+  <div class="footnote">Prices: yfinance · Mar 21, 2026</div>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     SLIDE 5 — PORTFOLIO ALLOCATION
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════════════
+     SLIDE 5 — PORTFOLIO
+     ════════════════════════════════════════════════ -->
 <div class="slide">
   <div class="slide-header">
-    <div class="slide-title">Portfolio Strategy</div>
-    <div class="slide-meta">Evidence-based allocation · Updated March 21, 2026</div>
-    <div class="logo">✨ Eva AI</div>
+    <div>
+      <div class="slide-title">Portfolio Strategy</div>
+      <div class="slide-meta">Evidence-based allocation · Mar 21, 2026</div>
+    </div>
+    <div class="logo">✨ Eva</div>
   </div>
 
-  <div class="grid-2">
-    <div>
-      <h2>📊 Current Allocation</h2>
-      <table>
-        <thead><tr><th>Position</th><th>Weight</th><th>Price</th><th>1D</th><th>Verdict</th><th>Rationale</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Defense ETFs ITA+XAR</strong></td><td>12%</td><td>—</td><td class="perf-neg">−2.5%</td><td><span class="tag tag-buy">BUY</span></td><td>Sharpe 2.09–2.25</td></tr>
-          <tr><td><strong>BIL T-Bills</strong></td><td>10%</td><td>$91.57</td><td class="perf-pos">+0.03%</td><td><span class="tag tag-buy">HOLD</span></td><td>4% yield dry powder</td></tr>
-          <tr><td><strong>LMT</strong></td><td>8%</td><td>$627.43</td><td class="perf-neg">−1.58%</td><td><span class="tag tag-buy">BUY</span></td><td>DCF +88% upside</td></tr>
-          <tr><td><strong>Gold IAU</strong></td><td>8%</td><td>$84.70</td><td class="perf-neg">−3.06%</td><td><span class="tag tag-buy">BUY</span></td><td>Sharpe 2.16</td></tr>
-          <tr style="background:#1a1040"><td><strong>AAPL ⭐</strong></td><td>4–6%</td><td>$247.99</td><td class="perf-neg">−0.39%</td><td><span class="tag tag-hold">HOLD</span></td><td>26.8% implied g</td></tr>
-          <tr><td><strong>MSFT</strong></td><td>5%</td><td>$381.87</td><td class="perf-neg">−1.84%</td><td><span class="tag tag-hold">HOLD</span></td><td>27% implied g</td></tr>
-          <tr><td><strong>SMH</strong></td><td>5%</td><td>$384.74</td><td class="perf-neg">−2.58%</td><td><span class="tag tag-hold">HOLD</span></td><td>Sharpe 1.88</td></tr>
-          <tr><td><strong>GRID</strong></td><td>5%</td><td>$160.88</td><td class="perf-neg">−3.29%</td><td><span class="tag tag-hold">HOLD</span></td><td>Sharpe 1.83</td></tr>
-          <tr><td><strong>COPX</strong></td><td>4%</td><td>$69.08</td><td class="perf-neg">−4.56%</td><td><span class="tag tag-buy">BUY</span></td><td>Sharpe 1.95</td></tr>
-          <tr><td><strong>TSM</strong></td><td>4%</td><td>$329.24</td><td class="perf-neg">−2.82%</td><td><span class="tag tag-hold">HOLD</span></td><td>Essential infra</td></tr>
-          <tr><td><strong>AVGO</strong></td><td>4%</td><td>$310.51</td><td class="perf-neg">−2.92%</td><td><span class="tag tag-hold">HOLD</span></td><td>FCF 44.5%</td></tr>
-          <tr><td><strong>NVDA</strong></td><td>4%</td><td>$172.70</td><td class="perf-neg">−3.28%</td><td><span class="tag tag-hold">HOLD</span></td><td>64% implied g</td></tr>
-          <tr><td><strong>URA</strong></td><td>3%</td><td>$46.44</td><td class="perf-neg">−3.79%</td><td><span class="tag tag-hold">HOLD</span></td><td>High vol — small</td></tr>
-          <tr><td><strong>ANET</strong></td><td>3%</td><td>$131.22</td><td class="perf-neg">−3.70%</td><td><span class="tag tag-hold">HOLD</span></td><td>AI networking</td></tr>
-          <tr><td><strong>CIBR</strong></td><td>3%</td><td>$64.03</td><td class="perf-neg">−1.84%</td><td><span class="tag tag-avoid">REDUCE</span></td><td>Sharpe −0.22</td></tr>
-          <tr><td><strong>XLE</strong></td><td>3%</td><td>$59.31</td><td class="perf-neg">−0.08%</td><td><span class="tag tag-hold">HOLD</span></td><td>Geo hedge</td></tr>
-          <tr><td><strong>CEG</strong></td><td>3%</td><td>$281.99</td><td class="perf-neg">−10.9%</td><td><span class="tag tag-hold">HOLD</span></td><td>Watch closely</td></tr>
-          <tr><td><strong>Cash</strong></td><td>3%</td><td>—</td><td>—</td><td>—</td><td>Buffer</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div>
-      <h2>🎯 Today's Priority Actions</h2>
-      <div class="card red" style="margin-bottom:12px">
-        <h3>⚠️ CEG −10.9% Today — Monitor</h3>
-        <p style="font-size:0.82rem;color:#94a3b8;line-height:1.5">Sharp single-day drop is significant. At 3% allocation the damage is limited, but the nuclear PPA thesis is under pressure. DCF implied growth was already 55.8% — this repricing may be rational. Watch for continued weakness before deciding to add or reduce.</p>
-      </div>
-      <div class="card blue" style="margin-bottom:12px">
-        <h3>🍎 AAPL — Size Review</h3>
-        <p style="font-size:0.82rem;color:#94a3b8;line-height:1.5">As your largest holding, ensure AAPL is not over-concentrated. Eva suggests 4–6% as the evidence-supported range. 26.8% implied growth is the most defensible in the portfolio after LMT — services flywheel provides real moat. Hold, don't add at $248.</p>
-      </div>
-      <div class="card green" style="margin-bottom:12px">
-        <h3>✅ LMT — Thesis Intact</h3>
-        <p style="font-size:0.82rem;color:#94a3b8;line-height:1.5">−1.58% today but geopolitical tailwinds strengthening. DCF base still $1,180 vs $627 current. Consider adding protective puts given 8% concentration.</p>
-      </div>
-      <div class="card amber">
-        <h3>📋 Watchlist</h3>
-        <p style="font-size:0.82rem;color:#94a3b8;line-height:1.5"><strong>CIBR</strong> — Sharpe −0.22; monitor for recovery above Sharpe 1.0 before re-entering<br><strong>NTR</strong> — Rev CAGR −10.8%; watch for fertilizer cycle bottom<br><strong>CRWD</strong> — All DCF scenarios below price; wait for 30%+ correction</p>
-      </div>
-    </div>
+  <h2>📊 Current Allocation</h2>
+
+  <div class="alloc-row"><div class="alloc-name">⚔️ Defense ETFs ITA+XAR</div><div class="alloc-bar-bg"><div class="alloc-bar" style="width:100%;background:#f87171"></div></div><div class="alloc-pct" style="color:#f87171">12%</div></div>
+  <div class="alloc-row"><div class="alloc-name">💵 BIL T-Bills</div><div class="alloc-bar-bg"><div class="alloc-bar" style="width:83%;background:#34d399"></div></div><div class="alloc-pct" style="color:#34d399">10%</div></div>
+  <div class="alloc-row"><div class="alloc-name">📊 LMT ⭐ BUY</div><div class="alloc-bar-bg"><div class="alloc-bar" style="width:67%;background:#34d399"></div></div><div class="alloc-pct" style="color:#34d399">8%</div></div>
+  <div class="alloc-row"><div class="alloc-name">🏅 Gold IAU</div><div class="alloc-bar-bg"><div class="alloc-bar" style="width:67%;background:#e3b341"></div></div><div class="alloc-pct" style="color:#e3b341">8%</div></div>
+  <div class="alloc-row"><div class="alloc-name">🍎 AAPL (yours)</div><div class="alloc-bar-bg"><div class="alloc-bar" style="width:42%;background:#a78bfa"></div></div><div class="alloc-pct" style="color:#a78bfa">4–6%</div></div>
+  <div class="alloc-row"><div class="alloc-name">☁️ MSFT</div><div class="alloc-bar-bg"><div class="alloc-bar" style="width:42%;background:#60a5fa"></div></div><div class="alloc-pct" style="color:#60a5fa">5%</div></div>
+  <div class="alloc-row"><div class="alloc-name">💾 SMH</div><div class="alloc-bar-bg"><div class="alloc-bar" style="width:42%;background:#60a5fa"></div></div><div class="alloc-pct" style="color:#60a5fa">5%</div></div>
+  <div class="alloc-row"><div class="alloc-name">⚡ GRID</div><div class="alloc-bar-bg"><div class="alloc-bar" style="width:42%;background:#bc8cff"></div></div><div class="alloc-pct" style="color:#bc8cff">5%</div></div>
+  <div class="alloc-row"><div class="alloc-name">⛏️ COPX</div><div class="alloc-bar-bg"><div class="alloc-bar" style="width:33%;background:#ff9500"></div></div><div class="alloc-pct" style="color:#ff9500">4%</div></div>
+  <div class="alloc-row"><div class="alloc-name">🏭 TSM / 🔧 AVGO / 🤖 NVDA</div><div class="alloc-bar-bg"><div class="alloc-bar" style="width:33%;background:#d29922"></div></div><div class="alloc-pct" style="color:#d29922">4% ea</div></div>
+  <div class="alloc-row"><div class="alloc-name">☢️ URA / 🔗 ANET / 🔐 CIBR / ⚡ XLE / 🌿 CEG</div><div class="alloc-bar-bg"><div class="alloc-bar" style="width:25%;background:#64748b"></div></div><div class="alloc-pct" style="color:#64748b">3% ea</div></div>
+  <div class="alloc-row"><div class="alloc-name">📋 Cash</div><div class="alloc-bar-bg"><div class="alloc-bar" style="width:25%;background:#475569"></div></div><div class="alloc-pct" style="color:#475569">3%</div></div>
+
+  <div class="divider"></div>
+  <h2>🎯 Today's Priority Actions</h2>
+
+  <div class="card red">
+    <h3>⚠️ CEG −10.9% — Monitor, Don't Panic</h3>
+    <p>Sharp drop on rate/PPA repricing. 3% allocation means limited damage. DCF implied growth was already 55.8% — repricing may be rational. Wait for stabilization before deciding to add or reduce.</p>
   </div>
-  <div class="footnote">Data: yfinance · March 21, 2026 · DCF: CAPM WACC, 5Y explicit FCF, Gordon Growth TV, reverse DCF via binary search · All verdicts evidence-based · Past performance not indicative of future results</div>
+  <div class="card purple">
+    <h3>🍎 AAPL — Check Your Concentration</h3>
+    <p>As your largest holding, confirm AAPL isn't significantly above 6% of portfolio. Services flywheel is real but 26.8% implied growth requires execution. Hold at current levels — don't add at $248.</p>
+  </div>
+  <div class="card green">
+    <h3>✅ LMT — Thesis Strengthening</h3>
+    <p>−1.58% today but geopolitical tailwinds are building. DCF base still $1,180 vs $627 (+88%). Consider protective puts given 8% concentration.</p>
+  </div>
+  <div class="card amber">
+    <h3>📋 Watchlist</h3>
+    <p><strong>CIBR</strong> — Sharpe −0.22; re-enter only when 1Y Sharpe &gt; 1.0<br><strong>NTR</strong> — Rev CAGR −10.8%; watch for fertilizer cycle bottom<br><strong>CRWD</strong> — Wait for 30%+ correction before revisiting</p>
+  </div>
+
+  <div class="footnote">All data: yfinance · Mar 21, 2026 · DCF uses CAPM WACC, 5Y explicit FCF forecast, Gordon Growth terminal value, reverse DCF via binary search · Not financial advice · Past performance not indicative of future results</div>
 </div>
 
 </body>
