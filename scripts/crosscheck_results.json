@@ -1,0 +1,222 @@
+{
+  "NVDA": {
+    "status": "discrepancy",
+    "issues": [
+      "Ana. Target $ gap 53745.2%"
+    ],
+    "yf": {
+      "price": 172.7,
+      "pe_ttm": 35.244896,
+      "pe_fwd": 15.543575,
+      "beta": 2.375,
+      "target": 269.226
+    },
+    "sa": {
+      "pe_ttm": null,
+      "pe_fwd": null,
+      "beta": null,
+      "target": 0.5,
+      "price": null
+    }
+  },
+  "AAPL": {
+    "status": "discrepancy",
+    "issues": [
+      "Ana. Target $ gap 58987.1%"
+    ],
+    "yf": {
+      "price": 247.99,
+      "pe_ttm": 31.351456,
+      "pe_fwd": 26.605259,
+      "beta": 1.116,
+      "target": 295.43536
+    },
+    "sa": {
+      "pe_ttm": null,
+      "pe_fwd": null,
+      "beta": null,
+      "target": 0.5,
+      "price": null
+    }
+  },
+  "MSFT": {
+    "status": "discrepancy",
+    "issues": [
+      "Ana. Target $ gap 118824.3%"
+    ],
+    "yf": {
+      "price": 381.87,
+      "pe_ttm": 23.926691,
+      "pe_fwd": 20.264795,
+      "beta": 1.108,
+      "target": 594.6217
+    },
+    "sa": {
+      "pe_ttm": null,
+      "pe_fwd": null,
+      "beta": null,
+      "target": 0.5,
+      "price": null
+    }
+  },
+  "LMT": {
+    "status": "discrepancy",
+    "issues": [
+      "Ana. Target $ gap 132542.1%"
+    ],
+    "yf": {
+      "price": 627.43,
+      "pe_ttm": 29.155668,
+      "pe_fwd": 19.625538,
+      "beta": 0.197,
+      "target": 663.2105
+    },
+    "sa": {
+      "pe_ttm": null,
+      "pe_fwd": null,
+      "beta": null,
+      "target": 0.5,
+      "price": null
+    }
+  },
+  "TSM": {
+    "status": "discrepancy",
+    "issues": [
+      "Ana. Target $ gap 86030.3%"
+    ],
+    "yf": {
+      "price": 329.24,
+      "pe_ttm": 31.84139,
+      "pe_fwd": 18.335482,
+      "beta": 1.282,
+      "target": 430.65167
+    },
+    "sa": {
+      "pe_ttm": null,
+      "pe_fwd": null,
+      "beta": null,
+      "target": 0.5,
+      "price": null
+    }
+  },
+  "AVGO": {
+    "status": "discrepancy",
+    "issues": [
+      "Ana. Target $ gap 94301.5%"
+    ],
+    "yf": {
+      "price": 310.51,
+      "pe_ttm": 60.64649,
+      "pe_fwd": 17.573149,
+      "beta": 1.257,
+      "target": 472.00763
+    },
+    "sa": {
+      "pe_ttm": null,
+      "pe_fwd": null,
+      "beta": null,
+      "target": 0.5,
+      "price": null
+    }
+  },
+  "ANET": {
+    "status": "discrepancy",
+    "issues": [
+      "Ana. Target $ gap 35448.2%"
+    ],
+    "yf": {
+      "price": 131.22,
+      "pe_ttm": 47.54348,
+      "pe_fwd": 30.779915,
+      "beta": 1.46,
+      "target": 177.74088
+    },
+    "sa": {
+      "pe_ttm": null,
+      "pe_fwd": null,
+      "beta": null,
+      "target": 0.5,
+      "price": null
+    }
+  },
+  "MU": {
+    "status": "discrepancy",
+    "issues": [
+      "Ana. Target $ gap 102435.0%"
+    ],
+    "yf": {
+      "price": 422.9,
+      "pe_ttm": 19.957527,
+      "pe_fwd": 4.3716197,
+      "beta": 1.542,
+      "target": 512.675
+    },
+    "sa": {
+      "pe_ttm": null,
+      "pe_fwd": null,
+      "beta": null,
+      "target": 0.5,
+      "price": null
+    }
+  },
+  "AMD": {
+    "status": "discrepancy",
+    "issues": [
+      "Ana. Target $ gap 57821.7%"
+    ],
+    "yf": {
+      "price": 201.33,
+      "pe_ttm": 76.84351,
+      "pe_fwd": 18.736355,
+      "beta": 2.022,
+      "target": 289.6087
+    },
+    "sa": {
+      "pe_ttm": null,
+      "pe_fwd": null,
+      "beta": null,
+      "target": 0.5,
+      "price": null
+    }
+  },
+  "CEG": {
+    "status": "discrepancy",
+    "issues": [
+      "Ana. Target $ gap 78719.2%"
+    ],
+    "yf": {
+      "price": 281.99,
+      "pe_ttm": 38.15832,
+      "pe_fwd": 20.533974,
+      "beta": 1.107,
+      "target": 394.0958
+    },
+    "sa": {
+      "pe_ttm": null,
+      "pe_fwd": null,
+      "beta": null,
+      "target": 0.5,
+      "price": null
+    }
+  },
+  "RTX": {
+    "status": "discrepancy",
+    "issues": [
+      "Ana. Target $ gap 43332.5%"
+    ],
+    "yf": {
+      "price": 198.16,
+      "pe_ttm": 40.032326,
+      "pe_fwd": 26.389103,
+      "beta": 0.406,
+      "target": 217.16238
+    },
+    "sa": {
+      "pe_ttm": null,
+      "pe_fwd": null,
+      "beta": null,
+      "target": 0.5,
+      "price": null
+    }
+  }
+}
