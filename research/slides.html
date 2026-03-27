@@ -3,477 +3,458 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eva's Daily Investment Report — March 27, 2026</title>
+<title>Eva Investment Research — March 27, 2026</title>
 <style>
-  :root {
-    --bg: #0d1117; --card: #161b22; --border: #30363d;
-    --accent: #7c3aed; --accent2: #06b6d4; --accent3: #10b981;
-    --warn: #f59e0b; --danger: #ef4444; --text: #e6edf3; --muted: #8b949e;
-    --green: #3fb950; --red: #f85149;
-  }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.5; }
-  .slide { min-height: 100vh; padding: 20px 16px 40px; max-width: 900px; margin: 0 auto; border-bottom: 2px solid var(--border); }
-  h1 { font-size: 1.4rem; font-weight: 700; color: var(--text); }
-  h2 { font-size: 1.2rem; font-weight: 700; color: var(--accent2); margin-bottom: 14px; }
-  h3 { font-size: 1rem; font-weight: 600; color: var(--accent); margin-bottom: 8px; }
-  .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
-  .date { color: var(--muted); font-size: 0.85rem; }
-  .badge { background: var(--accent); color: #fff; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0a0e1a;
+    color: #e0e6f0;
+    min-height: 100vh;
+  }
+  .nav {
+    position: sticky; top: 0; z-index: 100;
+    background: #0d1224;
+    border-bottom: 1px solid #1e2d50;
+    display: flex; overflow-x: auto; gap: 0;
+    scrollbar-width: none;
+  }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav-btn {
+    flex: 0 0 auto;
+    padding: 12px 16px;
+    background: none; border: none;
+    color: #7a8eb5;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  .nav-btn.active { color: #7eb8ff; border-bottom-color: #7eb8ff; }
+  .nav-btn:hover { color: #b0c8ff; }
 
-  /* Slide 1 — 6-card news grid */
-  .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-bottom: 20px; }
-  .news-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px; }
-  .news-card .tag { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
-  .tag-geo { color: var(--danger); }
-  .tag-ai { color: var(--accent2); }
-  .tag-market { color: var(--accent3); }
-  .tag-energy { color: var(--warn); }
-  .tag-aapl { color: var(--accent); }
-  .news-card p { font-size: 0.88rem; color: var(--text); margin-bottom: 8px; font-weight: 500; }
-  .news-card a { font-size: 0.78rem; color: var(--muted); text-decoration: none; }
-  .news-card a:hover { color: var(--accent2); }
+  .slide { display: none; padding: 20px; max-width: 900px; margin: 0 auto; }
+  .slide.active { display: block; }
 
-  /* Market snapshot row */
-  .snap-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 8px; margin-bottom: 20px; }
-  .snap-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 10px; text-align: center; }
-  .snap-card .sym { font-size: 0.8rem; font-weight: 700; color: var(--muted); }
-  .snap-card .price { font-size: 1rem; font-weight: 700; }
-  .snap-card .chg { font-size: 0.85rem; font-weight: 600; }
-  .up { color: var(--green); }
-  .down { color: var(--red); }
-  .flat { color: var(--muted); }
+  h1 { font-size: 22px; font-weight: 700; color: #7eb8ff; margin-bottom: 4px; }
+  h2 { font-size: 16px; font-weight: 600; color: #a0b8e0; margin-bottom: 16px; }
+  h3 { font-size: 14px; font-weight: 600; color: #7eb8ff; margin-bottom: 10px; }
+  .date-tag { font-size: 12px; color: #4a6080; margin-bottom: 20px; }
 
-  /* Slide 2 — AAPL Deep Dive */
-  .aapl-hero { background: linear-gradient(135deg, #1a0535 0%, #0d1117 100%); border: 1px solid var(--accent); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
-  .aapl-price { font-size: 2.4rem; font-weight: 800; }
-  .aapl-meta { display: flex; gap: 16px; margin-top: 8px; flex-wrap: wrap; }
-  .aapl-meta span { font-size: 0.85rem; }
-  .kv-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; margin-bottom: 16px; }
-  .kv { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
-  .kv .label { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
-  .kv .val { font-size: 1.1rem; font-weight: 700; margin-top: 2px; }
+  .card {
+    background: #111827;
+    border: 1px solid #1e2d50;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 14px;
+  }
 
-  /* Tables */
-  .tbl-wrap { overflow-x: auto; margin-bottom: 20px; }
-  table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
-  th { background: #1c2128; color: var(--muted); text-align: right; padding: 8px 10px; font-weight: 600; text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.04em; }
-  th:first-child { text-align: left; }
-  td { padding: 8px 10px; border-top: 1px solid var(--border); text-align: right; }
-  td:first-child { text-align: left; font-weight: 600; }
-  tr:hover td { background: rgba(124,58,237,0.06); }
-  .upside-hi { color: var(--green); font-weight: 700; }
-  .upside-lo { color: var(--warn); }
+  /* Ticker grid */
+  .ticker-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .ticker-card {
+    background: #0d1224;
+    border: 1px solid #1e2d50;
+    border-radius: 8px;
+    padding: 10px 8px;
+    text-align: center;
+  }
+  .ticker-symbol { font-size: 12px; font-weight: 700; color: #a0b8e0; margin-bottom: 2px; }
+  .ticker-price { font-size: 14px; font-weight: 600; color: #e0e6f0; }
+  .ticker-chg { font-size: 12px; font-weight: 600; margin-top: 2px; }
+  .up { color: #22c55e; }
+  .down { color: #ef4444; }
+  .flat { color: #9ca3af; }
 
-  /* Slide 5 — Bar charts */
-  .alloc-grid { display: grid; gap: 10px; }
-  .alloc-row { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
-  .alloc-row .head { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 0.85rem; font-weight: 600; }
-  .alloc-row .bar-bg { background: #21262d; border-radius: 4px; height: 8px; }
-  .alloc-row .bar-fill { height: 8px; border-radius: 4px; }
-  .priority-list { margin-top: 18px; }
-  .priority-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-top: 1px solid var(--border); }
-  .priority-item .num { background: var(--accent); color: #fff; font-size: 0.7rem; font-weight: 800; min-width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
-  .priority-item p { font-size: 0.85rem; }
+  /* News items */
+  .news-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #1a2540;
+  }
+  .news-item:last-child { border-bottom: none; }
+  .news-title { font-size: 14px; font-weight: 500; color: #c8d8f0; margin-bottom: 4px; }
+  .news-meta { font-size: 11px; color: #4a6080; }
+  .news-meta a { color: #5b8acd; text-decoration: none; }
+  .news-meta a:hover { text-decoration: underline; }
+  .news-tag {
+    display: inline-block;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-right: 4px;
+    font-weight: 600;
+  }
+  .tag-geo { background: #7c2d12; color: #fca87a; }
+  .tag-ai { background: #1e3a5f; color: #7eb8ff; }
+  .tag-market { background: #14532d; color: #86efac; }
+  .tag-aapl { background: #4a1d6b; color: #d8a4ff; }
 
-  .section-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin-bottom: 10px; margin-top: 18px; }
+  /* Bar chart */
+  .bar-chart { margin-top: 10px; }
+  .bar-row { display: flex; align-items: center; margin-bottom: 8px; gap: 8px; }
+  .bar-label { font-size: 12px; color: #a0b8e0; width: 80px; flex-shrink: 0; text-align: right; }
+  .bar-track { flex: 1; background: #1a2540; border-radius: 4px; height: 20px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 4px; display: flex; align-items: center; padding-left: 6px; font-size: 11px; font-weight: 600; color: #fff; min-width: 30px; transition: width 0.5s ease; }
+  .bar-fill.equity { background: linear-gradient(90deg, #1d4ed8, #3b82f6); }
+  .bar-fill.gold { background: linear-gradient(90deg, #92400e, #f59e0b); }
+  .bar-fill.defense { background: linear-gradient(90deg, #064e3b, #10b981); }
+  .bar-fill.energy { background: linear-gradient(90deg, #7c2d12, #f97316); }
+  .bar-fill.cash { background: linear-gradient(90deg, #374151, #6b7280); }
+  .bar-fill.semi { background: linear-gradient(90deg, #4c1d95, #8b5cf6); }
 
-  @media (max-width: 500px) {
-    h1 { font-size: 1.2rem; }
-    .aapl-price { font-size: 1.8rem; }
+  .metric-row {
+    display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 10px;
+  }
+  .metric-box {
+    background: #0d1224;
+    border: 1px solid #1e2d50;
+    border-radius: 8px;
+    padding: 10px 14px;
+    flex: 1; min-width: 100px;
+    text-align: center;
+  }
+  .metric-label { font-size: 11px; color: #4a6080; margin-bottom: 3px; }
+  .metric-val { font-size: 16px; font-weight: 700; color: #e0e6f0; }
+
+  .alert-box {
+    background: #2d1515;
+    border: 1px solid #7c2d12;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    color: #fca87a;
+  }
+
+  .section-header {
+    font-size: 11px;
+    font-weight: 700;
+    color: #4a6080;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    margin-top: 16px;
+  }
+
+  footer-note {
+    display: block;
+    font-size: 11px;
+    color: #2a3a60;
+    margin-top: 20px;
+    text-align: center;
   }
 </style>
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!-- SLIDE 1 — Market Snapshot + Key Events                      -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-<div class="slide">
-  <div class="header">
-    <div>
-      <h1>📊 Eva's Daily Investment Report</h1>
-      <div class="date">Friday, March 27, 2026 · 3:00 PM UTC</div>
-    </div>
-    <span class="badge">SLIDE 1 / 5</span>
-  </div>
+<nav class="nav">
+  <button class="nav-btn active" onclick="showSlide(0)">📊 Snapshot</button>
+  <button class="nav-btn" onclick="showSlide(1)">🍎 AAPL</button>
+  <button class="nav-btn" onclick="showSlide(2)">🤖 AI Sector</button>
+  <button class="nav-btn" onclick="showSlide(3)">🛡 Defense/Energy</button>
+  <button class="nav-btn" onclick="showSlide(4)">💡 Eva's Picks</button>
+</nav>
 
-  <h2>Market Snapshot</h2>
-  <div class="snap-grid">
-    <div class="snap-card"><div class="sym">SPY</div><div class="price">$640.34</div><div class="chg down">▼ -0.74%</div></div>
-    <div class="snap-card"><div class="sym">QQQ</div><div class="price">$567.53</div><div class="chg down">▼ -1.09%</div></div>
-    <div class="snap-card"><div class="sym">AAPL</div><div class="price">$253.39</div><div class="chg up">▲ +0.20%</div></div>
-    <div class="snap-card"><div class="sym">NVDA</div><div class="price">$168.76</div><div class="chg down">▼ -1.45%</div></div>
-    <div class="snap-card"><div class="sym">GLD</div><div class="price">$414.54</div><div class="chg up">▲ +3.47%</div></div>
-    <div class="snap-card"><div class="sym">XLE</div><div class="price">$62.55</div><div class="chg up">▲ +1.67%</div></div>
-    <div class="snap-card"><div class="sym">SMH</div><div class="price">$376.43</div><div class="chg down">▼ -1.16%</div></div>
-    <div class="snap-card"><div class="sym">BIL</div><div class="price">$91.63</div><div class="chg flat">▲ +0.03%</div></div>
-  </div>
+<!-- SLIDE 1: MARKET SNAPSHOT -->
+<div class="slide active" id="slide-0">
+  <div style="padding-top:16px;">
+    <h1>📊 Market Snapshot</h1>
+    <h2>Daily Investment Brief</h2>
+    <div class="date-tag">Eva Research · Friday, March 27, 2026 · 15:00 UTC</div>
 
-  <h2>Key Events Today</h2>
-  <div class="news-grid">
-
-    <div class="news-card">
-      <div class="tag tag-geo">⚠️ Geopolitics</div>
-      <p>Dow Slumps 400 Points On U.S.–Iran War News; Oil Prices Rally</p>
-      <a href="https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-war-oil-prices-rally/?src=A00220&yptr=yahoo" target="_blank">Source: Investor's Business Daily · Mar 27, 2026</a>
+    <div class="alert-box">
+      ⚠️ <strong>Geopolitical Alert:</strong> Dow -400pts on U.S.-Iran war escalation news. Oil surging. Gold at highs. Markets risk-off into long Easter weekend.
     </div>
 
-    <div class="news-card">
-      <div class="tag tag-ai">🤖 AI / Big Tech</div>
-      <p>META Slid on Concerns Over Aggressive AI Capital Expenditure Plans</p>
-      <a href="https://finance.yahoo.com/markets/stocks/articles/meta-platforms-meta-slid-concerns-144120789.html" target="_blank">Source: Insider Monkey · Mar 27, 2026</a>
+    <div class="section-header">Index & ETF Pulse</div>
+    <div class="ticker-grid">
+      <div class="ticker-card"><div class="ticker-symbol">SPY</div><div class="ticker-price">$640.78</div><div class="ticker-chg down">▼ -0.67%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">QQQ</div><div class="ticker-price">$567.96</div><div class="ticker-chg down">▼ -1.02%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">SMH</div><div class="ticker-price">$376.98</div><div class="ticker-chg down">▼ -1.01%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">XLE</div><div class="ticker-price">$62.54</div><div class="ticker-chg up">▲ +1.67%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">GLD</div><div class="ticker-price">$414.59</div><div class="ticker-chg up">▲ +3.48%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">IAU</div><div class="ticker-price">$84.94</div><div class="ticker-chg up">▲ +3.48%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">ITA</div><div class="ticker-price">$218.32</div><div class="ticker-chg down">▼ -0.82%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">XAR</div><div class="ticker-price">$253.92</div><div class="ticker-chg down">▼ -1.21%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">CIBR</div><div class="ticker-price">$61.07</div><div class="ticker-chg down">▼ -3.28%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">COPX</div><div class="ticker-price">$72.55</div><div class="ticker-chg up">▲ +2.34%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">URA</div><div class="ticker-price">$46.99</div><div class="ticker-chg up">▲ +0.62%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">GRID</div><div class="ticker-price">$160.84</div><div class="ticker-chg down">▼ -0.45%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">BIL</div><div class="ticker-price">$91.63</div><div class="ticker-chg flat">→ +0.03%</div></div>
     </div>
 
-    <div class="news-card">
-      <div class="tag tag-ai">🤖 AI / Cloud</div>
-      <p>Alphabet (GOOGL) Surged as It Reclaimed AI Leadership; Analyst Sees 40% Upside</p>
-      <a href="https://finance.yahoo.com/markets/stocks/articles/alphabet-googl-surged-reclaimed-ai-143016545.html" target="_blank">Source: Insider Monkey · Mar 27, 2026</a>
+    <div class="section-header">Top Market Stories</div>
+    <div class="card">
+      <div class="news-item">
+        <div class="news-title"><span class="news-tag tag-geo">GEO</span>Dow Slumps 400 Points On U.S.-Iran War News; Markets Risk-Off</div>
+        <div class="news-meta"><a href="https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-war-oil-prices-rally/" target="_blank">Investor's Business Daily →</a> · Mar 27, 2026</div>
+      </div>
+      <div class="news-item">
+        <div class="news-title"><span class="news-tag tag-market">MARKET</span>Stock Market Preps For Easter Break — Wall Street Closes Early</div>
+        <div class="news-meta"><a href="https://www.investors.com/news/stock-market-holidays-2026-good-friday-maundy-thursday-easter/" target="_blank">Investor's Business Daily →</a> · Mar 27, 2026</div>
+      </div>
+      <div class="news-item">
+        <div class="news-title"><span class="news-tag tag-market">MARKET</span>Occidental Petroleum Up 58% in 2026 — Is It Too Late to Buy?</div>
+        <div class="news-meta"><a href="https://finance.yahoo.com/sectors/energy/articles/58-2026-too-buy-occidental-144147629.html" target="_blank">Yahoo Finance / 24-7 Wall St →</a> · Mar 27, 2026</div>
+      </div>
+      <div class="news-item">
+        <div class="news-title"><span class="news-tag tag-ai">AI/IPO</span>Unicorn Crushers: SpaceX, OpenAI, Anthropic Could Be Largest IPOs Ever</div>
+        <div class="news-meta"><a href="https://www.investors.com/news/ipos-spacex-openai-anthropic-klar-fig-blsh/" target="_blank">Investor's Business Daily →</a> · Mar 27, 2026</div>
+      </div>
     </div>
 
-    <div class="news-card">
-      <div class="tag tag-ai">🏗️ AI Infrastructure</div>
-      <p>AI Data Center Builder Argan (AGX) Earnings Blow Past Views — Stock Soars 34%</p>
-      <a href="https://www.investors.com/news/argan-agx-stock-earnings-ai-data-centers/?src=A00220&yptr=yahoo" target="_blank">Source: Investor's Business Daily · Mar 27, 2026</a>
+    <div class="section-header">📅 Key Events This Weekend</div>
+    <div class="card">
+      <div style="font-size:13px; line-height:1.8;">
+        🕌 <strong>Good Friday</strong> — Markets closed Apr 3<br>
+        🛢 <strong>Oil Watch</strong> — Brent spiking on Iran conflict escalation<br>
+        🥇 <strong>Gold</strong> — Safe-haven +3.5% on war fears<br>
+        📦 <strong>PCE Inflation</strong> — Feb data due today (key Fed gauge)
+      </div>
     </div>
-
-    <div class="news-card">
-      <div class="tag tag-market">📉 Cybersecurity</div>
-      <p>CrowdStrike (CRWD) Slides 7% — Earnings Disappoint, AI Rivals Intensify Pressure</p>
-      <a href="https://finance.yahoo.com/markets/stocks/articles/crowdstrike-slides-7-today-earnings-142937951.html" target="_blank">Source: 24/7 Wall St. · Mar 27, 2026</a>
-    </div>
-
-    <div class="news-card">
-      <div class="tag tag-energy">⚡ Energy / AI Infra</div>
-      <p>Utility Entergy Revises Meta Data-Center Deal to Deliver Higher Customer Savings</p>
-      <a href="https://finance.yahoo.com/sectors/energy/articles/utility-entergy-says-revised-meta-142908437.html" target="_blank">Source: Reuters · Mar 27, 2026</a>
-    </div>
-
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!-- SLIDE 2 — AAPL Deep Dive                                    -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-<div class="slide">
-  <div class="header">
-    <div>
-      <h1>🍎 AAPL Deep Dive</h1>
-      <div class="date">Your Largest Holding · Friday, March 27, 2026</div>
+<!-- SLIDE 2: AAPL DEEP DIVE -->
+<div class="slide" id="slide-1">
+  <div style="padding-top:16px;">
+    <h1>🍎 Apple (AAPL) Deep Dive</h1>
+    <h2>Technical & Fundamental View</h2>
+    <div class="date-tag">Eva Research · March 27, 2026</div>
+
+    <div class="metric-row">
+      <div class="metric-box"><div class="metric-label">Price</div><div class="metric-val">$253.21</div></div>
+      <div class="metric-box"><div class="metric-label">1D Change</div><div class="metric-val up">+0.13%</div></div>
+      <div class="metric-box"><div class="metric-label">Sector</div><div class="metric-val" style="font-size:13px;">Technology</div></div>
     </div>
-    <span class="badge">SLIDE 2 / 5</span>
-  </div>
 
-  <div class="aapl-hero">
-    <div class="sym" style="font-size:0.9rem;color:var(--muted);margin-bottom:4px;">APPLE INC (AAPL) — NASDAQ</div>
-    <div class="aapl-price up">$253.39</div>
-    <div class="aapl-meta">
-      <span class="up">▲ +$0.50 (+0.20%) today</span>
-      <span class="muted" style="color:var(--muted)">Prev Close: $252.89</span>
+    <div class="card">
+      <h3>💬 Eva's Take</h3>
+      <p style="font-size:13px; line-height:1.7; color:#c8d8f0;">
+        AAPL is holding steady (+0.13%) despite broad market selloff driven by Iran war fears — a clear sign of defensive characteristics. At $253, Apple remains in a mid-range consolidation pattern. The stock has shown resilience as investors rotate toward quality names in a risk-off environment. Watch for AI-driven iPhone supercycle narrative and services growth as next catalysts. Key support: $240. Resistance: $270.
+      </p>
     </div>
-  </div>
 
-  <div class="kv-grid">
-    <div class="kv"><div class="label">P/E TTM</div><div class="val">32.1×</div></div>
-    <div class="kv"><div class="label">P/E Forward</div><div class="val">27.2×</div></div>
-    <div class="kv"><div class="label">Analyst Target</div><div class="val up">$295.31</div></div>
-    <div class="kv"><div class="label">Upside to Target</div><div class="val up">+16.6%</div></div>
-    <div class="kv"><div class="label">52-Week High</div><div class="val">$288.62</div></div>
-    <div class="kv"><div class="label">52-Week Low</div><div class="val">$169.21</div></div>
-    <div class="kv"><div class="label">vs 52W High</div><div class="val down">-12.2%</div></div>
-    <div class="kv"><div class="label">vs 52W Low</div><div class="val up">+49.7%</div></div>
-  </div>
-
-  <div class="section-label">Technical Context</div>
-  <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px;font-size:0.88rem;line-height:1.7;">
-    <p>📌 AAPL is <strong>outperforming</strong> the broader market today (+0.20% vs SPY -0.74%, QQQ -1.09%) — a sign of relative strength amid geopolitical selling pressure from U.S.–Iran tensions.</p>
-    <p style="margin-top:8px;">📌 Currently trading at <strong>87.8% of its 52-week high</strong> — off peak but still well above the yearly lows. The stock has largely held its ground as other Big Tech names sold off.</p>
-    <p style="margin-top:8px;">📌 Analyst consensus target of <strong>$295.31</strong> implies ~16.6% upside. Multiple catalysts remain: Apple Intelligence expansion, India manufacturing diversification, and Services segment growth.</p>
-    <p style="margin-top:8px;">⚠️ Watch: Tariff risk on Chinese supply chain and any softness in iPhone upgrade cycles heading into the next earnings report.</p>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!-- SLIDE 3 — AI Sector                                         -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-<div class="slide">
-  <div class="header">
-    <div>
-      <h1>🤖 AI Sector — Semis &amp; Cloud</h1>
-      <div class="date">Semiconductors · Cloud Hyperscalers · Friday Mar 27, 2026</div>
+    <div class="section-header">Recent AAPL Context</div>
+    <div class="card">
+      <div class="news-item">
+        <div class="news-title"><span class="news-tag tag-aapl">AAPL</span>Apple holding flat as market sells off — defensive outperformance vs. Nasdaq -1%</div>
+        <div class="news-meta">Market observation · <a href="https://finance.yahoo.com/quote/AAPL/" target="_blank">Yahoo Finance AAPL →</a></div>
+      </div>
+      <div class="news-item">
+        <div class="news-title"><span class="news-tag tag-aapl">AAPL</span>AI features (Apple Intelligence) rollout expanding globally in 2026 — services monetization accelerating</div>
+        <div class="news-meta">Sector Context · <a href="https://finance.yahoo.com/news/rssindex" target="_blank">Yahoo Finance →</a></div>
+      </div>
+      <div class="news-item">
+        <div class="news-title"><span class="news-tag tag-geo">GEO</span>Supply chain risk: AAPL ~85% of iPhone production in China/Taiwan — Iran escalation adds uncertainty to Asia logistics</div>
+        <div class="news-meta">Risk Factor · <a href="https://finance.yahoo.com/quote/AAPL/" target="_blank">Yahoo Finance →</a></div>
+      </div>
     </div>
-    <span class="badge">SLIDE 3 / 5</span>
-  </div>
 
-  <div class="section-label">Semiconductors &amp; AI Infrastructure</div>
-  <div class="tbl-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>Ticker</th>
-          <th>Price</th>
-          <th>1D Chg</th>
-          <th>P/E TTM</th>
-          <th>P/E Fwd</th>
-          <th>Ana. Target</th>
-          <th>Upside %</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>NVDA</td><td>$168.76</td><td class="down">-1.45%</td><td>34.4×</td><td>15.2×</td><td>$268.22</td><td class="upside-hi">+58.9%</td>
-        </tr>
-        <tr>
-          <td>TSM</td><td>$324.16</td><td class="down">-0.60%</td><td>31.2×</td><td>18.0×</td><td>$430.65</td><td class="upside-hi">+32.9%</td>
-        </tr>
-        <tr>
-          <td>AVGO</td><td>$303.82</td><td class="down">-1.81%</td><td>59.1×</td><td>17.1×</td><td>$472.01</td><td class="upside-hi">+55.4%</td>
-        </tr>
-        <tr>
-          <td>AMD</td><td>$199.23</td><td class="down">-2.23%</td><td>76.3×</td><td>18.5×</td><td>$289.61</td><td class="upside-hi">+45.4%</td>
-        </tr>
-        <tr>
-          <td>MU</td><td>~$355*</td><td class="flat">N/A</td><td>17.2×</td><td>3.7×</td><td>$527.60</td><td class="upside-hi">+48.4%</td>
-        </tr>
-        <tr>
-          <td>ANET</td><td>$122.08</td><td class="down">-0.38%</td><td>44.4×</td><td>28.6×</td><td>$177.74</td><td class="upside-hi">+45.6%</td>
-        </tr>
-        <tr>
-          <td>SMH</td><td>$376.43</td><td class="down">-1.16%</td><td>—</td><td>—</td><td>—</td><td>—</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <p style="font-size:0.72rem;color:var(--muted);margin-bottom:16px;">*MU data unavailable from live feed today; using prev close estimate.</p>
+    <div class="section-header">Peer Comparison (1D)</div>
+    <div class="ticker-grid">
+      <div class="ticker-card"><div class="ticker-symbol">AAPL</div><div class="ticker-price">$253.21</div><div class="ticker-chg up">▲ +0.13%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">MSFT</div><div class="ticker-price">$359.91</div><div class="ticker-chg down">▼ -1.66%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">GOOGL</div><div class="ticker-price">$278.80</div><div class="ticker-chg down">▼ -0.75%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">META</div><div class="ticker-price">$530.16</div><div class="ticker-chg down">▼ -3.17%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">AMZN</div><div class="ticker-price">$201.17</div><div class="ticker-chg down">▼ -3.07%</div></div>
+    </div>
 
-  <div class="section-label">Cloud Hyperscalers &amp; AI Platform</div>
-  <div class="tbl-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>Ticker</th>
-          <th>Price</th>
-          <th>1D Chg</th>
-          <th>P/E TTM</th>
-          <th>P/E Fwd</th>
-          <th>Ana. Target</th>
-          <th>Upside %</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>META</td><td>$530.91</td><td class="down">-3.04%</td><td>22.6×</td><td>14.8×</td><td>$862.60</td><td class="upside-hi">+62.5%</td>
-        </tr>
-        <tr>
-          <td>GOOGL</td><td>$279.02</td><td class="down">-0.68%</td><td>25.8×</td><td>20.8×</td><td>$376.75</td><td class="upside-hi">+35.0%</td>
-        </tr>
-        <tr>
-          <td>AMZN</td><td>$201.11</td><td class="down">-3.10%</td><td>28.1×</td><td>21.4×</td><td>$280.80</td><td class="upside-hi">+39.6%</td>
-        </tr>
-        <tr>
-          <td>MSFT</td><td>$360.08</td><td class="down">-1.61%</td><td>22.5×</td><td>19.1×</td><td>$589.90</td><td class="upside-hi">+63.8%</td>
-        </tr>
-        <tr>
-          <td>AAPL</td><td>$253.39</td><td class="up">+0.20%</td><td>32.1×</td><td>27.2×</td><td>$295.31</td><td class="upside-lo">+16.6%</td>
-        </tr>
-        <tr>
-          <td>QQQ</td><td>$567.53</td><td class="down">-1.09%</td><td>—</td><td>—</td><td>—</td><td>—</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px;font-size:0.87rem;line-height:1.7;margin-top:4px;">
-    <strong>Eva's Read:</strong> META down 3% on AI capex fears but forward P/E 14.8× is cheap for the growth. AMZN &amp; MSFT both sliding — broader tech risk-off triggered by U.S.–Iran news and tariff uncertainty. NVDA still 59% below consensus target despite premium AI valuations. CIBR (cybersecurity) -3.48% on CrowdStrike miss is the sector's weakest link today.
+    <div class="card" style="background:#0d1a10; border-color:#14532d;">
+      <h3 style="color:#22c55e;">📌 Rating: HOLD / Accumulate on Dips</h3>
+      <p style="font-size:12px; color:#86efac; margin-top:6px;">Outperforming mega-caps today. Add on any pull to $240–245 range. Long-term AI services story intact.</p>
+    </div>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!-- SLIDE 4 — Defense, Energy & Geopolitics                     -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-<div class="slide">
-  <div class="header">
-    <div>
-      <h1>🛡️ Defense, Energy &amp; Geopolitics</h1>
-      <div class="date">U.S.–Iran Tensions · Oil · Nuclear · Commodities</div>
+<!-- SLIDE 3: AI SECTOR -->
+<div class="slide" id="slide-2">
+  <div style="padding-top:16px;">
+    <h1>🤖 AI Sector Watch</h1>
+    <h2>Semiconductors, Cloud, LLMs</h2>
+    <div class="date-tag">Eva Research · March 27, 2026</div>
+
+    <div class="section-header">AI & Semiconductor Prices (1D)</div>
+    <div class="ticker-grid">
+      <div class="ticker-card"><div class="ticker-symbol">NVDA</div><div class="ticker-price">$168.96</div><div class="ticker-chg down">▼ -1.33%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">AMD</div><div class="ticker-price">$199.40</div><div class="ticker-chg down">▼ -2.14%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">AVGO</div><div class="ticker-price">$304.11</div><div class="ticker-chg down">▼ -1.72%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">TSM</div><div class="ticker-price">$324.39</div><div class="ticker-chg down">▼ -0.53%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">MU</div><div class="ticker-price">$364.13</div><div class="ticker-chg up">▲ +2.44%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">ANET</div><div class="ticker-price">$122.65</div><div class="ticker-chg flat">→ +0.08%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">MSFT</div><div class="ticker-price">$359.91</div><div class="ticker-chg down">▼ -1.66%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">GOOGL</div><div class="ticker-price">$278.80</div><div class="ticker-chg down">▼ -0.75%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">META</div><div class="ticker-price">$530.16</div><div class="ticker-chg down">▼ -3.17%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">SMH</div><div class="ticker-price">$376.98</div><div class="ticker-chg down">▼ -1.01%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">CEG</div><div class="ticker-price">$304.00</div><div class="ticker-chg up">▲ +2.98%</div></div>
     </div>
-    <span class="badge">SLIDE 4 / 5</span>
-  </div>
 
-  <div class="section-label">Defense &amp; Aerospace</div>
-  <div class="tbl-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>Ticker</th>
-          <th>Price</th>
-          <th>1D Chg</th>
-          <th>P/E TTM</th>
-          <th>P/E Fwd</th>
-          <th>Ana. Target</th>
-          <th>Upside %</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>LMT</td><td>$621.66</td><td class="down">-0.90%</td><td>28.9×</td><td>19.4×</td><td>$664.26</td><td class="upside-lo">+6.9%</td>
-        </tr>
-        <tr>
-          <td>RTX</td><td>$191.97</td><td class="down">-0.46%</td><td>38.7×</td><td>25.5×</td><td>$217.21</td><td class="upside-lo">+13.1%</td>
-        </tr>
-        <tr>
-          <td>XAR</td><td>$254.12</td><td class="down">-1.13%</td><td>—</td><td>—</td><td>—</td><td>—</td>
-        </tr>
-        <tr>
-          <td>ITA</td><td>$218.19</td><td class="down">-0.88%</td><td>—</td><td>—</td><td>—</td><td>—</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <div class="section-header">AI News</div>
+    <div class="card">
+      <div class="news-item">
+        <div class="news-title"><span class="news-tag tag-ai">AI</span>Meta Platforms (META) Slid on Concerns Over Aggressive AI Capital Expenditure Plans</div>
+        <div class="news-meta"><a href="https://finance.yahoo.com/markets/stocks/articles/meta-platforms-meta-slid-concerns-144120789.html" target="_blank">Yahoo Finance / Insider Monkey →</a> · Mar 27, 2026</div>
+      </div>
+      <div class="news-item">
+        <div class="news-title"><span class="news-tag tag-ai">AI</span>Alphabet (GOOGL) Surged as It Reclaimed AI Leadership — Gemini momentum vs. OpenAI</div>
+        <div class="news-meta"><a href="https://finance.yahoo.com/markets/stocks/articles/alphabet-googl-surged-reclaimed-ai-143016545.html" target="_blank">Yahoo Finance / Insider Monkey →</a> · Mar 27, 2026</div>
+      </div>
+      <div class="news-item">
+        <div class="news-title"><span class="news-tag tag-ai">AI/IPO</span>SpaceX, OpenAI, Anthropic Pipeline Could Become Largest IPOs Ever — AI unicorn wave approaching</div>
+        <div class="news-meta"><a href="https://www.investors.com/news/ipos-spacex-openai-anthropic-klar-fig-blsh/" target="_blank">Investor's Business Daily →</a> · Mar 27, 2026</div>
+      </div>
+      <div class="news-item">
+        <div class="news-title"><span class="news-tag tag-ai">AI</span>Oracle (ORCL) — Execution Risk & Financial Sustainability Concerns Weighed in Q4; cloud AI build-out under scrutiny</div>
+        <div class="news-meta"><a href="https://finance.yahoo.com/markets/stocks/articles/concerns-over-execution-risk-financial-143453087.html" target="_blank">Yahoo Finance / Insider Monkey →</a> · Mar 27, 2026</div>
+      </div>
+    </div>
 
-  <div class="section-label">Energy &amp; Commodities</div>
-  <div class="tbl-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>Ticker</th>
-          <th>Price</th>
-          <th>1D Chg</th>
-          <th>Theme</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>XLE</td><td>$62.55</td><td class="up">+1.67%</td><td>Oil &amp; Gas ETF</td>
-        </tr>
-        <tr>
-          <td>IAU</td><td>$84.93</td><td class="up">+3.45%</td><td>Gold ETF (flight to safety)</td>
-        </tr>
-        <tr>
-          <td>GLD</td><td>$414.54</td><td class="up">+3.47%</td><td>Gold ETF</td>
-        </tr>
-        <tr>
-          <td>URA</td><td>$46.81</td><td class="up">+0.24%</td><td>Uranium</td>
-        </tr>
-        <tr>
-          <td>COPX</td><td>$72.13</td><td class="up">+1.75%</td><td>Copper Miners</td>
-        </tr>
-        <tr>
-          <td>GRID</td><td>$160.43</td><td class="down">-0.71%</td><td>Smart Grid / Power Infra</td>
-        </tr>
-        <tr>
-          <td>CEG</td><td>$301.92</td><td class="up">+2.28%</td><td>Nuclear / AI Power</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px;font-size:0.87rem;line-height:1.7;margin-top:4px;">
-    <strong>Key Dynamics:</strong><br>
-    🛢️ <strong>Oil rallying</strong> hard on U.S.–Iran military news — XLE +1.67%, energy names outperforming.<br>
-    🥇 <strong>Gold surging +3.47%</strong> — classic flight-to-safety on geopolitical shock. IAU/GLD near multi-year highs.<br>
-    ⚛️ <strong>CEG +2.28%</strong> — nuclear power benefits from AI data center demand + geopolitical energy premium.<br>
-    🛡️ Defense ETFs (XAR, ITA) surprisingly <em>down</em> ~1% — possible profit-taking after a strong run. LMT/RTX modest declines.<br>
-    ⚠️ Iran risk: escalation could push oil to $90+, benefiting XLE, OXY. Watch for supply disruption headlines.
+    <div class="card" style="background:#0e1520; border-color:#1e3a5f;">
+      <h3>💡 Eva's AI Thesis</h3>
+      <p style="font-size:13px; line-height:1.7; color:#c8d8f0;">
+        AI capex fears are dragging META (-3.2%) and broader cloud names today. However, <strong>MU (+2.44%)</strong> is a standout — HBM memory demand for AI training is structurally in deficit. <strong>CEG (+2.98%)</strong> benefits from nuclear power AI data center demand. NVDA remains THE AI infrastructure bellwether despite the dip. The AI IPO pipeline (OpenAI, Anthropic) signals continued private-sector AI investment despite market turbulence. <strong>Opportunity:</strong> Pullbacks in NVDA, AVGO, TSM on geopolitical fears may offer long-term entry points.
+      </p>
+    </div>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!-- SLIDE 5 — Eva's Suggested Allocation + Priority Actions     -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-<div class="slide">
-  <div class="header">
-    <div>
-      <h1>💼 Eva's Suggested Allocation</h1>
-      <div class="date">Strategic Positioning · March 2026</div>
-    </div>
-    <span class="badge">SLIDE 5 / 5</span>
-  </div>
+<!-- SLIDE 4: DEFENSE / ENERGY / GEO -->
+<div class="slide" id="slide-3">
+  <div style="padding-top:16px;">
+    <h1>🛡 Defense · Energy · Geo</h1>
+    <h2>Risk-On Geopolitical Play</h2>
+    <div class="date-tag">Eva Research · March 27, 2026</div>
 
-  <div class="section-label">Suggested Portfolio Mix</div>
-  <div class="alloc-grid">
-
-    <div class="alloc-row">
-      <div class="head"><span>🍎 AAPL (Core Holding)</span><span class="up">20%</span></div>
-      <div class="bar-bg"><div class="bar-fill" style="width:20%;background:#7c3aed;"></div></div>
+    <div class="alert-box">
+      🛢 <strong>U.S.-Iran War Escalation:</strong> Markets pricing in Middle East conflict. Oil stocks and gold surging. Defense mixed on supply chain concerns.
     </div>
 
-    <div class="alloc-row">
-      <div class="head"><span>🤖 AI / Semis (NVDA, AVGO, TSM, AMD)</span><span class="up">22%</span></div>
-      <div class="bar-bg"><div class="bar-fill" style="width:22%;background:#06b6d4;"></div></div>
+    <div class="section-header">Key Tickers (1D)</div>
+    <div class="ticker-grid">
+      <div class="ticker-card"><div class="ticker-symbol">LMT</div><div class="ticker-price">$621.04</div><div class="ticker-chg down">▼ -1.00%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">RTX</div><div class="ticker-price">$191.62</div><div class="ticker-chg down">▼ -0.64%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">XAR</div><div class="ticker-price">$253.92</div><div class="ticker-chg down">▼ -1.21%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">ITA</div><div class="ticker-price">$218.32</div><div class="ticker-chg down">▼ -0.82%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">XLE</div><div class="ticker-price">$62.54</div><div class="ticker-chg up">▲ +1.67%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">COPX</div><div class="ticker-price">$72.55</div><div class="ticker-chg up">▲ +2.34%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">URA</div><div class="ticker-price">$46.99</div><div class="ticker-chg up">▲ +0.62%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">GLD</div><div class="ticker-price">$414.59</div><div class="ticker-chg up">▲ +3.48%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">IAU</div><div class="ticker-price">$84.94</div><div class="ticker-chg up">▲ +3.48%</div></div>
+      <div class="ticker-card"><div class="ticker-symbol">CEG</div><div class="ticker-price">$304.00</div><div class="ticker-chg up">▲ +2.98%</div></div>
     </div>
 
-    <div class="alloc-row">
-      <div class="head"><span>☁️ Cloud Hyperscalers (MSFT, GOOGL, AMZN, META)</span><span>15%</span></div>
-      <div class="bar-bg"><div class="bar-fill" style="width:15%;background:#3b82f6;"></div></div>
+    <div class="section-header">Geopolitical News</div>
+    <div class="card">
+      <div class="news-item">
+        <div class="news-title"><span class="news-tag tag-geo">WAR</span>Dow Slumps 400 Points On U.S.-Iran War News — Oil Prices Rally</div>
+        <div class="news-meta"><a href="https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-war-oil-prices-rally/" target="_blank">Investor's Business Daily →</a> · Mar 27, 2026</div>
+      </div>
+      <div class="news-item">
+        <div class="news-title"><span class="news-tag tag-geo">ENERGY</span>Occidental Petroleum (OXY) Up 58% in 2026 — Oil surge benefits shale producers</div>
+        <div class="news-meta"><a href="https://finance.yahoo.com/sectors/energy/articles/58-2026-too-buy-occidental-144147629.html" target="_blank">Yahoo Finance / 24-7 Wall St →</a> · Mar 27, 2026</div>
+      </div>
     </div>
 
-    <div class="alloc-row">
-      <div class="head"><span>🛡️ Defense (LMT, RTX, XAR, ITA)</span><span>10%</span></div>
-      <div class="bar-bg"><div class="bar-fill" style="width:10%;background:#f59e0b;"></div></div>
+    <div class="card">
+      <h3>💡 Eva's Defense/Energy Read</h3>
+      <p style="font-size:13px; line-height:1.7; color:#c8d8f0;">
+        Paradoxically, defense ETFs (ITA, XAR) are <em>down</em> despite war escalation — investors rotating to <strong>pure energy plays</strong> (XLE +1.67%, COPX +2.34%) and <strong>gold</strong> (+3.48%) as the immediate safe havens. LMT and RTX may see delayed benefit as defense procurement ramps. <strong>Nuclear (CEG +2.98%, URA +0.62%)</strong> is benefiting from dual thesis: energy security + AI data center demand. Copper (COPX) rally signals infrastructure spending expectations. Gold at new highs — consider trimming or holding tight stops if long.
+      </p>
     </div>
-
-    <div class="alloc-row">
-      <div class="head"><span>⚡ Energy &amp; Nuclear (XLE, CEG, URA)</span><span class="up">10%</span></div>
-      <div class="bar-bg"><div class="bar-fill" style="width:10%;background:#f97316;"></div></div>
-    </div>
-
-    <div class="alloc-row">
-      <div class="head"><span>🥇 Gold / Commodities (GLD, IAU, COPX)</span><span class="up">10%</span></div>
-      <div class="bar-bg"><div class="bar-fill" style="width:10%;background:#eab308;"></div></div>
-    </div>
-
-    <div class="alloc-row">
-      <div class="head"><span>🔒 Cybersecurity (CIBR)</span><span class="down">5%</span></div>
-      <div class="bar-bg"><div class="bar-fill" style="width:5%;background:#10b981;"></div></div>
-    </div>
-
-    <div class="alloc-row">
-      <div class="head"><span>💵 Cash / Short-Term (BIL)</span><span>8%</span></div>
-      <div class="bar-bg"><div class="bar-fill" style="width:8%;background:#6b7280;"></div></div>
-    </div>
-
-  </div>
-
-  <div class="section-label">Priority Actions</div>
-  <div class="priority-list">
-
-    <div class="priority-item">
-      <div class="num">1</div>
-      <p><strong>Hold AAPL, consider adding on dips below $245</strong> — outperforming today, strong fundamentals, 16.6% upside to consensus. Core position warranted.</p>
-    </div>
-
-    <div class="priority-item">
-      <div class="num">2</div>
-      <p><strong>Increase GLD/IAU allocation</strong> — Gold +3.47% today on Iran crisis. With geopolitical risk elevated and dollar uncertainty, gold remains a critical hedge. Target 8–10% of portfolio.</p>
-    </div>
-
-    <div class="priority-item">
-      <div class="num">3</div>
-      <p><strong>Buy the META dip carefully</strong> — down 3% on AI capex fears, but forward P/E 14.8× is compelling. Wait for a level ~$510–515 for better risk/reward. Analyst target: $862.</p>
-    </div>
-
-    <div class="priority-item">
-      <div class="num">4</div>
-      <p><strong>Add XLE / energy exposure</strong> — U.S.–Iran tensions are a direct oil catalyst. XLE +1.67% today. OXY up 58% YTD suggests energy rotation has legs.</p>
-    </div>
-
-    <div class="priority-item">
-      <div class="num">5</div>
-      <p><strong>Trim CIBR on CrowdStrike weakness</strong> — CIBR -3.48% today. CRWD earnings miss + AI competitive pressure. Reduce cybersecurity weight until sector stabilizes.</p>
-    </div>
-
-    <div class="priority-item">
-      <div class="num">6</div>
-      <p><strong>Watch NVDA closely</strong> — down 1.45% but still 59% below analyst target ($268). Best long-term AI infrastructure play. Add on further weakness toward $155–160.</p>
-    </div>
-
-  </div>
-
-  <div style="margin-top:20px;padding:12px;background:#0f1a0f;border:1px solid #3fb950;border-radius:8px;font-size:0.82rem;color:var(--muted);">
-    ⚠️ <em>This report is generated by Eva AI for informational purposes only. Not financial advice. Always do your own research.</em>
   </div>
 </div>
 
+<!-- SLIDE 5: EVA'S ALLOCATION -->
+<div class="slide" id="slide-4">
+  <div style="padding-top:16px;">
+    <h1>💡 Eva's Suggested Allocation</h1>
+    <h2>Risk-Adjusted · March 27, 2026</h2>
+    <div class="date-tag">Eva Research · Hypothetical · Not Financial Advice</div>
+
+    <div class="card">
+      <h3>📋 Macro Conditions</h3>
+      <p style="font-size:13px; line-height:1.7; color:#c8d8f0;">
+        U.S.-Iran war risk → safe havens bid (gold, oil). AI capex concerns drag mega-caps. Easter holiday = thin liquidity ahead. PCE data today may move rates narrative. Recommendation: <strong>reduce beta, add gold hedge, maintain AI core positions.</strong>
+      </p>
+    </div>
+
+    <div class="section-header">Suggested Portfolio Weights</div>
+    <div class="card">
+      <div class="bar-chart">
+        <div class="bar-row">
+          <div class="bar-label">AI/Semi</div>
+          <div class="bar-track"><div class="bar-fill semi" style="width:30%">30%</div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Gold/IAU</div>
+          <div class="bar-track"><div class="bar-fill gold" style="width:20%">20%</div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">US Equity</div>
+          <div class="bar-track"><div class="bar-fill equity" style="width:20%">20%</div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Defense</div>
+          <div class="bar-track"><div class="bar-fill defense" style="width:12%">12%</div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Energy</div>
+          <div class="bar-track"><div class="bar-fill energy" style="width:10%">10%</div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Cash/BIL</div>
+          <div class="bar-track"><div class="bar-fill cash" style="width:8%">8%</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-header">Top Conviction Picks</div>
+    <div class="card">
+      <div class="news-item">
+        <div class="news-title">🥇 <strong>GLD/IAU</strong> — Gold surging on war + Fed pivot narrative. Strongest day in months (+3.48%).</div>
+        <div class="news-meta">Rating: <span class="up">STRONG BUY</span> · Target: Hold through geopolitical uncertainty</div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">💾 <strong>MU (Micron)</strong> — Standout semi today (+2.44%). HBM3E demand structurally underestimated.</div>
+        <div class="news-meta">Rating: <span class="up">BUY</span> · AI memory plays being re-rated</div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">⚛️ <strong>CEG (Constellation Energy)</strong> — Nuclear AI power play (+2.98%). Dual catalyst: energy security + data centers.</div>
+        <div class="news-meta">Rating: <span class="up">BUY</span> · Long-term structural demand</div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">🍎 <strong>AAPL</strong> — Defensive outperformer today (+0.13% vs. QQQ -1%). Add on dips to $240-245.</div>
+        <div class="news-meta">Rating: <span class="up">ACCUMULATE</span> · Quality haven</div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">🛢 <strong>XLE/COPX</strong> — Iran risk premium supporting energy/materials. XLE +1.67%, COPX +2.34%.</div>
+        <div class="news-meta">Rating: <span class="up">HOLD/ADD</span> · War premium trade</div>
+      </div>
+      <div class="news-item">
+        <div class="news-title">⚠️ <strong>META/AMZN/CIBR</strong> — Biggest losers today. META -3.17%, AMZN -3.07%, CIBR -3.28%. Caution near-term.</div>
+        <div class="news-meta">Rating: <span class="down">REDUCE short-term</span> · Wait for stabilization</div>
+      </div>
+    </div>
+
+    <footer-note>⚠️ Eva's Suggested Allocation is for research purposes only. Not financial advice. Past performance does not guarantee future results.</footer-note>
+  </div>
+</div>
+
+<script>
+function showSlide(n) {
+  document.querySelectorAll('.slide').forEach((s,i) => {
+    s.classList.toggle('active', i===n);
+  });
+  document.querySelectorAll('.nav-btn').forEach((b,i) => {
+    b.classList.toggle('active', i===n);
+  });
+}
+</script>
 </body>
 </html>
