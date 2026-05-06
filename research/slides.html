@@ -1,154 +1,312 @@
 <!doctype html>
-<html><head><meta charset='utf-8'/>
+<html lang='en'>
+<head>
+<meta charset='utf-8'/>
 <meta name='viewport' content='width=device-width, initial-scale=1'/>
-<title>Daily Investment Update — 2026-05-05</title>
+<title>Daily Investment Update · 2026-05-06</title>
 <style>
-:root{--bg:#0b0f14;--card:#121926;--muted:#93a4b8;--text:#e6edf3;--accent:#7aa2ff;--green:#2dd4bf;--red:#fb7185;--border:#233044;}
-*{box-sizing:border-box;font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;}
-body{margin:0;background:var(--bg);color:var(--text);}
-.slide{min-height:100vh;padding:18px 14px 28px;display:flex;flex-direction:column;gap:14px;}
-.hdr{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;}
-.hdr h1{font-size:18px;margin:0;}
-.hdr .sub{color:var(--muted);font-size:12px;}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
-@media(min-width:760px){.grid{grid-template-columns:repeat(3,1fr);} .slide{padding:26px 22px;} .hdr h1{font-size:22px;} }
-.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:12px;}
-.card h3{margin:0 0 6px;font-size:13px;}
-.card p{margin:0;color:var(--muted);font-size:12px;line-height:1.35;}
-a{color:var(--accent);text-decoration:none;}
-a:hover{text-decoration:underline;}
-.kpi{display:flex;gap:10px;flex-wrap:wrap;}
-.kpi .pill{background:#0f1724;border:1px solid var(--border);border-radius:999px;padding:6px 10px;font-size:12px;color:var(--muted);}
-.banner{background:linear-gradient(90deg,#1b2540,#101a2c);border:1px solid var(--border);border-radius:14px;padding:12px;}
-.banner b{color:var(--text);}
-
-.tableWrap{overflow:auto;border-radius:12px;border:1px solid var(--border);}
-table{width:100%;border-collapse:collapse;min-width:520px;background:var(--card);}
-th,td{padding:10px 10px;border-bottom:1px solid var(--border);font-size:12px;text-align:right;white-space:nowrap;}
-th:first-child,td:first-child{text-align:left;}
-tr.hi td{background:#0f1a2d;}
-
-.barRow{display:flex;align-items:center;gap:10px;margin:10px 0;}
-.barLbl{width:180px;color:var(--muted);font-size:12px;}
-.bar{flex:1;height:10px;background:#0f1724;border:1px solid var(--border);border-radius:999px;overflow:hidden;}
-.bar > div{height:100%;background:linear-gradient(90deg,#7aa2ff,#2dd4bf);}
-
-.small{font-size:11px;color:var(--muted);}
-.sectionTitle{font-size:14px;margin:0 0 8px;}
-</style></head>
+  :root{--bg:#0b1020;--panel:#101a33;--panel2:#0f1630;--txt:#e8eefc;--muted:#a7b4d6;--pos:#2ee59d;--neg:#ff5d6c;--accent:#7c5cff;--border:rgba(255,255,255,.08);}
+  html,body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial;}
+  a{color:#a6c7ff;text-decoration:none;} a:hover{text-decoration:underline;}
+  .deck{max-width:860px;margin:0 auto;padding:12px;}
+  .slide{display:none;min-height:88vh;padding:14px;border:1px solid var(--border);border-radius:14px;background:linear-gradient(180deg,var(--panel),var(--panel2));box-shadow:0 10px 30px rgba(0,0,0,.35);}
+  .slide.active{display:block;}
+  .topbar{display:flex;gap:8px;align-items:center;justify-content:space-between;margin:10px 0 12px;}
+  .title{font-size:18px;font-weight:750;letter-spacing:.2px;}
+  .subtitle{color:var(--muted);font-size:12px;}
+  .nav{display:flex;gap:8px;flex-wrap:wrap;}
+  button{background:rgba(124,92,255,.15);border:1px solid rgba(124,92,255,.35);color:var(--txt);padding:8px 10px;border-radius:10px;font-weight:650;}
+  button:active{transform:translateY(1px);}
+  .banner{margin:10px 0 14px;padding:10px 12px;border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,.03);}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
+  @media (min-width:720px){.grid{grid-template-columns:repeat(3,1fr);}}
+  .card{padding:10px 10px 12px;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.03);}
+  .card-title{font-weight:700;font-size:13px;line-height:1.25;}
+  .card-meta{margin-top:8px;font-size:11px;color:var(--muted);}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 2px;}
+  .chip{border:1px solid var(--border);border-radius:12px;padding:8px 10px;min-width:98px;background:rgba(0,0,0,.18);}
+  .chip.pos{border-color:rgba(46,229,157,.35);}
+  .chip.neg{border-color:rgba(255,93,108,.35);}
+  .chip-t{font-weight:800;}
+  .chip-p{font-weight:800;margin-top:2px;}
+  .chip-l{color:var(--muted);font-size:12px;margin-top:2px;}
+  table{width:100%;border-collapse:separate;border-spacing:0;margin-top:8px;overflow:hidden;border-radius:12px;border:1px solid var(--border);}
+  th,td{padding:10px 10px;border-bottom:1px solid var(--border);font-size:12px;}
+  th{text-align:left;color:var(--muted);font-weight:750;background:rgba(255,255,255,.02);}
+  tr:last-child td{border-bottom:none;}
+  .mono{font-variant-numeric:tabular-nums; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;}
+  .pos{color:var(--pos);}
+  .neg{color:var(--neg);}
+  .section{margin-top:14px;}
+  .h2{font-size:14px;font-weight:800;margin:0 0 6px;}
+  .bars{display:flex;flex-direction:column;gap:10px;margin-top:10px;}
+  .bar{border:1px solid var(--border);border-radius:12px;padding:10px;background:rgba(255,255,255,.03);}
+  .barline{height:10px;border-radius:999px;background:rgba(124,92,255,.18);overflow:hidden;margin-top:8px;}
+  .barfill{height:100%;background:linear-gradient(90deg,var(--accent),#3fd0ff);}
+  .foot{margin-top:14px;color:var(--muted);font-size:11px;line-height:1.4;}
+</style>
+</head>
 <body>
-
-<section class='slide' id='s1'>
-  <div class='hdr'>
+<div class='deck'>
+  <div class='topbar'>
     <div>
-      <h1>Slide 1 — Market Snapshot</h1>
-      <div class='sub'>2026-05-05 · Data: yfinance (2d history) · News: Yahoo Finance RSS</div>
+      <div class='title'>Daily Investment Update</div>
+      <div class='subtitle'>2026-05-06 · generated 2026-05-06 15:02 UTC · news source: Yahoo Finance RSS</div>
     </div>
-  </div>
-  <div class='banner'>
-    <b>Key Events (top stories)</b>
-    <div class='small'>Each card includes a source link.</div>
-  </div>
-  <div class='grid'>
-    
-  </div>
-  <div class='card'>
-    <h3>1D Moves (selected tickers)</h3>
-    <div class='tableWrap'>
-      <table><thead><tr><th>Ticker</th><th>Last</th><th>Chg</th><th>ChgPct</th></tr></thead><tbody><tr class="hi"><td>AAPL</td><td>280.32</td><td>3.49</td><td>+1.26%</td></tr><tr><td>NVDA</td><td>197.09</td><td>-1.39</td><td>-0.70%</td></tr><tr><td>MSFT</td><td>410.49</td><td>-3.13</td><td>-0.76%</td></tr><tr><td>IAU</td><td>86.14</td><td>1.17</td><td>+1.38%</td></tr><tr><td>GLD</td><td>420.30</td><td>5.59</td><td>+1.35%</td></tr><tr><td>SMH</td><td>520.85</td><td>14.06</td><td>+2.78%</td></tr><tr><td>QQQ</td><td>680.56</td><td>7.68</td><td>+1.14%</td></tr><tr><td>SPY</td><td>723.20</td><td>5.19</td><td>+0.72%</td></tr><tr><td>XLE</td><td>59.18</td><td>-0.21</td><td>-0.35%</td></tr><tr><td>BIL</td><td>91.43</td><td>0.01</td><td>+0.01%</td></tr></tbody></table>
-    </div>
-  </div>
-</section>
-
-<section class='slide' id='s2'>
-  <div class='hdr'><div><h1>Slide 2 — AAPL Deep Dive</h1><div class='sub'>Largest portfolio holding · Focus: price action + valuation + catalysts</div></div></div>
-  <div class='card'>
-    <h3>AAPL price (1D change)</h3>
-    <div class='kpi'>
-      <div class='pill'>Last: <b>280.32</b></div>
-      <div class='pill'>Chg: <b>3.49</b></div>
-      <div class='pill'>Chg%: <b>+1.26%</b></div>
-    </div>
-  </div>
-  <div class='card'>
-    <h3>AAPL valuation (yfinance)</h3>
-    <div class='tableWrap'>
-      <table><thead><tr><th>Ticker</th><th>Price</th><th>PE_TTM</th><th>PE_Fwd</th><th>TargetMean</th><th>UpsidePct</th></tr></thead><tbody><tr class="hi"><td>AAPL</td><td>280.31</td><td>34.0</td><td>29.3</td><td>300.65</td><td>+7.3%</td></tr></tbody></table>
-    </div>
-    <p class='small' style='margin-top:8px;'>Note: analyst target is yfinance <code>targetMeanPrice</code> (when available).</p>
-  </div>
-  <div class='card'>
-    <h3>What I’m watching next (checklist)</h3>
-    <p>• Services growth commentary (App Store, subscriptions) and margin trend</p>
-    <p>• iPhone upgrade cycle + AI feature pull-through (on-device + ecosystem)</p>
-    <p>• Any regulatory headlines affecting App Store economics</p>
-  </div>
-</section>
-
-<section class='slide' id='s3'>
-  <div class='hdr'><div><h1>Slide 3 — AI Sector</h1><div class='sub'>Semis + cloud · Valuation + implied upside vs analyst mean target</div></div></div>
-
-  <div class='card'>
-    <h3>Semis / Networking</h3>
-    <div class='tableWrap'>
-      <table><thead><tr><th>Ticker</th><th>Price</th><th>PE_TTM</th><th>PE_Fwd</th><th>TargetMean</th><th>UpsidePct</th></tr></thead><tbody><tr class="hi"><td>NVDA</td><td>196.97</td><td>40.2</td><td>17.5</td><td>269.17</td><td>+36.7%</td></tr><tr><td>TSM</td><td>396.14</td><td>34.0</td><td>20.5</td><td>463.45</td><td>+17.0%</td></tr><tr><td>AVGO</td><td>424.05</td><td>82.8</td><td>23.4</td><td>475.49</td><td>+12.1%</td></tr><tr><td>ANET</td><td>174.39</td><td>63.6</td><td>40.3</td><td>180.33</td><td>+3.4%</td></tr><tr><td>MU</td><td>634.55</td><td>29.9</td><td>6.3</td><td>551.40</td><td>-13.1%</td></tr><tr><td>AMD</td><td>350.79</td><td>134.9</td><td>31.3</td><td>307.50</td><td>-12.3%</td></tr></tbody></table>
+    <div class='nav'>
+      <button onclick='go(0)'>1 Snapshot</button>
+      <button onclick='go(1)'>2 AAPL</button>
+      <button onclick='go(2)'>3 AI</button>
+      <button onclick='go(3)'>4 Def/Energy</button>
+      <button onclick='go(4)'>5 Allocation</button>
     </div>
   </div>
 
-  <div class='card'>
-    <h3>Cloud / Platforms</h3>
-    <div class='tableWrap'>
-      <table><thead><tr><th>Ticker</th><th>Price</th><th>PE_TTM</th><th>PE_Fwd</th><th>TargetMean</th><th>UpsidePct</th></tr></thead><tbody><tr><td>MSFT</td><td>410.48</td><td>24.4</td><td>21.1</td><td>560.77</td><td>+36.6%</td></tr><tr><td>GOOGL</td><td>387.93</td><td>29.6</td><td>27.0</td><td>413.78</td><td>+6.7%</td></tr><tr><td>META</td><td>601.96</td><td>21.9</td><td>16.6</td><td>832.80</td><td>+38.3%</td></tr><tr><td>AMZN</td><td>275.85</td><td>33.0</td><td>27.9</td><td>307.60</td><td>+11.5%</td></tr></tbody></table>
+  <!-- Slide 1 -->
+  <section class='slide active' id='s0'>
+    <div class='banner'><b>Market Snapshot</b> · 1D moves use yfinance history(period='2d') closes (unadjusted)</div>
+    <div class='chips'>
+      <div class='chip pos'><div class='chip-t'>SPY</div><div class='chip-p'>+1.17%</div><div class='chip-l'>$732.23</div></div><div class='chip pos'><div class='chip-t'>QQQ</div><div class='chip-p'>+1.43%</div><div class='chip-l'>$691.39</div></div><div class='chip pos'><div class='chip-t'>AAPL</div><div class='chip-p'>+0.32%</div><div class='chip-l'>$285.09</div></div><div class='chip pos'><div class='chip-t'>NVDA</div><div class='chip-p'>+4.10%</div><div class='chip-l'>$204.56</div></div><div class='chip neg'><div class='chip-t'>XLE</div><div class='chip-p'>-3.76%</div><div class='chip-l'>$57.22</div></div><div class='chip pos'><div class='chip-t'>GLD</div><div class='chip-p'>+3.20%</div><div class='chip-l'>$431.65</div></div>
     </div>
-  </div>
-
-  <div class='card'>
-    <h3>AI read-through</h3>
-    <p>• Semis breadth check: leaders (NVDA) vs memory (MU) vs foundry (TSM)</p>
-    <p>• Cloud monetization: watch guidance for AI attach rates and capex intensity</p>
-    <p class='small'>News links on Slide 1 include AI-tagged items (e.g., Reuters / Yahoo Finance).</p>
-  </div>
-</section>
-
-<section class='slide' id='s4'>
-  <div class='hdr'><div><h1>Slide 4 — Defense, Energy & Geopolitics</h1><div class='sub'>Primes, ETFs, and commodity-sensitive positioning</div></div></div>
-
-  <div class='card'>
-    <h3>Defense (primes + ETFs)</h3>
-    <div class='tableWrap'>
-      <table><thead><tr><th>Ticker</th><th>Price</th><th>PE_TTM</th><th>PE_Fwd</th><th>TargetMean</th><th>UpsidePct</th></tr></thead><tbody><tr><td>LMT</td><td>513.42</td><td>24.8</td><td>16.0</td><td>641.35</td><td>+24.9%</td></tr><tr><td>RTX</td><td>173.60</td><td>32.6</td><td>23.0</td><td>216.16</td><td>+24.5%</td></tr><tr><td>ITA</td><td>215.72</td><td>37.0</td><td>—</td><td>—</td><td>—</td></tr><tr><td>XAR</td><td>255.16</td><td>38.7</td><td>—</td><td>—</td><td>—</td></tr></tbody></table>
+    <div class='section'>
+      <div class='h2'>Key Events (top 6)</div>
+      <div class='grid'>
+        
+        <div class='card'>
+          <div class='card-title'>Stock market today: Nasdaq, S&amp;P 500, Dow gain on rising hopes for Iran peace, upbeat tech earnings</div>
+          <div class='card-meta'><a href='https://finance.yahoo.com/markets/stocks/live/stock-market-today-nasdaq-sp-500-dow-gain-on-rising-hopes-for-iran-peace-upbeat-tech-earnings-231128773.html' target='_blank' rel='noopener'>Source: Yahoo Finance · 2026-05-05T23:11:28Z</a></div>
+        </div>
+        
+        <div class='card'>
+          <div class='card-title'>Micron stock pauses massive rally as investors take profits amid booming AI demand</div>
+          <div class='card-meta'><a href='https://finance.yahoo.com/markets/stocks/article/micron-stock-pauses-massive-rally-as-investors-take-profits-amid-booming-ai-demand-143946747.html' target='_blank' rel='noopener'>Source: Yahoo Finance · 2026-05-05T14:39:46Z</a></div>
+        </div>
+        
+        <div class='card'>
+          <div class='card-title'>Oil slides after Pakistani source says US and Iran are close to framework peace deal</div>
+          <div class='card-meta'><a href='https://finance.yahoo.com/news/oil-prices-little-changed-ceasefire-231239399.html' target='_blank' rel='noopener'>Source: Reuters · 2026-05-06T14:38:11Z</a></div>
+        </div>
+        
+        <div class='card'>
+          <div class='card-title'>Stock Market Today: Dow Charges Higher On U.S.-Iran Deal Hopes; Lumentum Slides (Live Coverage)</div>
+          <div class='card-meta'><a href='https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-deal-amd-stock/?src=A00220&amp;yptr=yahoo' target='_blank' rel='noopener'>Source: Investor&#39;s Business Daily · 2026-05-06T14:49:12Z</a></div>
+        </div>
+        
+        <div class='card'>
+          <div class='card-title'>BioCryst Pharmaceuticals Q1 Earnings Call Highlights</div>
+          <div class='card-meta'><a href='https://finance.yahoo.com/sectors/healthcare/articles/biocryst-pharmaceuticals-q1-earnings-call-145506753.html' target='_blank' rel='noopener'>Source: MarketBeat · 2026-05-06T14:55:06Z</a></div>
+        </div>
+        
+        <div class='card'>
+          <div class='card-title'>Tech stocks today: Intel stock soars 25%, Meta to cut 10% of workforce, Microsoft offerings buyouts</div>
+          <div class='card-meta'><a href='https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-intel-stock-soars-25-meta-to-cut-10-of-workforce-microsoft-offerings-buyouts-144220036.html' target='_blank' rel='noopener'>Source: Yahoo Finance · 2026-03-13T14:42:20Z</a></div>
+        </div>
+        
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class='card'>
-    <h3>Energy / Strategic materials</h3>
-    <div class='tableWrap'>
-      <table><thead><tr><th>Ticker</th><th>Price</th><th>PE_TTM</th><th>PE_Fwd</th><th>TargetMean</th><th>UpsidePct</th></tr></thead><tbody><tr><td>XLE</td><td>59.18</td><td>22.8</td><td>—</td><td>—</td><td>—</td></tr><tr><td>CEG</td><td>320.49</td><td>43.4</td><td>23.6</td><td>367.93</td><td>+14.8%</td></tr></tbody></table>
+  <!-- Slide 2 -->
+  <section class='slide' id='s1'>
+    <div class='banner'><b>AAPL Deep Dive</b> (largest holding)</div>
+    <div class='chips'>
+      <div class='chip pos'><div class='chip-t'>AAPL</div><div class='chip-p'>+0.32%</div><div class='chip-l'>$285.09</div></div><div class='chip pos'><div class='chip-t'>MSFT</div><div class='chip-p'>+0.78%</div><div class='chip-l'>$414.61</div></div><div class='chip pos'><div class='chip-t'>GOOGL</div><div class='chip-p'>+2.36%</div><div class='chip-l'>$397.58</div></div><div class='chip pos'><div class='chip-t'>META</div><div class='chip-p'>+2.03%</div><div class='chip-l'>$617.27</div></div>
     </div>
-  </div>
+    <table>
+      <thead><tr><th>Ticker</th><th>Last</th><th>1D %</th><th>P/E TTM</th><th>P/E Fwd</th><th>Ana. Target</th><th>Upside</th></tr></thead>
+      <tbody>
+        <tr>
+              <td class='mono'>AAPL</td><td class='mono'>$285.09</td><td class='mono pos'>+0.32%</td>
+              <td class='mono'>34.5</td><td class='mono'>29.8</td>
+              <td class='mono'>$303.38</td><td class='mono'>+6.41%</td>
+            </tr>
+      </tbody>
+    </table>
+    <div class='section'>
+      <div class='h2'>Notes</div>
+      <div class='card'>
+        <div class='card-title'>What matters today</div>
+        <div class='card-meta'>1) AAPL is trading as a quality-duration name; near-term drivers are services mix, iPhone upgrade cycle tone, and any AI product cadence clarity. 2) Watch QQQ breadth: AAPL often follows index-level risk-on/risk-off even without Apple-specific news.</div>
+      </div>
+    </div>
+  </section>
 
-  <div class='card'>
-    <h3>Geopolitics watchlist</h3>
-    <p>• Middle East shipping / oil volatility (see Slide 1 market live coverage)</p>
-    <p>• Defense re-rating risk: budget headlines and order cadence</p>
-    <p>• Gold (GLD/IAU) as volatility hedge if oil/geopolitics re-accelerates</p>
-  </div>
-</section>
+  <!-- Slide 3 -->
+  <section class='slide' id='s2'>
+    <div class='banner'><b>AI Sector</b> (semis + cloud)</div>
+    <div class='section'>
+      <div class='h2'>Semis / Networking / AI Beta</div>
+      <table>
+        <thead><tr><th>Ticker</th><th>Last</th><th>1D %</th><th>P/E TTM</th><th>P/E Fwd</th><th>Ana. Target</th><th>Upside</th></tr></thead>
+        <tbody><tr>
+              <td class='mono'>NVDA</td><td class='mono'>$204.56</td><td class='mono pos'>+4.10%</td>
+              <td class='mono'>41.8</td><td class='mono'>18.2</td>
+              <td class='mono'>$269.17</td><td class='mono'>+31.58%</td>
+            </tr>
+<tr>
+              <td class='mono'>TSM</td><td class='mono'>$415.36</td><td class='mono pos'>+5.31%</td>
+              <td class='mono'>35.8</td><td class='mono'>21.5</td>
+              <td class='mono'>$463.45</td><td class='mono'>+11.58%</td>
+            </tr>
+<tr>
+              <td class='mono'>AVGO</td><td class='mono'>$423.34</td><td class='mono neg'>-0.94%</td>
+              <td class='mono'>82.5</td><td class='mono'>23.4</td>
+              <td class='mono'>$475.49</td><td class='mono'>+12.32%</td>
+            </tr>
+<tr>
+              <td class='mono'>ANET</td><td class='mono'>$145.43</td><td class='mono neg'>-14.56%</td>
+              <td class='mono'>50.0</td><td class='mono'>33.2</td>
+              <td class='mono'>$181.94</td><td class='mono'>+25.11%</td>
+            </tr>
+<tr>
+              <td class='mono'>MU</td><td class='mono'>$652.04</td><td class='mono pos'>+1.85%</td>
+              <td class='mono'>30.8</td><td class='mono'>6.4</td>
+              <td class='mono'>$551.40</td><td class='mono'>-15.43%</td>
+            </tr>
+<tr>
+              <td class='mono'>AMD</td><td class='mono'>$408.20</td><td class='mono pos'>+14.90%</td>
+              <td class='mono'>157.4</td><td class='mono'>33.2</td>
+              <td class='mono'>$312.28</td><td class='mono'>-23.50%</td>
+            </tr>
+<tr>
+              <td class='mono'>SMH</td><td class='mono'>$541.18</td><td class='mono pos'>+3.54%</td>
+              <td class='mono'>44.5</td><td class='mono'>—</td>
+              <td class='mono'>$—</td><td class='mono'>—</td>
+            </tr></tbody>
+      </table>
+    </div>
+    <div class='section'>
+      <div class='h2'>Cloud / Platforms</div>
+      <table>
+        <thead><tr><th>Ticker</th><th>Last</th><th>1D %</th><th>P/E TTM</th><th>P/E Fwd</th><th>Ana. Target</th><th>Upside</th></tr></thead>
+        <tbody><tr>
+              <td class='mono'>MSFT</td><td class='mono'>$414.61</td><td class='mono pos'>+0.78%</td>
+              <td class='mono'>24.7</td><td class='mono'>21.4</td>
+              <td class='mono'>$559.85</td><td class='mono'>+35.03%</td>
+            </tr>
+<tr>
+              <td class='mono'>GOOGL</td><td class='mono'>$397.58</td><td class='mono pos'>+2.36%</td>
+              <td class='mono'>30.3</td><td class='mono'>27.7</td>
+              <td class='mono'>$421.73</td><td class='mono'>+6.08%</td>
+            </tr>
+<tr>
+              <td class='mono'>META</td><td class='mono'>$617.27</td><td class='mono pos'>+2.03%</td>
+              <td class='mono'>22.4</td><td class='mono'>17.0</td>
+              <td class='mono'>$828.97</td><td class='mono'>+34.30%</td>
+            </tr>
+<tr>
+              <td class='mono'>AMZN</td><td class='mono'>$274.93</td><td class='mono pos'>+0.50%</td>
+              <td class='mono'>32.8</td><td class='mono'>27.8</td>
+              <td class='mono'>$309.52</td><td class='mono'>+12.58%</td>
+            </tr>
+<tr>
+              <td class='mono'>QQQ</td><td class='mono'>$691.39</td><td class='mono pos'>+1.43%</td>
+              <td class='mono'>33.7</td><td class='mono'>—</td>
+              <td class='mono'>$—</td><td class='mono'>—</td>
+            </tr></tbody>
+      </table>
+    </div>
+  </section>
 
-<section class='slide' id='s5'>
-  <div class='hdr'><div><h1>Slide 5 — Eva’s Suggested Allocation</h1><div class='sub'>Not current allocation · A practical “what to do next” framing</div></div></div>
-  <div class='card'>
-    <h3>Allocation sketch (bars)</h3>
-    <div class='barRow'><div class='barLbl'>Core Index (SPY/QQQ)</div><div class='bar'><div style='width:45%;'></div></div><div class='small'>45%</div></div><div class='barRow'><div class='barLbl'>AI/Semis (SMH + leaders)</div><div class='bar'><div style='width:25%;'></div></div><div class='small'>25%</div></div><div class='barRow'><div class='barLbl'>Defense/Aero (ITA/XAR + primes)</div><div class='bar'><div style='width:10%;'></div></div><div class='small'>10%</div></div><div class='barRow'><div class='barLbl'>Energy/Materials (XLE + COPX)</div><div class='bar'><div style='width:8%;'></div></div><div class='small'>8%</div></div><div class='barRow'><div class='barLbl'>Gold/Real Assets (GLD/IAU)</div><div class='bar'><div style='width:7%;'></div></div><div class='small'>7%</div></div><div class='barRow'><div class='barLbl'>Cash/T-bills (BIL)</div><div class='bar'><div style='width:5%;'></div></div><div class='small'>5%</div></div>
-    <p class='small'>Heuristic mix: core index + AI growth + geopolitical hedges + liquidity buffer.</p>
-  </div>
-  <div class='card'>
-    <h3>Priority actions (today)</h3>
-    <p>1) Keep AAPL as core; add only on market-wide weakness (avoid chasing single-day pops).</p>
-    <p>2) If semis are broadening (NVDA + MU + TSM green together), consider modest SMH tilt.</p>
-    <p>3) Use BIL for dry powder; avoid forced buys ahead of macro prints.</p>
-    <p>4) Maintain small GLD/IAU sleeve as geopolitical hedge; add only if volatility regime changes.</p>
-  </div>
-</section>
+  <!-- Slide 4 -->
+  <section class='slide' id='s3'>
+    <div class='banner'><b>Defense, Energy & Geopolitics</b></div>
+    <div class='section'>
+      <div class='h2'>Defense / Aerospace</div>
+      <table>
+        <thead><tr><th>Ticker</th><th>Last</th><th>1D %</th><th>P/E TTM</th><th>P/E Fwd</th><th>Ana. Target</th><th>Upside</th></tr></thead>
+        <tbody><tr>
+              <td class='mono'>LMT</td><td class='mono'>$511.88</td><td class='mono pos'>+0.58%</td>
+              <td class='mono'>24.8</td><td class='mono'>15.9</td>
+              <td class='mono'>$637.60</td><td class='mono'>+24.56%</td>
+            </tr>
+<tr>
+              <td class='mono'>RTX</td><td class='mono'>$177.59</td><td class='mono pos'>+2.73%</td>
+              <td class='mono'>33.4</td><td class='mono'>23.5</td>
+              <td class='mono'>$216.16</td><td class='mono'>+21.72%</td>
+            </tr>
+<tr>
+              <td class='mono'>XAR</td><td class='mono'>$265.69</td><td class='mono pos'>+4.10%</td>
+              <td class='mono'>38.3</td><td class='mono'>—</td>
+              <td class='mono'>$—</td><td class='mono'>—</td>
+            </tr>
+<tr>
+              <td class='mono'>ITA</td><td class='mono'>$223.48</td><td class='mono pos'>+3.77%</td>
+              <td class='mono'>36.6</td><td class='mono'>—</td>
+              <td class='mono'>$—</td><td class='mono'>—</td>
+            </tr></tbody>
+      </table>
+    </div>
+    <div class='section'>
+      <div class='h2'>Energy / Uranium / Grid</div>
+      <table>
+        <thead><tr><th>Ticker</th><th>Last</th><th>1D %</th><th>P/E TTM</th><th>P/E Fwd</th><th>Ana. Target</th><th>Upside</th></tr></thead>
+        <tbody><tr>
+              <td class='mono'>XLE</td><td class='mono'>$57.22</td><td class='mono neg'>-3.76%</td>
+              <td class='mono'>20.8</td><td class='mono'>—</td>
+              <td class='mono'>$—</td><td class='mono'>—</td>
+            </tr>
+<tr>
+              <td class='mono'>CEG</td><td class='mono'>$316.17</td><td class='mono neg'>-1.32%</td>
+              <td class='mono'>42.7</td><td class='mono'>23.3</td>
+              <td class='mono'>$367.68</td><td class='mono'>+16.29%</td>
+            </tr>
+<tr>
+              <td class='mono'>COPX</td><td class='mono'>$83.52</td><td class='mono pos'>+6.79%</td>
+              <td class='mono'>22.1</td><td class='mono'>—</td>
+              <td class='mono'>$—</td><td class='mono'>—</td>
+            </tr>
+<tr>
+              <td class='mono'>GRID</td><td class='mono'>$196.61</td><td class='mono pos'>+1.61%</td>
+              <td class='mono'>34.7</td><td class='mono'>—</td>
+              <td class='mono'>$—</td><td class='mono'>—</td>
+            </tr>
+<tr>
+              <td class='mono'>URA</td><td class='mono'>$56.38</td><td class='mono pos'>+4.02%</td>
+              <td class='mono'>39.2</td><td class='mono'>—</td>
+              <td class='mono'>$—</td><td class='mono'>—</td>
+            </tr>
+<tr>
+              <td class='mono'>IAU</td><td class='mono'>$88.43</td><td class='mono pos'>+3.20%</td>
+              <td class='mono'>—</td><td class='mono'>—</td>
+              <td class='mono'>$—</td><td class='mono'>—</td>
+            </tr>
+<tr>
+              <td class='mono'>GLD</td><td class='mono'>$431.65</td><td class='mono pos'>+3.20%</td>
+              <td class='mono'>—</td><td class='mono'>—</td>
+              <td class='mono'>$—</td><td class='mono'>—</td>
+            </tr>
+<tr>
+              <td class='mono'>BIL</td><td class='mono'>$91.43</td><td class='mono neg'>-0.01%</td>
+              <td class='mono'>—</td><td class='mono'>—</td>
+              <td class='mono'>$—</td><td class='mono'>—</td>
+            </tr></tbody>
+      </table>
+    </div>
+    <div class='foot'>Geopolitics sensitivity: XLE reacts most directly to oil headlines; defense ETFs (ITA/XAR) tend to respond to escalation risk and procurement headlines. Gold (GLD/IAU) remains the cleanest liquid hedge.</div>
+  </section>
 
-</body></html>
+  <!-- Slide 5 -->
+  <section class='slide' id='s4'>
+    <div class='banner'><b>Eva's Suggested Allocation</b> (model portfolio framing; not your current allocation)</div>
+    <div class='bars'>
+      <div class='bar'><div><b>Core Index (SPY/QQQ)</b> · <span class='mono'>35%</span></div><div class='barline'><div class='barfill' style='width:35%;'></div></div></div><div class='bar'><div><b>AAPL (Core single-name)</b> · <span class='mono'>15%</span></div><div class='barline'><div class='barfill' style='width:15%;'></div></div></div><div class='bar'><div><b>AI Semis (NVDA/AVGO/TSM/SMH)</b> · <span class='mono'>20%</span></div><div class='barline'><div class='barfill' style='width:20%;'></div></div></div><div class='bar'><div><b>Defense (ITA/XAR + LMT/RTX)</b> · <span class='mono'>10%</span></div><div class='barline'><div class='barfill' style='width:10%;'></div></div></div><div class='bar'><div><b>Energy &amp; Grid (XLE/CEG/GRID/URA)</b> · <span class='mono'>10%</span></div><div class='barline'><div class='barfill' style='width:10%;'></div></div></div><div class='bar'><div><b>Gold hedge (GLD/IAU)</b> · <span class='mono'>5%</span></div><div class='barline'><div class='barfill' style='width:5%;'></div></div></div><div class='bar'><div><b>Cash/T-bills (BIL)</b> · <span class='mono'>5%</span></div><div class='barline'><div class='barfill' style='width:5%;'></div></div></div>
+    </div>
+    <div class='section'>
+      <div class='h2'>Priority actions (next 1–3 sessions)</div>
+      <ul>
+        <li>Keep AAPL as the anchor; add only on red days unless a clear catalyst hits.</li><li>Use SMH as diversified AI beta; size NVDA/AVGO as higher-volatility satellites.</li><li>Geopolitics: maintain some ITA/XAR as convexity; avoid overconcentration.</li><li>If oil continues sliding on Iran-deal headlines, expect XLE to lag short-term; use GRID/CEG for ‘energy-but-not-oil’.</li>
+      </ul>
+    </div>
+    <div class='foot'>Disclosure: Valuation fields (P/E + targets) come from yfinance provider data and may be missing/lagged for some ETFs/tickers.</div>
+  </section>
+</div>
+<script>
+  const slides=[...document.querySelectorAll('.slide')];
+  let idx=0;
+  function show(i){idx=(i+slides.length)%slides.length;slides.forEach((s,j)=>s.classList.toggle('active',j===idx));window.scrollTo(0,0);}
+  function go(i){show(i);}
+  document.addEventListener('keydown', (e)=>{if(e.key==='ArrowRight')show(idx+1); if(e.key==='ArrowLeft')show(idx-1);});
+</script>
+</body>
+</html>
