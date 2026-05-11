@@ -3,160 +3,226 @@
 <head>
 <meta charset='utf-8'/>
 <meta name='viewport' content='width=device-width, initial-scale=1'/>
-<title>Daily Investment Update · 2026-05-10</title>
+<title>Daily Investment Update · 2026-05-11</title>
 <style>
-:root{--bg:#0b0f14;--card:#111827;--card2:#0f172a;--text:#e5e7eb;--muted:#9ca3af;--accent:#60a5fa;--good:#34d399;--bad:#fb7185;--line:#243244;}
-html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;}
-main{height:100vh;overflow-y:auto;scroll-snap-type:y mandatory;}
-section.slide{min-height:100vh;scroll-snap-align:start;padding:18px 16px 28px;box-sizing:border-box;display:flex;flex-direction:column;gap:14px;}
-.header{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;}
-.h1{font-size:20px;font-weight:800;letter-spacing:.2px;}
-.sub{color:var(--muted);font-size:12px;}
-.grid{display:grid;gap:10px;}
-.grid.cards{grid-template-columns:repeat(2,minmax(0,1fr));}
-@media(min-width:720px){.grid.cards{grid-template-columns:repeat(3,minmax(0,1fr));}}
-.card{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:14px;padding:12px;}
-.card h3{margin:0 0 8px;font-size:13px;line-height:1.25;}
-.card a{color:var(--accent);text-decoration:none;font-size:12px;}
-.kpi{display:flex;flex-wrap:wrap;gap:10px;}
-.kpi .pill{background:#0b1220;border:1px solid var(--line);border-radius:999px;padding:8px 10px;font-size:12px;color:var(--muted);}
-.tbl{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:14px;border:1px solid var(--line);background:#0b1220;}
-.tbl th,.tbl td{padding:10px 8px;border-bottom:1px solid var(--line);font-size:12px;text-align:right;white-space:nowrap;}
-.tbl th:first-child,.tbl td:first-child{text-align:left;}
-.tbl thead th{color:var(--muted);font-weight:700;background:#0a1020;}
-.tbl tbody tr:last-child td{border-bottom:none;}
-.pos{color:var(--good);font-weight:700;}
-.neg{color:var(--bad);font-weight:700;}
-.banner{background:#0b1220;border:1px solid var(--line);border-radius:14px;padding:12px;}
-hr.sep{border:none;border-top:1px solid var(--line);margin:2px 0;}
-.barwrap{display:flex;flex-direction:column;gap:8px;}
-.bar{display:flex;align-items:center;gap:10px;}
-.bar .lbl{width:150px;max-width:46vw;font-size:12px;color:var(--muted);}
-.bar .track{flex:1;height:10px;background:#0a1020;border:1px solid var(--line);border-radius:999px;overflow:hidden;}
-.bar .fill{height:100%;background:linear-gradient(90deg,#60a5fa,#a78bfa);}
-.bar .pct{width:52px;text-align:right;font-size:12px;color:var(--text);}
-.actions li{margin:6px 0;color:var(--text);font-size:12px;}
-small.note{color:var(--muted);}
+:root{{--bg:#0b0f14;--panel:#111826;--panel2:#0f1720;--text:#e6edf3;--muted:#9aa7b2;--accent:#7c5cff;--good:#2ecc71;--bad:#ff5c7a;--line:#1f2a37;}}
+html,body{{margin:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;}}
+.container{{max-width:980px;margin:0 auto;padding:14px 12px 80px;}}
+.topbar{{position:sticky;top:0;background:rgba(11,15,20,.92);backdrop-filter: blur(10px);border-bottom:1px solid var(--line);z-index:50;}}
+.topbar .inner{{max-width:980px;margin:0 auto;padding:10px 12px;display:flex;gap:10px;align-items:center;}}
+.pill{{font-size:12px;color:var(--muted);border:1px solid var(--line);padding:6px 10px;border-radius:999px;}}
+.navbtn{{background:var(--panel);border:1px solid var(--line);color:var(--text);padding:8px 10px;border-radius:10px;}}
+.navbtn:active{{transform:translateY(1px);}}
+.h1{{font-size:18px;font-weight:750;}}
+.slide{{display:none;}}
+.slide.active{{display:block;}}
+.banner{{margin:12px 0 10px;padding:12px;border:1px solid var(--line);background:linear-gradient(90deg, rgba(124,92,255,.25), rgba(17,24,38,.5));border-radius:14px;}}
+.grid6{{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}}
+@media(min-width:720px){{.grid6{{grid-template-columns:repeat(3,1fr);}}}}
+.card{{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px;min-height:92px;display:flex;flex-direction:column;gap:8px;}}
+.card-title{{font-size:13px;line-height:1.25;font-weight:650;}}
+.card-meta, .muted{{font-size:12px;color:var(--muted);}}
+.card-meta a, .muted a{{color:var(--muted);text-decoration:none;border-bottom:1px dashed rgba(154,167,178,.35);}}
+.row{{display:grid;grid-template-columns:1fr;gap:10px;}}
+@media(min-width:820px){{.row{{grid-template-columns:1fr 1fr;}}}}
+.panel{{background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:12px;}}
+.tbl{{width:100%;border-collapse:collapse;font-size:12px;}}
+.tbl th,.tbl td{{border-bottom:1px solid var(--line);padding:8px 6px;text-align:right;white-space:nowrap;}}
+.tbl th:first-child,.tbl td:first-child{{text-align:left;}}
+.tkr{{font-weight:700;}}
+.linklist{{margin:0;padding-left:18px;}}
+.linklist li{{margin:8px 0;}}
+.linklist a{{color:var(--text);text-decoration:none;}}
+.kpi{{display:flex;gap:12px;flex-wrap:wrap;}}
+.kpi .box{{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px 12px;min-width:150px;}}
+.kpi .lbl{{font-size:12px;color:var(--muted);}}
+.kpi .val{{font-size:18px;font-weight:750;margin-top:2px;}}
+.chg.good{{color:var(--good);}} .chg.bad{{color:var(--bad);}}
+.barrow{{margin:10px 0;}}
+.barlabel{{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);}}
+.bar{{height:10px;background:#0c1220;border:1px solid var(--line);border-radius:999px;overflow:hidden;margin-top:6px;}}
+.barfill{{height:100%;background:linear-gradient(90deg,var(--accent),#33d6ff);}}
+.footerNav{{position:fixed;left:0;right:0;bottom:0;background:rgba(11,15,20,.92);backdrop-filter: blur(10px);border-top:1px solid var(--line);}}
+.footerNav .inner{{max-width:980px;margin:0 auto;padding:10px 12px;display:flex;gap:8px;justify-content:space-between;}}
+.small{{font-size:11px;color:var(--muted);}}
 </style>
 </head>
 <body>
-<main>
-<section class='slide' id='s1'>
-  <div class='header'>
-    <div>
-      <div class='h1'>Market Snapshot · 2026-05-10 (UTC)</div>
-      <div class='sub'>1D change from yfinance history(period='2d') closes (unadjusted).</div>
-    </div>
-    <div class='sub'>Slides: 1/5</div>
+<div class='topbar'><div class='inner'>
+  <button class='navbtn' onclick='prevSlide()'>◀</button>
+  <div style='flex:1'>
+    <div class='h1'>Daily Investment Update</div>
+    <div class='small'>2026-05-11 · Generated 2026-05-11T15:05:10Z</div>
   </div>
-  <div class='banner'>
-    <b style='color:#fbbf24;'>Key Events (from live RSS)</b>
-    <div class='grid cards' style='margin-top:10px;'>
+  <button class='navbtn' onclick='nextSlide()'>▶</button>
+</div></div>
+
+<div class='container'>
+
+  <section class='slide active' id='s1'>
+    <div class='banner'><b>Market Snapshot + Key Events</b><div class='small'>Top stories pulled from live RSS. Tap any card for the source.</div></div>
+    <div class='grid6'>
       
+        <div class='card'>
+          <div class='card-title'>Stock Market Today: Dow Wavers, Oil Rises After Trump Rejects Peace Deal; Micron, Nvidia Jump (Live Coverage)</div>
+          <div class='card-meta'><a href='https://www.investors.com/market-trend/stock-market-today/stock-market-today-dow-jones-sp500-nasdaq-oil-prices-intel-lumentum-moderna-circle-internet/?src=A00220&amp;yptr=yahoo' target='_blank' rel='noopener'>Source: Investor&#39;s Business Daily · 2026-05-11T14:18:05Z</a></div>
+        </div>
+        
+        <div class='card'>
+          <div class='card-title'>Cloudflare stock rebounds from steep post-earnings sell-off</div>
+          <div class='card-meta'><a href='https://finance.yahoo.com/markets/article/cloudflare-stock-rebounds-from-steep-post-earnings-sell-off-134338974.html' target='_blank' rel='noopener'>Source: Yahoo Finance · 2026-05-08T13:43:38Z</a></div>
+        </div>
+        
+        <div class='card'>
+          <div class='card-title'>Tech stocks today: Chipmaker Cerebras to stage blockbuster IPO, AI in focus for Trump-Xi meeting</div>
+          <div class='card-meta'><a href='https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-chipmaker-cerebras-to-stage-blockbuster-ipo-ai-in-focus-for-trump-xi-meeting-100000457.html' target='_blank' rel='noopener'>Source: Yahoo Finance · 2026-05-11T10:00:00Z</a></div>
+        </div>
+        
+        <div class='card'>
+          <div class='card-title'>Gold and silver prices today, Monday, May 11: Gold and silver down this morning after Trump rejects Iran&#39;s peace plan</div>
+          <div class='card-meta'><a href='https://finance.yahoo.com/personal-finance/investing/article/gold-and-silver-prices-today-monday-may-11-gold-and-silver-down-this-morning-after-trump-rejects-irans-peace-plan-110050358.html' target='_blank' rel='noopener'>Source: Yahoo Personal Finance · 2026-05-11T11:00:50Z</a></div>
+        </div>
+        
+        <div class='card'>
+          <div class='card-title'>Comfort Systems USA (FIX) Rallied on Strong Demand from Data Center Construction</div>
+          <div class='card-meta'><a href='https://finance.yahoo.com/markets/stocks/articles/comfort-systems-usa-fix-rallied-134744469.html' target='_blank' rel='noopener'>Source: Insider Monkey · 2026-05-11T13:47:44Z</a></div>
+        </div>
+        
+        <div class='card'>
+          <div class='card-title'>Is Wall Street Underestimating This Under-The-Radar AI Stock Pick in Cathie Wood’s Portfolio?</div>
+          <div class='card-meta'><a href='https://finance.yahoo.com/markets/stocks/articles/wall-street-underestimating-under-radar-134833206.html' target='_blank' rel='noopener'>Source: Insider Monkey · 2026-05-11T13:48:33Z</a></div>
+        </div>
+        
     </div>
-  </div>
-  <div class='card'>
-    <h3>1D Movers (watchlist)</h3>
-    <div style='overflow:auto'>
-      <table class='tbl'>
-        <thead><tr><th>Ticker</th><th>Last Close</th><th>1D %</th></tr></thead>
+
+    <div class='row' style='margin-top:10px'>
+      <div class='panel'>
+        <div style='font-weight:750;margin-bottom:8px'>Quick Tape</div>
+        <table class='tbl'>
+          <thead><tr><th>Ticker</th><th>Last</th><th>1D</th></tr></thead>
+          <tbody>
+            <tr><td class='tkr'>AAPL</td><td>292.69</td><td class='chg bad'>-0.21%</td></tr><tr><td class='tkr'>NVDA</td><td>221.12</td><td class='chg good'>+2.75%</td></tr><tr><td class='tkr'>MSFT</td><td>409.29</td><td class='chg bad'>-1.40%</td></tr><tr><td class='tkr'>SPY</td><td>739.41</td><td class='chg good'>+0.24%</td></tr><tr><td class='tkr'>QQQ</td><td>712.37</td><td class='chg good'>+0.16%</td></tr><tr><td class='tkr'>SMH</td><td>574.28</td><td class='chg good'>+1.37%</td></tr><tr><td class='tkr'>XLE</td><td>56.78</td><td class='chg good'>+1.93%</td></tr><tr><td class='tkr'>GLD</td><td>433.86</td><td class='chg good'>+0.02%</td></tr><tr><td class='tkr'>IAU</td><td>88.90</td><td class='chg good'>+0.04%</td></tr><tr><td class='tkr'>BIL</td><td>91.48</td><td class='chg good'>+0.02%</td></tr><tr><td class='tkr'>LMT</td><td>509.36</td><td class='chg good'>+0.56%</td></tr><tr><td class='tkr'>RTX</td><td>178.00</td><td class='chg good'>+1.08%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class='panel'>
+        <div style='font-weight:750;margin-bottom:8px'>More headlines</div>
+        <ul class="linklist"><li><a href='https://www.investors.com/market-trend/stock-market-today/stock-market-today-dow-jones-sp500-nasdaq-oil-prices-intel-lumentum-moderna-circle-internet/?src=A00220&amp;yptr=yahoo' target='_blank' rel='noopener'>Stock Market Today: Dow Wavers, Oil Rises After Trump Rejects Peace Deal; Micron, Nvidia Jump (Live Coverage)</a><div class='muted'><a href='https://www.investors.com/market-trend/stock-market-today/stock-market-today-dow-jones-sp500-nasdaq-oil-prices-intel-lumentum-moderna-circle-internet/?src=A00220&amp;yptr=yahoo' target='_blank' rel='noopener'>Source: Investor&#39;s Business Daily · 2026-05-11T14:18:05Z</a></div></li><li><a href='https://finance.yahoo.com/markets/article/cloudflare-stock-rebounds-from-steep-post-earnings-sell-off-134338974.html' target='_blank' rel='noopener'>Cloudflare stock rebounds from steep post-earnings sell-off</a><div class='muted'><a href='https://finance.yahoo.com/markets/article/cloudflare-stock-rebounds-from-steep-post-earnings-sell-off-134338974.html' target='_blank' rel='noopener'>Source: Yahoo Finance · 2026-05-08T13:43:38Z</a></div></li><li><a href='https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-chipmaker-cerebras-to-stage-blockbuster-ipo-ai-in-focus-for-trump-xi-meeting-100000457.html' target='_blank' rel='noopener'>Tech stocks today: Chipmaker Cerebras to stage blockbuster IPO, AI in focus for Trump-Xi meeting</a><div class='muted'><a href='https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-chipmaker-cerebras-to-stage-blockbuster-ipo-ai-in-focus-for-trump-xi-meeting-100000457.html' target='_blank' rel='noopener'>Source: Yahoo Finance · 2026-05-11T10:00:00Z</a></div></li><li><a href='https://finance.yahoo.com/personal-finance/investing/article/gold-and-silver-prices-today-monday-may-11-gold-and-silver-down-this-morning-after-trump-rejects-irans-peace-plan-110050358.html' target='_blank' rel='noopener'>Gold and silver prices today, Monday, May 11: Gold and silver down this morning after Trump rejects Iran&#39;s peace plan</a><div class='muted'><a href='https://finance.yahoo.com/personal-finance/investing/article/gold-and-silver-prices-today-monday-may-11-gold-and-silver-down-this-morning-after-trump-rejects-irans-peace-plan-110050358.html' target='_blank' rel='noopener'>Source: Yahoo Personal Finance · 2026-05-11T11:00:50Z</a></div></li><li><a href='https://finance.yahoo.com/personal-finance/banking/article/best-high-yield-savings-interest-rates-today-sunday-may-10-2026-100000441.html' target='_blank' rel='noopener'>Best high-yield savings interest rates today, Sunday, May 10, 2026 (Earn up to 4.1% APY)</a><div class='muted'><a href='https://finance.yahoo.com/personal-finance/banking/article/best-high-yield-savings-interest-rates-today-sunday-may-10-2026-100000441.html' target='_blank' rel='noopener'>Source: Yahoo Personal Finance · 2026-05-10T10:00:00Z</a></div></li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class='slide' id='s2'>
+    <div class='banner'><b>AAPL Deep Dive</b><div class='small'>Largest holding — always highlighted.</div></div>
+    <div class='kpi'>
+      <div class='box'><div class='lbl'>AAPL Price</div><div class='val'>292.69</div></div><div class='box'><div class='lbl'>1D Change</div><div class='val chg bad'>-0.21%</div></div><div class='box'><div class='lbl'>P/E (TTM)</div><div class='val'>35.38</div></div><div class='box'><div class='lbl'>P/E (Fwd)</div><div class='val'>30.61</div></div><div class='box'><div class='lbl'>Analyst Target (Mean)</div><div class='val'>305.28</div></div>
+    </div>
+
+    <div class='row' style='margin-top:10px'>
+      <div class='panel'>
+        <div style='font-weight:750;margin-bottom:8px'>AAPL-linked news</div>
+        <ul class="linklist"><li><a href='https://www.investors.com/market-trend/stock-market-today/stock-market-today-dow-jones-sp500-nasdaq-oil-prices-intel-lumentum-moderna-circle-internet/?src=A00220&amp;yptr=yahoo' target='_blank' rel='noopener'>Stock Market Today: Dow Wavers, Oil Rises After Trump Rejects Peace Deal; Micron, Nvidia Jump (Live Coverage)</a><div class='muted'><a href='https://www.investors.com/market-trend/stock-market-today/stock-market-today-dow-jones-sp500-nasdaq-oil-prices-intel-lumentum-moderna-circle-internet/?src=A00220&amp;yptr=yahoo' target='_blank' rel='noopener'>Source: Investor&#39;s Business Daily · 2026-05-11T14:18:05Z</a></div></li><li><a href='https://finance.yahoo.com/markets/article/cloudflare-stock-rebounds-from-steep-post-earnings-sell-off-134338974.html' target='_blank' rel='noopener'>Cloudflare stock rebounds from steep post-earnings sell-off</a><div class='muted'><a href='https://finance.yahoo.com/markets/article/cloudflare-stock-rebounds-from-steep-post-earnings-sell-off-134338974.html' target='_blank' rel='noopener'>Source: Yahoo Finance · 2026-05-08T13:43:38Z</a></div></li><li><a href='https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-chipmaker-cerebras-to-stage-blockbuster-ipo-ai-in-focus-for-trump-xi-meeting-100000457.html' target='_blank' rel='noopener'>Tech stocks today: Chipmaker Cerebras to stage blockbuster IPO, AI in focus for Trump-Xi meeting</a><div class='muted'><a href='https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-chipmaker-cerebras-to-stage-blockbuster-ipo-ai-in-focus-for-trump-xi-meeting-100000457.html' target='_blank' rel='noopener'>Source: Yahoo Finance · 2026-05-11T10:00:00Z</a></div></li></ul>
+      </div>
+      <div class='panel'>
+        <div style='font-weight:750;margin-bottom:8px'>Positioning notes</div>
+        <div class='small'>
+          • Treat AAPL as the portfolio anchor; add on pullbacks, not breakouts.<br/>
+          • Watch mega-cap rotation: if QQQ leads while defensives lag, keep some dry powder (BIL).<br/>
+          • If rates spike again, expect near-term compression in mega-cap multiples.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class='slide' id='s3'>
+    <div class='banner'><b>AI Sector</b><div class='small'>Semis + cloud. Valuation fields from yfinance.</div></div>
+    <div class='panel'>
+      <div style='font-weight:750;margin-bottom:8px'>AI / Semis</div>
+      <table class='tbl'><thead><tr><th>Ticker</th><th>Price</th><th>P/E TTM</th><th>P/E Fwd</th><th>Ana. Target</th><th>Upside%</th></tr></thead><tbody><tr><td class='tkr'>NVDA</td><td>221.13</td><td>45.04</td><td>19.59</td><td>269.17</td><td>+21.72%</td></tr><tr><td class='tkr'>TSM</td><td>403.96</td><td>34.56</td><td>20.94</td><td>463.45</td><td>+14.73%</td></tr><tr><td class='tkr'>AVGO</td><td>430.75</td><td>84.12</td><td>23.77</td><td>475.49</td><td>+10.39%</td></tr><tr><td class='tkr'>AMD</td><td>458.39</td><td>152.71</td><td>35.51</td><td>445.02</td><td>-2.92%</td></tr><tr><td class='tkr'>MU</td><td>787.75</td><td>37.14</td><td>7.74</td><td>573.90</td><td>-27.15%</td></tr><tr><td class='tkr'>ANET</td><td>140.49</td><td>48.28</td><td>31.68</td><td>188.90</td><td>+34.46%</td></tr></tbody></table>
+    </div>
+    <div class='panel' style='margin-top:10px'>
+      <div style='font-weight:750;margin-bottom:8px'>AI / Cloud & Platforms</div>
+      <table class='tbl'><thead><tr><th>Ticker</th><th>Price</th><th>P/E TTM</th><th>P/E Fwd</th><th>Ana. Target</th><th>Upside%</th></tr></thead><tbody><tr><td class='tkr'>MSFT</td><td>409.25</td><td>24.40</td><td>21.14</td><td>561.56</td><td>+37.21%</td></tr><tr><td class='tkr'>AMZN</td><td>271.84</td><td>32.48</td><td>27.54</td><td>311.55</td><td>+14.61%</td></tr><tr><td class='tkr'>GOOGL</td><td>393.98</td><td>30.05</td><td>27.24</td><td>427.89</td><td>+8.61%</td></tr><tr><td class='tkr'>META</td><td>600.25</td><td>21.83</td><td>16.59</td><td>826.69</td><td>+37.72%</td></tr></tbody></table>
+    </div>
+    <div class='panel' style='margin-top:10px'>
+      <div style='font-weight:750;margin-bottom:8px'>AI headlines</div>
+      <ul class="linklist"><li><a href='https://www.investors.com/market-trend/stock-market-today/stock-market-today-dow-jones-sp500-nasdaq-oil-prices-intel-lumentum-moderna-circle-internet/?src=A00220&amp;yptr=yahoo' target='_blank' rel='noopener'>Stock Market Today: Dow Wavers, Oil Rises After Trump Rejects Peace Deal; Micron, Nvidia Jump (Live Coverage)</a><div class='muted'><a href='https://www.investors.com/market-trend/stock-market-today/stock-market-today-dow-jones-sp500-nasdaq-oil-prices-intel-lumentum-moderna-circle-internet/?src=A00220&amp;yptr=yahoo' target='_blank' rel='noopener'>Source: Investor&#39;s Business Daily · 2026-05-11T14:18:05Z</a></div></li><li><a href='https://finance.yahoo.com/markets/article/cloudflare-stock-rebounds-from-steep-post-earnings-sell-off-134338974.html' target='_blank' rel='noopener'>Cloudflare stock rebounds from steep post-earnings sell-off</a><div class='muted'><a href='https://finance.yahoo.com/markets/article/cloudflare-stock-rebounds-from-steep-post-earnings-sell-off-134338974.html' target='_blank' rel='noopener'>Source: Yahoo Finance · 2026-05-08T13:43:38Z</a></div></li><li><a href='https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-chipmaker-cerebras-to-stage-blockbuster-ipo-ai-in-focus-for-trump-xi-meeting-100000457.html' target='_blank' rel='noopener'>Tech stocks today: Chipmaker Cerebras to stage blockbuster IPO, AI in focus for Trump-Xi meeting</a><div class='muted'><a href='https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-chipmaker-cerebras-to-stage-blockbuster-ipo-ai-in-focus-for-trump-xi-meeting-100000457.html' target='_blank' rel='noopener'>Source: Yahoo Finance · 2026-05-11T10:00:00Z</a></div></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/comfort-systems-usa-fix-rallied-134744469.html' target='_blank' rel='noopener'>Comfort Systems USA (FIX) Rallied on Strong Demand from Data Center Construction</a><div class='muted'><a href='https://finance.yahoo.com/markets/stocks/articles/comfort-systems-usa-fix-rallied-134744469.html' target='_blank' rel='noopener'>Source: Insider Monkey · 2026-05-11T13:47:44Z</a></div></li><li><a href='https://finance.yahoo.com/markets/stocks/articles/wall-street-underestimating-under-radar-134833206.html' target='_blank' rel='noopener'>Is Wall Street Underestimating This Under-The-Radar AI Stock Pick in Cathie Wood’s Portfolio?</a><div class='muted'><a href='https://finance.yahoo.com/markets/stocks/articles/wall-street-underestimating-under-radar-134833206.html' target='_blank' rel='noopener'>Source: Insider Monkey · 2026-05-11T13:48:33Z</a></div></li></ul>
+    </div>
+  </section>
+
+  <section class='slide' id='s4'>
+    <div class='banner'><b>Defense, Energy & Geopolitics</b><div class='small'>Hedges + cyclicals that respond to geopolitical and energy shocks.</div></div>
+    <div class='row'>
+      <div class='panel'>
+        <div style='font-weight:750;margin-bottom:8px'>Defense tape</div>
+        <table class='tbl'><thead><tr><th>Ticker</th><th>Last</th><th>1D</th></tr></thead>
         <tbody>
-          <tr><td>AAPL</td><td>$293.32</td><td class='pos'>+2.05%</td></tr><tr><td>NVDA</td><td>$215.20</td><td class='pos'>+1.75%</td></tr><tr><td>MSFT</td><td>$415.12</td><td class='neg'>-1.34%</td></tr><tr><td>LMT</td><td>$506.51</td><td class='neg'>-1.15%</td></tr><tr><td>TSM</td><td>$411.68</td><td class='neg'>-0.60%</td></tr><tr><td>AVGO</td><td>$430.00</td><td class='pos'>+4.23%</td></tr><tr><td>ANET</td><td>$141.77</td><td class='pos'>+0.01%</td></tr><tr><td>MU</td><td>$746.81</td><td class='pos'>+15.49%</td></tr><tr><td>AMD</td><td>$455.19</td><td class='pos'>+11.44%</td></tr><tr><td>CEG</td><td>$303.63</td><td class='neg'>-2.46%</td></tr><tr><td>RTX</td><td>$176.09</td><td class='neg'>-0.39%</td></tr><tr><td>XAR</td><td>$265.40</td><td class='pos'>+1.00%</td></tr><tr><td>ITA</td><td>$223.49</td><td class='pos'>+0.44%</td></tr><tr><td>IAU</td><td>$88.87</td><td class='pos'>+0.46%</td></tr><tr><td>GLD</td><td>$433.77</td><td class='pos'>+0.48%</td></tr><tr><td>SMH</td><td>$566.54</td><td class='pos'>+4.90%</td></tr><tr><td>QQQ</td><td>$711.23</td><td class='pos'>+2.34%</td></tr><tr><td>SPY</td><td>$737.62</td><td class='pos'>+0.83%</td></tr><tr><td>XLE</td><td>$55.70</td><td class='neg'>-0.45%</td></tr><tr><td>URA</td><td>$55.18</td><td class='neg'>-1.92%</td></tr><tr><td>COPX</td><td>$85.97</td><td class='pos'>+4.07%</td></tr><tr><td>GRID</td><td>$197.22</td><td class='pos'>+2.26%</td></tr><tr><td>BIL</td><td>$91.46</td><td class='pos'>+0.02%</td></tr><tr><td>CIBR</td><td>$75.32</td><td class='pos'>+2.98%</td></tr><tr><td>GOOGL</td><td>$400.80</td><td class='pos'>+0.71%</td></tr><tr><td>META</td><td>$609.63</td><td class='neg'>-1.16%</td></tr><tr><td>AMZN</td><td>$272.68</td><td class='pos'>+0.56%</td></tr>
-        </tbody>
-      </table>
+          <tr><td class='tkr'>LMT</td><td>509.36</td><td class='chg good'>+0.56%</td></tr><tr><td class='tkr'>RTX</td><td>178.00</td><td class='chg good'>+1.08%</td></tr><tr><td class='tkr'>ITA</td><td>225.70</td><td class='chg good'>+0.99%</td></tr><tr><td class='tkr'>XAR</td><td>268.54</td><td class='chg good'>+1.18%</td></tr>
+        </tbody></table>
+      </div>
+      <div class='panel'>
+        <div style='font-weight:750;margin-bottom:8px'>Energy / materials tape</div>
+        <table class='tbl'><thead><tr><th>Ticker</th><th>Last</th><th>1D</th></tr></thead>
+        <tbody>
+          <tr><td class='tkr'>XLE</td><td>56.78</td><td class='chg good'>+1.93%</td></tr><tr><td class='tkr'>CEG</td><td>292.40</td><td class='chg bad'>-3.70%</td></tr><tr><td class='tkr'>URA</td><td>57.03</td><td class='chg good'>+3.35%</td></tr><tr><td class='tkr'>COPX</td><td>88.26</td><td class='chg good'>+2.66%</td></tr><tr><td class='tkr'>GRID</td><td>198.15</td><td class='chg good'>+0.47%</td></tr>
+        </tbody></table>
+      </div>
     </div>
-    <small class='note'>If markets are closed, last two daily closes may be from prior sessions.</small>
-  </div>
-</section>
+    <div class='panel' style='margin-top:10px'>
+      <div style='font-weight:750;margin-bottom:8px'>Geopolitics / oil headlines</div>
+      <ul class="linklist"><li><a href='https://www.investors.com/market-trend/stock-market-today/stock-market-today-dow-jones-sp500-nasdaq-oil-prices-intel-lumentum-moderna-circle-internet/?src=A00220&amp;yptr=yahoo' target='_blank' rel='noopener'>Stock Market Today: Dow Wavers, Oil Rises After Trump Rejects Peace Deal; Micron, Nvidia Jump (Live Coverage)</a><div class='muted'><a href='https://www.investors.com/market-trend/stock-market-today/stock-market-today-dow-jones-sp500-nasdaq-oil-prices-intel-lumentum-moderna-circle-internet/?src=A00220&amp;yptr=yahoo' target='_blank' rel='noopener'>Source: Investor&#39;s Business Daily · 2026-05-11T14:18:05Z</a></div></li><li><a href='https://finance.yahoo.com/personal-finance/investing/article/gold-and-silver-prices-today-monday-may-11-gold-and-silver-down-this-morning-after-trump-rejects-irans-peace-plan-110050358.html' target='_blank' rel='noopener'>Gold and silver prices today, Monday, May 11: Gold and silver down this morning after Trump rejects Iran&#39;s peace plan</a><div class='muted'><a href='https://finance.yahoo.com/personal-finance/investing/article/gold-and-silver-prices-today-monday-may-11-gold-and-silver-down-this-morning-after-trump-rejects-irans-peace-plan-110050358.html' target='_blank' rel='noopener'>Source: Yahoo Personal Finance · 2026-05-11T11:00:50Z</a></div></li></ul>
+    </div>
+  </section>
 
-<section class='slide' id='s2'>
-  <div class='header'>
-    <div>
-      <div class='h1'>AAPL Deep Dive (largest holding)</div>
-      <div class='sub'>Price action, valuation, and analyst target snapshot.</div>
+  <section class='slide' id='s5'>
+    <div class='banner'><b>Eva's Suggested Allocation</b><div class='small'>Suggested (not current) — sized for diversification + optionality.</div></div>
+    <div class='panel'>
+      <div style='font-weight:750;margin-bottom:8px'>Target mix</div>
+      <div class='barrow'><div class='barlabel'>Core Index (SPY/QQQ)<span class='barval'>35%</span></div><div class='bar'><div class='barfill' style='width:100.0%;'></div></div></div><div class='barrow'><div class='barlabel'>Apple (AAPL)<span class='barval'>15%</span></div><div class='bar'><div class='barfill' style='width:42.9%;'></div></div></div><div class='barrow'><div class='barlabel'>AI Semis<span class='barval'>15%</span></div><div class='bar'><div class='barfill' style='width:42.9%;'></div></div></div><div class='barrow'><div class='barlabel'>Defense<span class='barval'>10%</span></div><div class='bar'><div class='barfill' style='width:28.6%;'></div></div></div><div class='barrow'><div class='barlabel'>Energy/Materials<span class='barval'>10%</span></div><div class='bar'><div class='barfill' style='width:28.6%;'></div></div></div><div class='barrow'><div class='barlabel'>Gold (IAU/GLD)<span class='barval'>5%</span></div><div class='bar'><div class='barfill' style='width:14.3%;'></div></div></div><div class='barrow'><div class='barlabel'>Cash/T-Bills (BIL)<span class='barval'>10%</span></div><div class='bar'><div class='barfill' style='width:28.6%;'></div></div></div>
+      <div class='small' style='margin-top:10px'>Not investment advice; sizing reflects a balanced risk posture with hedges for geopolitics and rates.</div>
     </div>
-    <div class='sub'>Slides: 2/5</div>
-  </div>
-  <div class='kpi'>
-    <div class='pill'>Last close: <b>$293.32</b> (+2.05%)</div>
-    <div class='pill'>P/E TTM: <b>35.5</b></div>
-    <div class='pill'>P/E Fwd: <b>30.7</b></div>
-    <div class='pill'>Analyst mean target: <b>$305.28</b></div>
-    <div class='pill'>52W range: <b>$193.46–$294.76</b></div>
-  </div>
-  <div class='card'>
-    <h3>What I’m watching</h3>
-    <ul class='actions'>
-      <li>Any catalyst headlines tied to iPhone demand, services growth, or regulatory risk.</li>
-      <li>Relative performance vs QQQ/SMH as a signal of “quality rotation” vs “beta chase”.</li>
-      <li>Valuation vs analyst target: upside is +4.1%.</li>
-    </ul>
-  </div>
-</section>
+    <div class='panel' style='margin-top:10px'>
+      <div style='font-weight:750;margin-bottom:8px'>Priority actions (today)</div>
+      <ol class='small'>
+        <li>Keep AAPL as core; add only on weakness, not after gap-ups.</li><li>Use SMH/semis exposure tactically around AI-capex headlines; trim if NVDA-led spikes extend.</li><li>Maintain defense basket (ITA/XAR) as geopolitics hedge; prefer dips vs. chasing.</li><li>Hold gold (IAU/GLD) and BIL as ballast; raise BIL if oil/geopolitics escalates.</li>
+      </ol>
+    </div>
+  </section>
 
-<section class='slide' id='s3'>
-  <div class='header'>
-    <div>
-      <div class='h1'>AI Sector</div>
-      <div class='sub'>Semis + cloud tables (yfinance fundamentals).</div>
-    </div>
-    <div class='sub'>Slides: 3/5</div>
-  </div>
-  <div class='card'><h3>Semis</h3><div style='overflow:auto'><table class="tbl"><thead><tr><th>Ticker</th><th>Price</th><th>P/E TTM</th><th>P/E Fwd</th><th>Ana. Target</th><th>Upside%</th></tr></thead><tbody><tr><td>NVDA</td><td>$215.20</td><td>43.8</td><td>19.1</td><td>$269.17</td><td class="pos">+25.1%</td></tr><tr><td>TSM</td><td>$411.68</td><td>35.2</td><td>21.3</td><td>$463.45</td><td class="pos">+12.6%</td></tr><tr><td>AVGO</td><td>$430.00</td><td>84.0</td><td>23.7</td><td>$475.49</td><td class="pos">+10.6%</td></tr><tr><td>ANET</td><td>$141.77</td><td>48.7</td><td>32.0</td><td>$188.59</td><td class="pos">+33.0%</td></tr><tr><td>MU</td><td>$746.81</td><td>35.2</td><td>7.3</td><td>$556.05</td><td class="neg">-25.5%</td></tr><tr><td>AMD</td><td>$455.19</td><td>151.7</td><td>35.3</td><td>$445.02</td><td class="neg">-2.2%</td></tr></tbody></table></div></div>
-  <div class='card'><h3>Cloud / Platforms</h3><div style='overflow:auto'><table class="tbl"><thead><tr><th>Ticker</th><th>Price</th><th>P/E TTM</th><th>P/E Fwd</th><th>Ana. Target</th><th>Upside%</th></tr></thead><tbody><tr><td>MSFT</td><td>$415.12</td><td>24.8</td><td>21.4</td><td>$561.56</td><td class="pos">+35.3%</td></tr><tr><td>GOOGL</td><td>$400.80</td><td>30.6</td><td>27.7</td><td>$427.89</td><td class="pos">+6.8%</td></tr><tr><td>META</td><td>$609.63</td><td>22.2</td><td>16.8</td><td>$826.69</td><td class="pos">+35.6%</td></tr><tr><td>AMZN</td><td>$272.68</td><td>32.6</td><td>27.6</td><td>$311.55</td><td class="pos">+14.3%</td></tr></tbody></table></div></div>
-</section>
+</div>
 
-<section class='slide' id='s4'>
-  <div class='header'>
-    <div>
-      <div class='h1'>Defense, Energy & Geopolitics</div>
-      <div class='sub'>Risk hedges and key exposures.</div>
-    </div>
-    <div class='sub'>Slides: 4/5</div>
-  </div>
-  <div class='card'>
-    <h3>Defense / Aerospace (1D)</h3>
-    <div style='overflow:auto'>
-      <table class='tbl'><thead><tr><th>Ticker</th><th>Last Close</th><th>1D %</th></tr></thead><tbody>
-      <tr><td>LMT</td><td>$506.51</td><td class='neg'>-1.15%</td></tr><tr><td>RTX</td><td>$176.09</td><td class='neg'>-0.39%</td></tr><tr><td>ITA</td><td>$223.49</td><td class='pos'>+0.44%</td></tr><tr><td>XAR</td><td>$265.40</td><td class='pos'>+1.00%</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-  <div class='card'>
-    <h3>Energy / Transition / Materials (1D)</h3>
-    <div style='overflow:auto'>
-      <table class='tbl'><thead><tr><th>Ticker</th><th>Last Close</th><th>1D %</th></tr></thead><tbody>
-      <tr><td>XLE</td><td>$55.70</td><td class='neg'>-0.45%</td></tr><tr><td>URA</td><td>$55.18</td><td class='neg'>-1.92%</td></tr><tr><td>COPX</td><td>$85.97</td><td class='pos'>+4.07%</td></tr><tr><td>GRID</td><td>$197.22</td><td class='pos'>+2.26%</td></tr><tr><td>CEG</td><td>$303.63</td><td class='neg'>-2.46%</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-</section>
+<div class='footerNav'><div class='inner'>
+  <button class='navbtn' onclick='gotoSlide(1)'>1</button>
+  <button class='navbtn' onclick='gotoSlide(2)'>2</button>
+  <button class='navbtn' onclick='gotoSlide(3)'>3</button>
+  <button class='navbtn' onclick='gotoSlide(4)'>4</button>
+  <button class='navbtn' onclick='gotoSlide(5)'>5</button>
+</div></div>
 
-<section class='slide' id='s5'>
-  <div class='header'>
-    <div>
-      <div class='h1'>Eva’s Suggested Allocation</div>
-      <div class='sub'>Model weights + priority actions (not current portfolio).</div>
-    </div>
-    <div class='sub'>Slides: 5/5</div>
-  </div>
-  <div class='card'>
-    <h3>Suggested weights</h3>
-    <div class='barwrap'>
-      <div class='bar'><div class='lbl'>Core Index (SPY/QQQ)</div><div class='track'><div class='fill' style='width:40%;'></div></div><div class='pct'>40%</div></div><div class='bar'><div class='lbl'>AAPL (core single-name)</div><div class='track'><div class='fill' style='width:18%;'></div></div><div class='pct'>18%</div></div><div class='bar'><div class='lbl'>AI/Semis (NVDA/AVGO/TSM/SMH)</div><div class='track'><div class='fill' style='width:18%;'></div></div><div class='pct'>18%</div></div><div class='bar'><div class='lbl'>Defense & Energy (ITA/XAR/XLE)</div><div class='track'><div class='fill' style='width:12%;'></div></div><div class='pct'>12%</div></div><div class='bar'><div class='lbl'>Gold/Real assets (GLD/IAU)</div><div class='track'><div class='fill' style='width:7%;'></div></div><div class='pct'>7%</div></div><div class='bar'><div class='lbl'>Cash/T-bills (BIL)</div><div class='track'><div class='fill' style='width:5%;'></div></div><div class='pct'>5%</div></div>
-    </div>
-  </div>
-  <div class='card'>
-    <h3>Priority actions (today → 1 week)</h3>
-    <ul class='actions'>
-      <li><b>AAPL:</b> Hold overweight; consider adding only on broad-market dips rather than chasing strength.</li>
-      <li><b>AI/Semis:</b> Prefer diversified exposure (SMH) + leaders (NVDA/AVGO/TSM) on pullbacks; avoid overconcentration.</li>
-      <li><b>Geopolitical hedge:</b> Keep ITA/XAR + XLE steady; add GLD/IAU if volatility picks up.</li>
-      <li><b>Cash discipline:</b> Keep planned buys in BIL to deploy opportunistically.</li>
-    </ul>
-    <small class='note'>Educational research — not financial advice.</small>
-  </div>
-</section>
-</main>
+<script>
+let idx = 1;
+function show(i){
+  idx = Math.max(1, Math.min(5, i));
+  for (let k=1;k<=5;k++){
+    const el = document.getElementById('s'+k);
+    if (!el) continue;
+    el.classList.toggle('active', k===idx);
+  }
+  window.scrollTo({top:0, behavior:'instant'});
+}
+function nextSlide(){show(idx+1);} 
+function prevSlide(){show(idx-1);} 
+function gotoSlide(i){show(i);} 
+// swipe
+let x0=null;
+document.addEventListener('touchstart', e=>{x0 = e.touches[0].clientX;}, {passive:true});
+document.addEventListener('touchend', e=>{
+  if (x0===null) return;
+  let x1 = e.changedTouches[0].clientX;
+  let dx = x1-x0;
+  if (Math.abs(dx) > 50){ dx<0 ? nextSlide() : prevSlide(); }
+  x0=null;
+}, {passive:true});
+</script>
 </body>
 </html>
